@@ -1,0 +1,29 @@
+2025-06-10 14:16:06,028 - ERROR - Exchange baðlantý hatasý: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-06-10 14:16:48,419 - ERROR - Exchange baðlantý hatasý: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-06-10 14:22:01,281 - ERROR - Exchange baðlantý hatasý: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-06-10 14:22:35,072 - ERROR - Exchange baðlantý hatasý: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-06-10 14:23:46,804 - ERROR - Exchange baðlantý hatasý: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-06-10 14:24:20,402 - ERROR - Exchange baðlantý hatasý: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-06-10 14:32:10,522 - ERROR - Exchange baðlantý hatasý: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-06-10 14:32:35,653 - ERROR - Exchange baðlantý hatasý: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-06-10 14:33:35,988 - ERROR - Exchange baðlantý hatasý: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-06-10 14:34:18,492 - ERROR - Exchange baðlantý hatasý: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-06-10 14:35:46,903 - ERROR - Exchange baðlantý hatasý: binance {"code":-2008,"msg":"Invalid Api-Key ID."}
+2025-06-10 14:40:06,914 - INFO - Binance Public API baðlantýsý baþarýyla kuruldu
+2025-06-10 14:40:07,544 - INFO - Balina pozisyon takibi baþlatýldý...
+2025-06-10 14:40:22,392 - INFO - Balina pozisyon bildirimi gönderildi: SOL/USDT - LONG
+2025-06-10 14:40:35,843 - ERROR - Büyük iþlem analizi hatasý (MATIC/USDT): binance does not have market symbol MATIC/USDT
+2025-06-10 14:40:40,492 - ERROR - Büyük iþlem analizi hatasý (SHIB/USDT): binance does not have market symbol SHIB/USDT
+2025-06-10 14:41:03,998 - INFO - Balina tarama turu tamamlandý. 30 saniye bekleniyor...
+2025-06-10 14:41:58,161 - ERROR - Büyük iþlem analizi hatasý (MATIC/USDT): binance does not have market symbol MATIC/USDT
+2025-06-10 14:42:02,752 - ERROR - Büyük iþlem analizi hatasý (SHIB/USDT): binance does not have market symbol SHIB/USDT
+2025-06-10 14:42:26,265 - INFO - Balina tarama turu tamamlandý. 30 saniye bekleniyor...
+2025-06-10 14:43:20,801 - ERROR - Büyük iþlem analizi hatasý (MATIC/USDT): binance does not have market symbol MATIC/USDT
+2025-06-10 14:43:25,388 - ERROR - Büyük iþlem analizi hatasý (SHIB/USDT): binance does not have market symbol SHIB/USDT
+2025-06-10 14:43:49,685 - INFO - Balina tarama turu tamamlandý. 30 saniye bekleniyor...
+2025-06-10 14:44:21,248 - INFO - Balina pozisyon bildirimi gönderildi: BTC/USDT - SHORT
+2025-06-10 14:44:44,600 - ERROR - Büyük iþlem analizi hatasý (MATIC/USDT): binance does not have market symbol MATIC/USDT
+2025-06-10 14:44:49,215 - ERROR - Büyük iþlem analizi hatasý (SHIB/USDT): binance does not have market symbol SHIB/USDT
+2025-06-10 14:45:12,517 - INFO - Balina tarama turu tamamlandý. 30 saniye bekleniyor...
+2025-06-10 14:45:24,219 - INFO - Balina takibi durduruldu.
+2025-06-10 14:45:24,220 - INFO - Balina takibi durdurma sinyali gönderildi
