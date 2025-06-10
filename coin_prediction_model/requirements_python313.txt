@@ -1,0 +1,65 @@
+# Python 3.13 Uyumlu ML Paketleri
+# Machine Learning Core
+scikit-learn>=1.5.0
+xgboost>=2.1.0
+lightgbm>=4.5.0
+
+# Data Processing
+pandas>=2.2.0
+numpy>=1.26.0
+
+# Visualization
+matplotlib>=3.9.0
+seaborn>=0.13.0
+plotly>=5.24.0
+
+# Statistics & Analysis
+statsmodels>=0.14.0
+scipy>=1.14.0
+
+# Binance API
+python-binance>=1.0.28
+requests>=2.31.0
+
+# Utilities
+python-dateutil>=2.8.2
+pytz>=2024.1
+tqdm>=4.66.0
+
+# Logging & Configuration
+colorlog>=6.8.0
+
+# Jupyter (Opsiyonel)
+jupyter>=1.0.0
+ipython>=8.20.0
+
+# File Operations
+openpyxl>=3.1.0
+
+# Async
+aiohttp>=3.10.0
+asyncio-mqtt>=0.16.0
+
+# Warning Suppressions
+warnings
+
+# JSON & Pickle
+pickle-mixin>=1.0.2
+
+# Mevcut trading bot gereksinimleri
+python-dotenv>=1.0.0
+
+# Veri görselleştirme
+plotly>=5.17.0
+
+# Teknik analiz
+ta>=0.10.2
+
+# Async ve diğer yardımcı paketler
+aiohttp>=3.9.0
+
+# Telegram API
+python-telegram-bot>=20.7
+
+# Time series prediction alternatives
+pykalman>=0.9.7 

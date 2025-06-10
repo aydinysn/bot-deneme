@@ -1,0 +1,8 @@
+[2025-05-28 23:32:10,818] [INFO] Logging started - Log file: logs\2025-05-28.txt
+[2025-05-28 23:32:10,818] [INFO] Trading Bot Started
+[2025-05-28 23:32:10,819] [INFO] Loaded 97 coins from coins.json
+[2025-05-28 23:32:10,819] [INFO] Trading 97 coins with 10x leverage
+[2025-05-28 23:32:15,480] [INFO] API connection successful
+[2025-05-28 23:32:16,245] [INFO] Balance - Total: $8.33 | Available: $4.33
+[2025-05-28 23:32:16,245] [INFO] Setting leverage to 10x for all coins...
+[2025-05-28 23:32:44,967] [INFO] Leverage setting completed: 97 successful, 0 failed

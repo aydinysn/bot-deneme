@@ -1,0 +1,49 @@
+[2025-05-23 23:52:49,633] [INFO] Logging started - Log file: logs\2025-05-23.txt
+[2025-05-23 23:52:49,634] [INFO] Trading Bot Started
+[2025-05-23 23:52:49,634] [INFO] Loaded 98 coins from coins.json
+[2025-05-23 23:52:49,634] [INFO] Trading 98 coins with 10x leverage
+[2025-05-23 23:52:55,182] [INFO] API connection successful
+[2025-05-23 23:52:55,449] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-23 23:52:55,450] [INFO] Setting leverage to 10x for all coins...
+[2025-05-23 23:53:07,627] [WARNING] Failed to set leverage for EOS/USDT: binance does not have market symbol EOS/USDT
+[2025-05-23 23:53:21,710] [INFO] Leverage setting completed: 97 successful, 1 failed
+[2025-05-23 23:54:19,547] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-23 23:56:47,169] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-23 23:59:13,440] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:01:40,883] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:04:04,368] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:06:30,277] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:08:56,896] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:11:29,159] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:13:55,106] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:16:28,985] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:18:51,921] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:21:14,490] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:23:40,346] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:26:02,059] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:28:26,085] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:30:49,116] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:33:12,304] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:35:35,128] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:37:58,720] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:40:20,537] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:42:43,189] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:45:07,048] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:47:30,426] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:49:54,694] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:52:14,083] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:54:36,181] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:57:02,236] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 00:59:23,410] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:01:44,721] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:04:08,600] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:06:29,404] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:08:46,801] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:11:04,162] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:13:21,458] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:15:38,824] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:17:59,536] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:20:17,648] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:22:35,954] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:24:53,329] [ERROR] OHLCV data fetch error (EOS/USDT): binance does not have market symbol EOS/USDT
+[2025-05-24 01:26:56,713] [WARNING] Bot stopped by user

@@ -1,0 +1,25 @@
+# Mevcut trading bot gereksinimleri
+python-binance>=1.0.19
+pandas>=2.1.0
+numpy>=1.25.0
+python-dotenv>=1.0.0
+requests>=2.31.0
+
+# Machine Learning ve LSTM için gerekli paketler
+tensorflow>=2.15.0
+scikit-learn>=1.3.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+
+# Veri işleme ve analiz (TA-Lib alternatifi)
+ta>=0.10.2
+plotly>=5.17.0
+
+# Async ve diğer yardımcı paketler
+aiohttp>=3.9.0
+
+# Logging ve debugging
+colorlog>=6.8.0
+
+# Telegram API (eğer kullanıyorsanız)
+python-telegram-bot>=20.7 

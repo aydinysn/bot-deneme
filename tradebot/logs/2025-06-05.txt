@@ -1,0 +1,628 @@
+[2025-06-05 23:10:07,892] [INFO] Logging started - Log file: logs\2025-06-05.txt
+[2025-06-05 23:10:07,893] [INFO] Trading Bot Started
+[2025-06-05 23:10:07,895] [INFO] Loaded 97 coins from coins.json
+[2025-06-05 23:10:07,895] [INFO] Trading 97 coins with 10x leverage
+[2025-06-05 23:10:19,075] [INFO] API connection successful
+[2025-06-05 23:10:19,616] [INFO] Balance - Total: $3.62 | Available: $1.63
+[2025-06-05 23:10:19,617] [INFO] Setting leverage to 10x for all coins...
+[2025-06-05 23:11:15,567] [INFO] Leverage setting completed: 97 successful, 0 failed
+[2025-06-06 02:20:45,080] [INFO] Signal Alert: TRX/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 02:20:45,093] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 02:20:45,093] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 02:20:45,093] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 02:20:45,635] [INFO] Dynamic Risk Levels for TRX/USDT (Score: 65.0)
+[2025-06-06 02:20:45,636] [INFO] ATR: 0.001631 | Current Price: 0.275240
+[2025-06-06 02:20:45,638] [INFO] Stop Loss: 11.85% | Take Profit: 8.89%
+[2025-06-06 02:20:45,904] [ERROR] Order placement error for TRX/USDT: binance {"code":-2019,"msg":"Margin is insufficient."}
+[2025-06-06 02:20:45,965] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 395, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11450, in handle_errors
+    self.throw_exactly_matched_exception(self.get_exceptions_by_url(url, 'exact'), error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.InsufficientFunds: binance {"code":-2019,"msg":"Margin is insufficient."}
+
+[2025-06-06 05:47:07,870] [ERROR] Error calculating signal score for XLM/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=XLMUSDT
+[2025-06-06 05:47:08,047] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 226, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=XLMUSDT
+
+[2025-06-06 05:47:19,122] [ERROR] OHLCV data fetch error (SUI/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SUIUSDT
+[2025-06-06 05:47:30,183] [ERROR] OHLCV data fetch error (TON/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TONUSDT
+[2025-06-06 05:47:30,202] [ERROR] OHLCV data fetch error (HBAR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=HBARUSDT
+[2025-06-06 05:47:30,289] [ERROR] OHLCV data fetch error (BCH/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=BCHUSDT
+[2025-06-06 05:47:30,389] [ERROR] OHLCV data fetch error (LTC/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=LTCUSDT
+[2025-06-06 05:47:30,490] [ERROR] OHLCV data fetch error (DOT/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=DOTUSDT
+[2025-06-06 05:47:30,589] [ERROR] OHLCV data fetch error (XMR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=XMRUSDT
+[2025-06-06 05:47:30,688] [ERROR] OHLCV data fetch error (UNI/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=UNIUSDT
+[2025-06-06 05:47:30,790] [ERROR] OHLCV data fetch error (APT/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=APTUSDT
+[2025-06-06 05:47:30,890] [ERROR] OHLCV data fetch error (ONDO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ONDOUSDT
+[2025-06-06 05:47:30,999] [ERROR] OHLCV data fetch error (NEAR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=NEARUSDT
+[2025-06-06 05:47:31,108] [ERROR] OHLCV data fetch error (ICP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ICPUSDT
+[2025-06-06 05:47:31,218] [ERROR] OHLCV data fetch error (ETC/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ETCUSDT
+[2025-06-06 05:47:31,333] [ERROR] OHLCV data fetch error (AAVE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=AAVEUSDT
+[2025-06-06 05:47:31,409] [ERROR] OHLCV data fetch error (TAO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TAOUSDT
+[2025-06-06 05:47:31,512] [ERROR] OHLCV data fetch error (VET/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=VETUSDT
+[2025-06-06 05:47:31,609] [ERROR] OHLCV data fetch error (RENDER/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=RENDERUSDT
+[2025-06-06 05:47:31,713] [ERROR] OHLCV data fetch error (KAS/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=KASUSDT
+[2025-06-06 05:47:31,812] [ERROR] OHLCV data fetch error (ATOM/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ATOMUSDT
+[2025-06-06 05:47:31,912] [ERROR] OHLCV data fetch error (ENA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ENAUSDT
+[2025-06-06 05:47:32,013] [ERROR] OHLCV data fetch error (TRUMP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TRUMPUSDT
+[2025-06-06 05:47:32,114] [ERROR] OHLCV data fetch error (FIL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=FILUSDT
+[2025-06-06 05:47:32,214] [ERROR] OHLCV data fetch error (POL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=POLUSDT
+[2025-06-06 05:47:32,316] [ERROR] OHLCV data fetch error (ALGO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ALGOUSDT
+[2025-06-06 05:47:32,416] [ERROR] OHLCV data fetch error (S/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SUSDT
+[2025-06-06 05:47:32,518] [ERROR] OHLCV data fetch error (TIA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TIAUSDT
+[2025-06-06 05:47:32,619] [ERROR] OHLCV data fetch error (ARB/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ARBUSDT
+[2025-06-06 05:47:32,719] [ERROR] OHLCV data fetch error (FET/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=FETUSDT
+[2025-06-06 05:47:32,819] [ERROR] OHLCV data fetch error (MKR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=MKRUSDT
+[2025-06-06 05:47:32,921] [ERROR] OHLCV data fetch error (OM/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=OMUSDT
+[2025-06-06 05:47:33,021] [ERROR] OHLCV data fetch error (OP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=OPUSDT
+[2025-06-06 05:47:33,120] [ERROR] OHLCV data fetch error (JUP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=JUPUSDT
+[2025-06-06 05:47:33,220] [ERROR] OHLCV data fetch error (IP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=IPUSDT
+[2025-06-06 05:47:33,326] [ERROR] OHLCV data fetch error (QNT/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=QNTUSDT
+[2025-06-06 05:47:33,422] [ERROR] OHLCV data fetch error (STX/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=STXUSDT
+[2025-06-06 08:05:45,262] [INFO] Signal Alert: COMP/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 08:05:45,263] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 08:05:45,264] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 08:05:45,265] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 08:05:45,792] [INFO] Dynamic Risk Levels for COMP/USDT (Score: 65.0)
+[2025-06-06 08:05:45,792] [INFO] ATR: 0.342857 | Current Price: 44.800000
+[2025-06-06 08:05:45,793] [INFO] Stop Loss: 15.31% | Take Profit: 11.48%
+[2025-06-06 08:05:45,795] [WARNING] Order value still too low after adjustments! Notional: $19.98 < $20 minimum
+[2025-06-06 08:23:49,685] [INFO] Signal Alert: COMP/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 08:23:49,685] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 08:23:49,685] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 08:23:49,686] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 08:23:50,220] [INFO] Dynamic Risk Levels for COMP/USDT (Score: 65.0)
+[2025-06-06 08:23:50,220] [INFO] ATR: 0.362857 | Current Price: 45.070000
+[2025-06-06 08:23:50,221] [INFO] Stop Loss: 16.10% | Take Profit: 12.08%
+[2025-06-06 08:23:50,487] [ERROR] Order placement error for COMP/USDT: binance {"code":-2019,"msg":"Margin is insufficient."}
+[2025-06-06 08:23:50,490] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 395, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11450, in handle_errors
+    self.throw_exactly_matched_exception(self.get_exceptions_by_url(url, 'exact'), error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.InsufficientFunds: binance {"code":-2019,"msg":"Margin is insufficient."}
+
+[2025-06-06 08:40:36,573] [INFO] Signal Alert: COMP/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 08:40:36,574] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 08:40:36,574] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 08:40:36,575] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 08:40:37,120] [INFO] Dynamic Risk Levels for COMP/USDT (Score: 65.0)
+[2025-06-06 08:40:37,121] [INFO] ATR: 0.397857 | Current Price: 45.340000
+[2025-06-06 08:40:37,121] [INFO] Stop Loss: 17.55% | Take Profit: 13.16%
+[2025-06-06 08:40:37,122] [WARNING] Order value still too low after adjustments! Notional: $19.99 < $20 minimum
+[2025-06-06 09:29:40,774] [INFO] Signal Alert: TAO/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 09:29:40,775] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 09:29:40,775] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 09:29:40,775] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 09:29:41,308] [INFO] Dynamic Risk Levels for TAO/USDT (Score: 65.0)
+[2025-06-06 09:29:41,309] [INFO] ATR: 2.367143 | Current Price: 365.850000
+[2025-06-06 09:29:41,309] [INFO] Stop Loss: 12.94% | Take Profit: 9.71%
+[2025-06-06 09:29:41,568] [ERROR] Order placement error for TAO/USDT: binance {"code":-2019,"msg":"Margin is insufficient."}
+[2025-06-06 09:29:41,572] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 395, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11450, in handle_errors
+    self.throw_exactly_matched_exception(self.get_exceptions_by_url(url, 'exact'), error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.InsufficientFunds: binance {"code":-2019,"msg":"Margin is insufficient."}
+
+[2025-06-06 12:38:00,620] [INFO] Signal Alert: ARB/USDT - Score: 65.0/100 - Trend: None
+[2025-06-06 12:42:28,711] [INFO] Signal Alert: ARB/USDT - Score: 65.0/100 - Trend: None
+[2025-06-06 12:44:43,145] [INFO] Signal Alert: ARB/USDT - Score: 65.0/100 - Trend: None
+[2025-06-06 13:18:33,980] [INFO] Signal Alert: FARTCOIN/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 13:18:33,981] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 13:18:33,982] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 13:18:33,982] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 13:18:34,661] [INFO] Dynamic Risk Levels for FARTCOIN/USDT (Score: 65.0)
+[2025-06-06 13:18:34,661] [INFO] ATR: 0.013179 | Current Price: 1.070400
+[2025-06-06 13:18:34,662] [INFO] Stop Loss: 24.62% | Take Profit: 18.47%
+[2025-06-06 13:18:34,991] [ERROR] Order placement error for FARTCOIN/USDT: binance {"code":-2019,"msg":"Margin is insufficient."}
+[2025-06-06 13:18:34,994] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 395, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11450, in handle_errors
+    self.throw_exactly_matched_exception(self.get_exceptions_by_url(url, 'exact'), error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.InsufficientFunds: binance {"code":-2019,"msg":"Margin is insufficient."}
+
+[2025-06-06 13:26:54,822] [INFO] Signal Alert: FARTCOIN/USDT - Score: 70.0/100 - Trend: long
+[2025-06-06 13:26:54,823] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 13:26:54,823] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 13:26:54,823] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 13:26:55,362] [INFO] Dynamic Risk Levels for FARTCOIN/USDT (Score: 70.0)
+[2025-06-06 13:26:55,363] [INFO] ATR: 0.013329 | Current Price: 1.070200
+[2025-06-06 13:26:55,363] [INFO] Stop Loss: 18.68% | Take Profit: 31.14%
+[2025-06-06 13:26:55,621] [ERROR] Order placement error for FARTCOIN/USDT: binance {"code":-2019,"msg":"Margin is insufficient."}
+[2025-06-06 13:26:55,624] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 395, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11450, in handle_errors
+    self.throw_exactly_matched_exception(self.get_exceptions_by_url(url, 'exact'), error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.InsufficientFunds: binance {"code":-2019,"msg":"Margin is insufficient."}
+
+[2025-06-06 13:30:05,268] [INFO] Signal Alert: FARTCOIN/USDT - Score: 70.0/100 - Trend: long
+[2025-06-06 13:30:05,268] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 13:30:05,268] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 13:30:05,269] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 13:30:06,205] [INFO] Dynamic Risk Levels for FARTCOIN/USDT (Score: 70.0)
+[2025-06-06 13:30:06,206] [INFO] ATR: 0.012621 | Current Price: 1.069100
+[2025-06-06 13:30:06,207] [INFO] Stop Loss: 17.71% | Take Profit: 29.51%
+[2025-06-06 13:30:06,207] [WARNING] Order value still too low after adjustments! Notional: $19.99 < $20 minimum
+[2025-06-06 14:12:08,223] [INFO] Signal Alert: FARTCOIN/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 14:12:08,224] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 14:12:08,224] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 14:12:08,224] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 14:12:08,732] [INFO] Dynamic Risk Levels for FARTCOIN/USDT (Score: 65.0)
+[2025-06-06 14:12:08,733] [INFO] ATR: 0.013829 | Current Price: 1.080600
+[2025-06-06 14:12:08,733] [INFO] Stop Loss: 25.59% | Take Profit: 19.20%
+[2025-06-06 14:12:08,733] [WARNING] Order value still too low after adjustments! Notional: $19.99 < $20 minimum
+[2025-06-06 15:30:57,121] [INFO] Signal Alert: SAND/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 15:30:57,122] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 15:30:57,123] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 15:30:57,123] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 15:30:57,661] [INFO] Dynamic Risk Levels for SAND/USDT (Score: 65.0)
+[2025-06-06 15:30:57,662] [INFO] ATR: 0.001361 | Current Price: 0.268680
+[2025-06-06 15:30:57,662] [INFO] Stop Loss: 10.13% | Take Profit: 7.60%
+[2025-06-06 15:30:57,677] [WARNING] Order value still too low after adjustments! Notional: $19.88 < $20 minimum
+[2025-06-06 15:33:13,723] [INFO] Signal Alert: GALA/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 15:33:13,724] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 15:33:13,725] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 15:33:13,726] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 15:33:14,237] [INFO] Dynamic Risk Levels for GALA/USDT (Score: 65.0)
+[2025-06-06 15:33:14,237] [INFO] ATR: 0.000091 | Current Price: 0.015910
+[2025-06-06 15:33:14,238] [INFO] Stop Loss: 11.49% | Take Profit: 8.62%
+[2025-06-06 15:33:14,238] [WARNING] Order value still too low after adjustments! Notional: $20.00 < $20 minimum
+[2025-06-06 15:35:29,071] [INFO] Signal Alert: GALA/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 15:35:29,072] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 15:35:29,073] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 15:35:29,073] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 15:35:29,588] [INFO] Dynamic Risk Levels for GALA/USDT (Score: 65.0)
+[2025-06-06 15:35:29,589] [INFO] ATR: 0.000091 | Current Price: 0.015920
+[2025-06-06 15:35:29,589] [INFO] Stop Loss: 11.49% | Take Profit: 8.61%
+[2025-06-06 15:35:29,590] [WARNING] Order value still too low after adjustments! Notional: $20.00 < $20 minimum
+[2025-06-06 15:37:45,819] [INFO] Signal Alert: GALA/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 15:37:45,820] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 15:37:45,820] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 15:37:45,821] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 15:37:46,331] [INFO] Dynamic Risk Levels for GALA/USDT (Score: 65.0)
+[2025-06-06 15:37:46,332] [INFO] ATR: 0.000091 | Current Price: 0.015910
+[2025-06-06 15:37:46,332] [INFO] Stop Loss: 11.49% | Take Profit: 8.62%
+[2025-06-06 15:37:46,332] [WARNING] Order value still too low after adjustments! Notional: $20.00 < $20 minimum
+[2025-06-06 15:39:34,460] [INFO] Signal Alert: S/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 15:39:34,476] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 15:39:34,477] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 15:39:34,477] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 15:39:35,004] [INFO] Dynamic Risk Levels for S/USDT (Score: 65.0)
+[2025-06-06 15:39:35,005] [INFO] ATR: 0.001979 | Current Price: 0.374400
+[2025-06-06 15:39:35,005] [INFO] Stop Loss: 10.57% | Take Profit: 7.93%
+[2025-06-06 15:39:35,008] [WARNING] Order value still too low after adjustments! Notional: $19.84 < $20 minimum
+[2025-06-06 15:40:03,682] [INFO] Signal Alert: GALA/USDT - Score: 70.0/100 - Trend: long
+[2025-06-06 15:40:03,683] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 15:40:03,683] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 15:40:03,684] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 15:40:04,688] [INFO] Dynamic Risk Levels for GALA/USDT (Score: 70.0)
+[2025-06-06 15:40:04,688] [INFO] ATR: 0.000091 | Current Price: 0.015870
+[2025-06-06 15:40:04,689] [INFO] Stop Loss: 8.64% | Take Profit: 14.40%
+[2025-06-06 15:40:04,689] [WARNING] Order value still too low after adjustments! Notional: $20.00 < $20 minimum
+[2025-06-06 15:42:17,162] [INFO] Signal Alert: SAND/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 15:42:17,162] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 15:42:17,163] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 15:42:17,164] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 15:42:17,749] [INFO] Dynamic Risk Levels for SAND/USDT (Score: 65.0)
+[2025-06-06 15:42:17,750] [INFO] ATR: 0.001361 | Current Price: 0.267480
+[2025-06-06 15:42:17,750] [INFO] Stop Loss: 10.18% | Take Profit: 7.63%
+[2025-06-06 15:42:18,020] [ERROR] Order placement error for SAND/USDT: binance {"code":-2019,"msg":"Margin is insufficient."}
+[2025-06-06 15:42:18,023] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 395, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11450, in handle_errors
+    self.throw_exactly_matched_exception(self.get_exceptions_by_url(url, 'exact'), error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.InsufficientFunds: binance {"code":-2019,"msg":"Margin is insufficient."}
+
+[2025-06-06 15:42:19,088] [INFO] Signal Alert: GALA/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 15:42:19,089] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 15:42:19,089] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 15:42:19,090] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 15:42:19,626] [INFO] Dynamic Risk Levels for GALA/USDT (Score: 65.0)
+[2025-06-06 15:42:19,627] [INFO] ATR: 0.000091 | Current Price: 0.015860
+[2025-06-06 15:42:19,627] [INFO] Stop Loss: 11.53% | Take Profit: 8.65%
+[2025-06-06 15:42:19,628] [WARNING] Order value still too low after adjustments! Notional: $20.00 < $20 minimum
+[2025-06-06 15:44:24,746] [INFO] Signal Alert: GRT/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 15:44:24,747] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 15:44:24,747] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 15:44:24,748] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 15:44:25,264] [INFO] Dynamic Risk Levels for GRT/USDT (Score: 65.0)
+[2025-06-06 15:44:25,265] [INFO] ATR: 0.000492 | Current Price: 0.090210
+[2025-06-06 15:44:25,265] [INFO] Stop Loss: 10.91% | Take Profit: 8.18%
+[2025-06-06 15:44:25,521] [ERROR] Order placement error for GRT/USDT: binance {"code":-2019,"msg":"Margin is insufficient."}
+[2025-06-06 15:44:25,524] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 395, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11450, in handle_errors
+    self.throw_exactly_matched_exception(self.get_exceptions_by_url(url, 'exact'), error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.InsufficientFunds: binance {"code":-2019,"msg":"Margin is insufficient."}
+
+[2025-06-06 15:44:34,415] [INFO] Signal Alert: SAND/USDT - Score: 65.0/100 - Trend: long
+[2025-06-06 15:44:34,415] [INFO] Balance - Total: $3.62 | Available: $3.62
+[2025-06-06 15:44:34,416] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-06 15:44:34,416] [INFO] Increased position amount to minimum: $2.00
+[2025-06-06 15:44:34,933] [INFO] Dynamic Risk Levels for SAND/USDT (Score: 65.0)
+[2025-06-06 15:44:34,933] [INFO] ATR: 0.001361 | Current Price: 0.267140
+[2025-06-06 15:44:34,934] [INFO] Stop Loss: 10.19% | Take Profit: 7.64%
+[2025-06-06 15:44:35,190] [ERROR] Order placement error for SAND/USDT: binance {"code":-2019,"msg":"Margin is insufficient."}
+[2025-06-06 15:44:35,193] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 395, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11450, in handle_errors
+    self.throw_exactly_matched_exception(self.get_exceptions_by_url(url, 'exact'), error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.InsufficientFunds: binance {"code":-2019,"msg":"Margin is insufficient."}
+
+[2025-06-06 15:50:44,386] [WARNING] Bot stopped by user

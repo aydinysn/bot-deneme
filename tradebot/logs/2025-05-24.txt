@@ -1,0 +1,441 @@
+[2025-05-24 01:27:02,607] [INFO] Logging started - Log file: logs\2025-05-24.txt
+[2025-05-24 01:27:02,607] [INFO] Trading Bot Started
+[2025-05-24 01:27:02,608] [INFO] Loaded 97 coins from coins.json
+[2025-05-24 01:27:02,608] [INFO] Trading 97 coins with 10x leverage
+[2025-05-24 01:27:07,287] [INFO] API connection successful
+[2025-05-24 01:27:07,545] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-24 01:27:07,546] [INFO] Setting leverage to 10x for all coins...
+[2025-05-24 01:27:34,620] [INFO] Leverage setting completed: 97 successful, 0 failed
+[2025-05-24 02:32:40,724] [WARNING] Bot stopped by user
+[2025-05-24 02:33:07,732] [INFO] Logging started - Log file: logs\2025-05-24.txt
+[2025-05-24 02:33:07,733] [INFO] Trading Bot Started
+[2025-05-24 02:33:07,735] [INFO] Loaded 97 coins from coins.json
+[2025-05-24 02:33:07,735] [INFO] Trading 97 coins with 10x leverage
+[2025-05-24 02:33:12,458] [INFO] API connection successful
+[2025-05-24 02:33:12,713] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-24 02:33:12,714] [INFO] Setting leverage to 10x for all coins...
+[2025-05-24 02:33:38,360] [INFO] Leverage setting completed: 97 successful, 0 failed
+[2025-05-24 04:15:02,889] [ERROR] OHLCV data fetch error (BTC/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=BTCUSDT
+[2025-05-24 04:15:02,928] [ERROR] OHLCV data fetch error (ETH/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ETHUSDT
+[2025-05-24 04:15:03,021] [ERROR] OHLCV data fetch error (XRP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=XRPUSDT
+[2025-05-24 04:15:03,103] [ERROR] OHLCV data fetch error (BNB/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=BNBUSDT
+[2025-05-24 04:15:03,204] [ERROR] OHLCV data fetch error (SOL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SOLUSDT
+[2025-05-24 04:15:03,301] [ERROR] OHLCV data fetch error (DOGE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=DOGEUSDT
+[2025-05-24 04:15:03,401] [ERROR] OHLCV data fetch error (TRX/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TRXUSDT
+[2025-05-24 04:15:03,502] [ERROR] OHLCV data fetch error (ADA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ADAUSDT
+[2025-05-24 04:15:03,603] [ERROR] OHLCV data fetch error (AVAX/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=AVAXUSDT
+[2025-05-24 04:15:03,703] [ERROR] OHLCV data fetch error (LINK/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=LINKUSDT
+[2025-05-24 04:15:03,804] [ERROR] OHLCV data fetch error (XLM/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=XLMUSDT
+[2025-05-24 04:15:03,905] [ERROR] OHLCV data fetch error (SUI/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SUIUSDT
+[2025-05-24 04:15:04,005] [ERROR] OHLCV data fetch error (TON/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TONUSDT
+[2025-05-24 04:15:04,106] [ERROR] OHLCV data fetch error (HBAR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=HBARUSDT
+[2025-05-24 04:15:04,205] [ERROR] OHLCV data fetch error (BCH/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=BCHUSDT
+[2025-05-24 04:15:04,305] [ERROR] OHLCV data fetch error (LTC/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=LTCUSDT
+[2025-05-24 04:15:04,405] [ERROR] OHLCV data fetch error (DOT/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=DOTUSDT
+[2025-05-24 04:15:04,507] [ERROR] OHLCV data fetch error (XMR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=XMRUSDT
+[2025-05-24 04:15:04,607] [ERROR] OHLCV data fetch error (UNI/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=UNIUSDT
+[2025-05-24 04:15:04,708] [ERROR] OHLCV data fetch error (APT/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=APTUSDT
+[2025-05-24 04:15:04,807] [ERROR] OHLCV data fetch error (ONDO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ONDOUSDT
+[2025-05-24 04:15:04,907] [ERROR] OHLCV data fetch error (NEAR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=NEARUSDT
+[2025-05-24 04:15:05,008] [ERROR] OHLCV data fetch error (ICP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ICPUSDT
+[2025-05-24 04:15:05,109] [ERROR] OHLCV data fetch error (ETC/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ETCUSDT
+[2025-05-24 04:15:05,263] [ERROR] OHLCV data fetch error (AAVE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=AAVEUSDT
+[2025-05-24 05:10:17,824] [ERROR] Error calculating signal score for IMX/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=IMXUSDT
+[2025-05-24 05:10:18,124] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 226, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 29, in calculate_multi_timeframe_score
+    df_4h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='4h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 600, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=IMXUSDT
+
+[2025-05-24 05:10:18,129] [ERROR] OHLCV data fetch error (PAXG/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=PAXGUSDT
+[2025-05-24 05:10:18,227] [ERROR] OHLCV data fetch error (THETA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=THETAUSDT
+[2025-05-24 05:10:18,327] [ERROR] OHLCV data fetch error (XCN/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=XCNUSDT
+[2025-05-24 05:10:18,428] [ERROR] OHLCV data fetch error (LDO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=LDOUSDT
+[2025-05-24 05:10:18,528] [ERROR] OHLCV data fetch error (SAND/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SANDUSDT
+[2025-05-24 05:10:18,627] [ERROR] OHLCV data fetch error (GALA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=GALAUSDT
+[2025-05-24 05:10:18,727] [ERROR] OHLCV data fetch error (IOTA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=IOTAUSDT
+[2025-05-24 05:10:18,829] [ERROR] OHLCV data fetch error (KAIA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=KAIAUSDT
+[2025-05-24 05:10:18,928] [ERROR] OHLCV data fetch error (WAL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=WALUSDT
+[2025-05-24 05:10:19,029] [ERROR] OHLCV data fetch error (CAKE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=CAKEUSDT
+[2025-05-24 05:10:19,129] [ERROR] OHLCV data fetch error (BSV/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=BSVUSDT
+[2025-05-24 05:10:19,230] [ERROR] OHLCV data fetch error (FLOW/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=FLOWUSDT
+[2025-05-24 05:10:19,329] [ERROR] OHLCV data fetch error (RAY/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=RAYUSDT
+[2025-05-24 05:10:19,429] [ERROR] OHLCV data fetch error (JTO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=JTOUSDT
+[2025-05-24 05:10:19,530] [ERROR] OHLCV data fetch error (XTZ/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=XTZUSDT
+[2025-05-24 05:10:19,630] [ERROR] OHLCV data fetch error (PENDLE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=PENDLEUSDT
+[2025-05-24 05:10:19,731] [ERROR] OHLCV data fetch error (ZEC/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ZECUSDT
+[2025-05-24 05:10:19,833] [ERROR] OHLCV data fetch error (MANA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=MANAUSDT
+[2025-05-24 05:10:19,930] [ERROR] OHLCV data fetch error (SPX/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SPXUSDT
+[2025-05-24 05:10:20,031] [ERROR] OHLCV data fetch error (PYTH/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=PYTHUSDT
+[2025-05-24 05:10:20,132] [ERROR] OHLCV data fetch error (ENS/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ENSUSDT
+[2025-05-24 05:10:20,233] [ERROR] OHLCV data fetch error (KAVA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=KAVAUSDT
+[2025-05-24 05:10:20,334] [ERROR] OHLCV data fetch error (WIF/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=WIFUSDT
+[2025-05-24 08:15:02,358] [ERROR] Error calculating signal score for ICP/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=ICPUSDT
+[2025-05-24 08:15:02,371] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 226, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 600, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=ICPUSDT
+
+[2025-05-24 08:15:02,405] [ERROR] OHLCV data fetch error (ETC/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ETCUSDT
+[2025-05-24 08:15:02,475] [ERROR] OHLCV data fetch error (AAVE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=AAVEUSDT
+[2025-05-24 08:15:02,575] [ERROR] OHLCV data fetch error (TAO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TAOUSDT
+[2025-05-24 08:15:02,676] [ERROR] OHLCV data fetch error (VET/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=VETUSDT
+[2025-05-24 08:15:02,776] [ERROR] OHLCV data fetch error (RENDER/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=RENDERUSDT
+[2025-05-24 08:15:02,875] [ERROR] OHLCV data fetch error (KAS/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=KASUSDT
+[2025-05-24 08:15:02,976] [ERROR] OHLCV data fetch error (ATOM/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ATOMUSDT
+[2025-05-24 08:15:03,078] [ERROR] OHLCV data fetch error (ENA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ENAUSDT
+[2025-05-24 08:15:03,178] [ERROR] OHLCV data fetch error (TRUMP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TRUMPUSDT
+[2025-05-24 08:15:03,278] [ERROR] OHLCV data fetch error (FIL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=FILUSDT
+[2025-05-24 08:15:03,379] [ERROR] OHLCV data fetch error (POL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=POLUSDT
+[2025-05-24 08:15:03,479] [ERROR] OHLCV data fetch error (ALGO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ALGOUSDT
+[2025-05-24 08:15:03,580] [ERROR] OHLCV data fetch error (S/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SUSDT
+[2025-05-24 08:15:03,679] [ERROR] OHLCV data fetch error (TIA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TIAUSDT
+[2025-05-24 08:15:03,780] [ERROR] OHLCV data fetch error (ARB/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ARBUSDT
+[2025-05-24 08:15:03,881] [ERROR] OHLCV data fetch error (FET/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=FETUSDT
+[2025-05-24 08:15:03,980] [ERROR] OHLCV data fetch error (MKR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=MKRUSDT
+[2025-05-24 08:15:04,080] [ERROR] OHLCV data fetch error (OM/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=OMUSDT
+[2025-05-24 08:15:04,182] [ERROR] OHLCV data fetch error (OP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=OPUSDT
+[2025-05-24 08:15:04,282] [ERROR] OHLCV data fetch error (JUP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=JUPUSDT
+[2025-05-24 08:15:04,382] [ERROR] OHLCV data fetch error (IP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=IPUSDT
+[2025-05-24 08:15:04,483] [ERROR] OHLCV data fetch error (QNT/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=QNTUSDT
+[2025-05-24 08:15:04,582] [ERROR] OHLCV data fetch error (STX/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=STXUSDT
+[2025-05-24 08:15:04,682] [ERROR] OHLCV data fetch error (WLD/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=WLDUSDT
+[2025-05-24 11:03:39,343] [INFO] Signal Alert: QNT/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 11:14:37,985] [INFO] Signal Alert: XMR/USDT - Score: 70.0/100 - Trend: long
+[2025-05-24 11:14:37,985] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-24 11:14:37,986] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-24 11:14:37,986] [INFO] Increased position amount to minimum: $2.00
+[2025-05-24 11:14:38,505] [INFO] Dynamic Risk Levels for XMR/USDT (Score: 70.0)
+[2025-05-24 11:14:38,505] [INFO] ATR: 2.605714 | Current Price: 401.230000
+[2025-05-24 11:14:38,506] [INFO] Stop Loss: 9.74% | Take Profit: 16.24%
+[2025-05-24 11:14:38,784] [INFO] Trailing stop set for XMR/USDT (LONG) | Activation: 8.0%
+[2025-05-24 11:14:38,785] [INFO] [OPEN POSITION] XMR/USDT - Type: LONG | Price: 401.23 | Amount: 0.05 | Notional: $20.06 | Signal Score: 70.0 | Leverage: 10x | ATR: 2.605714 | Stop Loss: 9.74% | Take Profit: 16.24%
+[2025-05-24 11:19:59,943] [INFO] Signal Alert: FLOW/USDT - Score: 65.0/100 - Trend: short
+[2025-05-24 11:19:59,944] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-24 11:19:59,944] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-24 11:19:59,945] [INFO] Increased position amount to minimum: $2.00
+[2025-05-24 11:20:00,494] [INFO] Dynamic Risk Levels for FLOW/USDT (Score: 65.0)
+[2025-05-24 11:20:00,494] [INFO] ATR: 0.002429 | Current Price: 0.407000
+[2025-05-24 11:20:00,495] [INFO] Stop Loss: 11.93% | Take Profit: 8.95%
+[2025-05-24 11:20:00,495] [WARNING] Order value still too low after adjustments! Notional: $19.98 < $20 minimum
+[2025-05-24 11:28:19,781] [INFO] Signal Alert: TIA/USDT - Score: 65.0/100 - Trend: short
+[2025-05-24 11:28:19,782] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-24 11:28:19,782] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-24 11:28:19,782] [INFO] Increased position amount to minimum: $2.00
+[2025-05-24 11:28:20,316] [INFO] Dynamic Risk Levels for TIA/USDT (Score: 65.0)
+[2025-05-24 11:28:20,317] [INFO] ATR: 0.017593 | Current Price: 2.524700
+[2025-05-24 11:28:20,317] [INFO] Stop Loss: 13.94% | Take Profit: 10.45%
+[2025-05-24 11:28:20,577] [INFO] Trailing stop set for TIA/USDT (SHORT) | Activation: 8.0%
+[2025-05-24 11:28:20,579] [INFO] [OPEN POSITION] TIA/USDT - Type: SHORT | Price: 2.5247 | Amount: 8.0 | Notional: $20.20 | Signal Score: 65.0 | Leverage: 10x | ATR: 0.017593 | Stop Loss: 13.94% | Take Profit: 10.45%
+[2025-05-24 11:28:54,260] [INFO] Signal Alert: FLOW/USDT - Score: 65.0/100 - Trend: short
+[2025-05-24 11:28:54,260] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-24 11:28:54,261] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-24 11:28:54,261] [INFO] Increased position amount to minimum: $2.00
+[2025-05-24 11:28:54,803] [INFO] Dynamic Risk Levels for FLOW/USDT (Score: 65.0)
+[2025-05-24 11:28:54,804] [INFO] ATR: 0.002429 | Current Price: 0.407000
+[2025-05-24 11:28:54,804] [INFO] Stop Loss: 11.93% | Take Profit: 8.95%
+[2025-05-24 11:28:54,805] [WARNING] Order value still too low after adjustments! Notional: $19.98 < $20 minimum
+[2025-05-24 11:50:21,222] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 11:56:33,850] [INFO] Trailing stop activated for XMR/USDT | PnL: 8.20% | Stop: Break-even
+[2025-05-24 12:16:42,228] [INFO] Trailing stop hit! XMR/USDT (LONG) | Price: 400.96 | Stop: 401.23 | Locked PnL: 0.00%
+[2025-05-24 12:16:42,229] [INFO] Closing position due to trailing stop: XMR/USDT
+[2025-05-24 12:16:42,765] [INFO] [CLOSE POSITION] XMR/USDT - Type: LONG | Entry Price: 401.23 | Exit Price: 400.96 | PnL: -0.67% | Amount: 0.05
+[2025-05-24 12:26:11,940] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 12:30:41,245] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 12:32:59,705] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 12:35:14,001] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 12:37:03,417] [INFO] Dynamic stop loss hit: TIA/USDT (-14.85% <= -13.94%)
+[2025-05-24 12:37:03,937] [INFO] [CLOSE POSITION] TIA/USDT - Type: SHORT | Entry Price: 2.5247 | Exit Price: 2.5627 | PnL: -15.05% | Amount: 8.0
+[2025-05-24 12:37:31,162] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 12:39:45,834] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 12:42:02,081] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 12:44:16,675] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 13:44:29,725] [INFO] Signal Alert: ZEC/USDT - Score: 70.0/100 - Trend: None
+[2025-05-24 13:49:03,580] [INFO] Signal Alert: ZEC/USDT - Score: 65.0/100 - Trend: long
+[2025-05-24 13:49:03,581] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-24 13:49:03,582] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-24 13:49:03,582] [INFO] Increased position amount to minimum: $2.00
+[2025-05-24 13:49:04,108] [INFO] Dynamic Risk Levels for ZEC/USDT (Score: 65.0)
+[2025-05-24 13:49:04,109] [INFO] ATR: 0.250714 | Current Price: 47.620000
+[2025-05-24 13:49:04,109] [INFO] Stop Loss: 10.53% | Take Profit: 7.90%
+[2025-05-24 13:49:04,371] [INFO] Trailing stop set for ZEC/USDT (LONG) | Activation: 8.0%
+[2025-05-24 13:49:04,372] [INFO] [OPEN POSITION] ZEC/USDT - Type: LONG | Price: 47.62 | Amount: 0.42 | Notional: $20.00 | Signal Score: 65.0 | Leverage: 10x | ATR: 0.250714 | Stop Loss: 10.53% | Take Profit: 7.90%
+[2025-05-24 14:02:16,756] [INFO] Signal Alert: INJ/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 14:04:33,702] [INFO] Signal Alert: INJ/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 14:06:51,933] [INFO] Signal Alert: INJ/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 14:13:39,058] [INFO] Signal Alert: INJ/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 15:25:51,414] [INFO] Signal Alert: OM/USDT - Score: 65.0/100 - Trend: long
+[2025-05-24 15:25:51,415] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-24 15:25:51,416] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-24 15:25:51,416] [INFO] Increased position amount to minimum: $2.00
+[2025-05-24 15:25:51,943] [INFO] Dynamic Risk Levels for OM/USDT (Score: 65.0)
+[2025-05-24 15:25:51,944] [INFO] ATR: 0.002180 | Current Price: 0.405890
+[2025-05-24 15:25:51,944] [INFO] Stop Loss: 10.74% | Take Profit: 8.06%
+[2025-05-24 15:25:52,207] [INFO] Trailing stop set for OM/USDT (LONG) | Activation: 8.0%
+[2025-05-24 15:25:52,208] [INFO] [OPEN POSITION] OM/USDT - Type: LONG | Price: 0.40589 | Amount: 49.3 | Notional: $20.01 | Signal Score: 65.0 | Leverage: 10x | ATR: 0.002180 | Stop Loss: 10.74% | Take Profit: 8.06%
+[2025-05-24 15:43:12,230] [INFO] Dynamic stop loss hit: ZEC/USDT (-18.27% <= -10.53%)
+[2025-05-24 15:43:12,757] [INFO] [CLOSE POSITION] ZEC/USDT - Type: LONG | Entry Price: 47.62 | Exit Price: 46.75 | PnL: -18.27% | Amount: 0.42
+[2025-05-24 15:47:45,766] [INFO] Trailing stop activated for OM/USDT | PnL: 8.33% | Stop: Break-even
+[2025-05-24 15:47:46,029] [INFO] Dynamic take profit hit: OM/USDT (8.33% >= 8.06%)
+[2025-05-24 15:47:46,547] [INFO] [CLOSE POSITION] OM/USDT - Type: LONG | Entry Price: 0.40589 | Exit Price: 0.40932 | PnL: 8.45% | Amount: 49.3
+[2025-05-24 15:57:46,937] [INFO] Signal Alert: WLD/USDT - Score: 65.0/100 - Trend: long
+[2025-05-24 15:57:46,938] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-24 15:57:46,938] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-24 15:57:46,939] [INFO] Increased position amount to minimum: $2.00
+[2025-05-24 15:57:47,468] [INFO] Dynamic Risk Levels for WLD/USDT (Score: 65.0)
+[2025-05-24 15:57:47,469] [INFO] ATR: 0.021036 | Current Price: 1.517500
+[2025-05-24 15:57:47,469] [INFO] Stop Loss: 27.72% | Take Profit: 20.79%
+[2025-05-24 15:57:47,469] [WARNING] Order value still too low after adjustments! Notional: $19.73 < $20 minimum
+[2025-05-24 18:01:29,733] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 18:06:10,864] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 18:08:39,523] [INFO] Signal Alert: FET/USDT - Score: 65.0/100 - Trend: None
+[2025-05-24 20:22:17,240] [INFO] Signal Alert: XMR/USDT - Score: 65.0/100 - Trend: long
+[2025-05-24 20:22:17,241] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-24 20:22:17,241] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-24 20:22:17,242] [INFO] Increased position amount to minimum: $2.00
+[2025-05-24 20:22:17,766] [INFO] Dynamic Risk Levels for XMR/USDT (Score: 65.0)
+[2025-05-24 20:22:17,767] [INFO] ATR: 2.272143 | Current Price: 402.310000
+[2025-05-24 20:22:17,767] [INFO] Stop Loss: 11.30% | Take Profit: 8.47%
+[2025-05-24 20:22:18,027] [INFO] Trailing stop set for XMR/USDT (LONG) | Activation: 8.0%
+[2025-05-24 20:22:18,027] [INFO] [OPEN POSITION] XMR/USDT - Type: LONG | Price: 402.31 | Amount: 0.05 | Notional: $20.12 | Signal Score: 65.0 | Leverage: 10x | ATR: 2.272143 | Stop Loss: 11.30% | Take Profit: 8.47%
+[2025-05-24 22:27:14,573] [INFO] Signal Alert: ZEC/USDT - Score: 65.0/100 - Trend: long
+[2025-05-24 22:27:14,573] [INFO] Balance - Total: $7.88 | Available: $7.88
+[2025-05-24 22:27:14,574] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-24 22:27:14,574] [INFO] Increased position amount to minimum: $2.00
+[2025-05-24 22:27:15,096] [INFO] Dynamic Risk Levels for ZEC/USDT (Score: 65.0)
+[2025-05-24 22:27:15,097] [INFO] ATR: 0.265000 | Current Price: 48.070000
+[2025-05-24 22:27:15,098] [INFO] Stop Loss: 11.03% | Take Profit: 8.27%
+[2025-05-24 22:27:15,098] [WARNING] Order value still too low after adjustments! Notional: $20.00 < $20 minimum
+[2025-05-24 23:06:26,636] [INFO] Dynamic stop loss hit: XMR/USDT (-12.40% <= -11.30%)
+[2025-05-24 23:06:27,154] [INFO] [CLOSE POSITION] XMR/USDT - Type: LONG | Entry Price: 402.31 | Exit Price: 397.62 | PnL: -11.66% | Amount: 0.05

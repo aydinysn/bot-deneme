@@ -1,0 +1,496 @@
+[2025-05-26 20:23:23,188] [INFO] Logging started - Log file: logs\2025-05-26.txt
+[2025-05-26 20:23:23,188] [INFO] Trading Bot Started
+[2025-05-26 20:23:23,196] [INFO] Loaded 97 coins from coins.json
+[2025-05-26 20:23:23,197] [INFO] Trading 97 coins with 10x leverage
+[2025-05-26 20:23:23,737] [ERROR] Exchange initialization error: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}
+[2025-05-26 20:24:37,352] [INFO] Logging started - Log file: logs\2025-05-26.txt
+[2025-05-26 20:24:37,353] [INFO] Trading Bot Started
+[2025-05-26 20:24:37,353] [INFO] Loaded 97 coins from coins.json
+[2025-05-26 20:24:37,354] [INFO] Trading 97 coins with 10x leverage
+[2025-05-26 20:24:41,712] [INFO] API connection successful
+[2025-05-26 20:24:41,975] [INFO] Balance - Total: $8.06 | Available: $6.05
+[2025-05-26 20:24:41,976] [INFO] Setting leverage to 10x for all coins...
+[2025-05-26 20:25:07,290] [INFO] Leverage setting completed: 97 successful, 0 failed
+[2025-05-26 20:26:27,357] [INFO] Signal Alert: ZEC/USDT - Score: 65.0/100 - Trend: None
+[2025-05-26 22:37:51,018] [INFO] Signal Alert: QNT/USDT - Score: 65.0/100 - Trend: long
+[2025-05-26 22:37:51,054] [INFO] Balance - Total: $8.06 | Available: $8.06
+[2025-05-26 22:37:51,065] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-26 22:37:51,065] [INFO] Increased position amount to minimum: $2.00
+[2025-05-26 22:37:51,628] [INFO] Dynamic Risk Levels for QNT/USDT (Score: 65.0)
+[2025-05-26 22:37:51,628] [INFO] ATR: 0.867857 | Current Price: 99.590000
+[2025-05-26 22:37:51,629] [INFO] Stop Loss: 17.43% | Take Profit: 13.07%
+[2025-05-26 22:37:51,631] [WARNING] Order value still too low after adjustments! Notional: $19.92 < $20 minimum
+[2025-05-26 22:40:10,227] [INFO] Signal Alert: QNT/USDT - Score: 65.0/100 - Trend: long
+[2025-05-26 22:40:10,228] [INFO] Balance - Total: $8.06 | Available: $8.06
+[2025-05-26 22:40:10,243] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-26 22:40:10,243] [INFO] Increased position amount to minimum: $2.00
+[2025-05-26 22:40:10,768] [INFO] Dynamic Risk Levels for QNT/USDT (Score: 65.0)
+[2025-05-26 22:40:10,769] [INFO] ATR: 0.895714 | Current Price: 99.050000
+[2025-05-26 22:40:10,771] [INFO] Stop Loss: 18.09% | Take Profit: 13.56%
+[2025-05-26 22:40:10,771] [WARNING] Order value still too low after adjustments! Notional: $19.81 < $20 minimum
+[2025-05-26 22:42:29,978] [INFO] Signal Alert: QNT/USDT - Score: 65.0/100 - Trend: long
+[2025-05-26 22:42:29,978] [INFO] Balance - Total: $8.06 | Available: $8.06
+[2025-05-26 22:42:29,979] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-26 22:42:29,979] [INFO] Increased position amount to minimum: $2.00
+[2025-05-26 22:42:30,528] [INFO] Dynamic Risk Levels for QNT/USDT (Score: 65.0)
+[2025-05-26 22:42:30,528] [INFO] ATR: 0.950000 | Current Price: 98.530000
+[2025-05-26 22:42:30,528] [INFO] Stop Loss: 19.28% | Take Profit: 14.46%
+[2025-05-26 22:42:30,529] [WARNING] Order value still too low after adjustments! Notional: $19.71 < $20 minimum
+[2025-05-26 22:44:49,060] [INFO] Signal Alert: QNT/USDT - Score: 65.0/100 - Trend: long
+[2025-05-26 22:44:49,060] [INFO] Balance - Total: $8.06 | Available: $8.06
+[2025-05-26 22:44:49,060] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-26 22:44:49,060] [INFO] Increased position amount to minimum: $2.00
+[2025-05-26 22:44:49,594] [INFO] Dynamic Risk Levels for QNT/USDT (Score: 65.0)
+[2025-05-26 22:44:49,595] [INFO] ATR: 0.950000 | Current Price: 98.750000
+[2025-05-26 22:44:49,595] [INFO] Stop Loss: 19.24% | Take Profit: 14.43%
+[2025-05-26 22:44:49,595] [WARNING] Order value still too low after adjustments! Notional: $19.75 < $20 minimum
+[2025-05-26 23:12:33,831] [ERROR] Error calculating signal score for AAVE/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=AAVEUSDT
+[2025-05-26 23:12:34,430] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 226, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 600, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=AAVEUSDT
+
+[2025-05-26 23:12:34,437] [ERROR] OHLCV data fetch error (TAO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TAOUSDT
+[2025-05-26 23:12:34,535] [ERROR] OHLCV data fetch error (VET/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=VETUSDT
+[2025-05-26 23:12:34,635] [ERROR] OHLCV data fetch error (RENDER/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=RENDERUSDT
+[2025-05-26 23:12:34,738] [ERROR] OHLCV data fetch error (KAS/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=KASUSDT
+[2025-05-26 23:12:34,836] [ERROR] OHLCV data fetch error (ATOM/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ATOMUSDT
+[2025-05-26 23:12:34,940] [ERROR] OHLCV data fetch error (ENA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ENAUSDT
+[2025-05-26 23:12:35,036] [ERROR] OHLCV data fetch error (TRUMP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TRUMPUSDT
+[2025-05-26 23:12:35,137] [ERROR] OHLCV data fetch error (FIL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=FILUSDT
+[2025-05-26 23:12:35,236] [ERROR] OHLCV data fetch error (POL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=POLUSDT
+[2025-05-26 23:12:35,338] [ERROR] OHLCV data fetch error (ALGO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ALGOUSDT
+[2025-05-26 23:12:35,438] [ERROR] OHLCV data fetch error (S/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SUSDT
+[2025-05-26 23:12:35,539] [ERROR] OHLCV data fetch error (TIA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TIAUSDT
+[2025-05-26 23:12:35,646] [ERROR] OHLCV data fetch error (ARB/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ARBUSDT
+[2025-05-26 23:12:35,739] [ERROR] OHLCV data fetch error (FET/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=FETUSDT
+[2025-05-26 23:12:35,841] [ERROR] OHLCV data fetch error (MKR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=MKRUSDT
+[2025-05-26 23:12:35,952] [ERROR] OHLCV data fetch error (OM/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=OMUSDT
+[2025-05-27 00:43:32,305] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-27 01:14:21,405] [INFO] Signal Alert: DOGE/USDT - Score: 65.0/100 - Trend: long
+[2025-05-27 01:14:21,408] [INFO] Balance - Total: $8.06 | Available: $8.06
+[2025-05-27 01:14:21,409] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-27 01:14:21,409] [INFO] Increased position amount to minimum: $2.00
+[2025-05-27 01:14:21,939] [INFO] Dynamic Risk Levels for DOGE/USDT (Score: 65.0)
+[2025-05-27 01:14:21,939] [INFO] ATR: 0.001166 | Current Price: 0.227430
+[2025-05-27 01:14:21,954] [INFO] Stop Loss: 10.26% | Take Profit: 7.69%
+[2025-05-27 01:14:22,259] [INFO] Trailing stop set for DOGE/USDT (LONG) | Activation: 8.0%
+[2025-05-27 01:14:22,263] [INFO] [OPEN POSITION] DOGE/USDT - Type: LONG | Price: 0.22743 | Amount: 88.0 | Notional: $20.01 | Signal Score: 65.0 | Leverage: 10x | ATR: 0.001166 | Stop Loss: 10.26% | Take Profit: 7.69%
+[2025-05-27 01:15:01,019] [INFO] Signal Alert: OP/USDT - Score: 65.0/100 - Trend: long
+[2025-05-27 01:15:01,020] [INFO] Balance - Total: $8.06 | Available: $8.06
+[2025-05-27 01:15:01,020] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-27 01:15:01,021] [INFO] Increased position amount to minimum: $2.00
+[2025-05-27 01:15:01,557] [INFO] Dynamic Risk Levels for OP/USDT (Score: 65.0)
+[2025-05-27 01:15:01,557] [INFO] ATR: 0.005064 | Current Price: 0.769700
+[2025-05-27 01:15:01,558] [INFO] Stop Loss: 13.16% | Take Profit: 9.87%
+[2025-05-27 01:15:01,840] [INFO] Trailing stop set for OP/USDT (LONG) | Activation: 8.0%
+[2025-05-27 01:15:01,840] [INFO] [OPEN POSITION] OP/USDT - Type: LONG | Price: 0.7697 | Amount: 26.0 | Notional: $20.01 | Signal Score: 65.0 | Leverage: 10x | ATR: 0.005064 | Stop Loss: 13.16% | Take Profit: 9.87%
+[2025-05-27 01:24:30,760] [INFO] Signal Alert: QNT/USDT - Score: 65.0/100 - Trend: long
+[2025-05-27 01:24:30,760] [INFO] Balance - Total: $8.06 | Available: $8.06
+[2025-05-27 01:24:30,778] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-27 01:24:30,778] [INFO] Increased position amount to minimum: $2.00
+[2025-05-27 01:24:31,398] [INFO] Dynamic Risk Levels for QNT/USDT (Score: 65.0)
+[2025-05-27 01:24:31,398] [INFO] ATR: 1.126429 | Current Price: 104.100000
+[2025-05-27 01:24:31,399] [INFO] Stop Loss: 21.64% | Take Profit: 16.23%
+[2025-05-27 01:24:31,728] [ERROR] Order placement error for QNT/USDT: binance {"code":-2019,"msg":"Margin is insufficient."}
+[2025-05-27 01:24:31,782] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 395, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11450, in handle_errors
+    self.throw_exactly_matched_exception(self.get_exceptions_by_url(url, 'exact'), error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.InsufficientFunds: binance {"code":-2019,"msg":"Margin is insufficient."}
+
+[2025-05-27 01:26:59,495] [INFO] Signal Alert: QNT/USDT - Score: 65.0/100 - Trend: long
+[2025-05-27 01:26:59,496] [INFO] Balance - Total: $8.06 | Available: $8.06
+[2025-05-27 01:26:59,497] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-27 01:26:59,497] [INFO] Increased position amount to minimum: $2.00
+[2025-05-27 01:27:00,161] [INFO] Dynamic Risk Levels for QNT/USDT (Score: 65.0)
+[2025-05-27 01:27:00,161] [INFO] ATR: 1.126429 | Current Price: 104.300000
+[2025-05-27 01:27:00,162] [INFO] Stop Loss: 21.60% | Take Profit: 16.20%
+[2025-05-27 01:27:00,468] [ERROR] Order placement error for QNT/USDT: binance {"code":-2019,"msg":"Margin is insufficient."}
+[2025-05-27 01:27:00,469] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 395, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11450, in handle_errors
+    self.throw_exactly_matched_exception(self.get_exceptions_by_url(url, 'exact'), error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.InsufficientFunds: binance {"code":-2019,"msg":"Margin is insufficient."}
+
+[2025-05-27 01:29:27,345] [INFO] Signal Alert: QNT/USDT - Score: 65.0/100 - Trend: long
+[2025-05-27 01:29:27,346] [INFO] Balance - Total: $8.06 | Available: $8.06
+[2025-05-27 01:29:27,346] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-27 01:29:27,361] [INFO] Increased position amount to minimum: $2.00
+[2025-05-27 01:29:27,968] [INFO] Dynamic Risk Levels for QNT/USDT (Score: 65.0)
+[2025-05-27 01:29:27,968] [INFO] ATR: 1.126429 | Current Price: 104.220000
+[2025-05-27 01:29:27,984] [INFO] Stop Loss: 21.62% | Take Profit: 16.21%
+[2025-05-27 01:29:28,289] [ERROR] Order placement error for QNT/USDT: binance {"code":-2019,"msg":"Margin is insufficient."}
+[2025-05-27 01:29:28,296] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 400 Client Error: Bad Request for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 395, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11450, in handle_errors
+    self.throw_exactly_matched_exception(self.get_exceptions_by_url(url, 'exact'), error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.InsufficientFunds: binance {"code":-2019,"msg":"Margin is insufficient."}
+
+[2025-05-27 01:35:58,392] [ERROR] Error calculating signal score for XRP/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=XRPUSDT
+[2025-05-27 01:35:58,426] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 226, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 29, in calculate_multi_timeframe_score
+    df_4h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='4h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 600, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=XRPUSDT
+
+[2025-05-27 01:35:58,461] [ERROR] OHLCV data fetch error (BNB/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=BNBUSDT
+[2025-05-27 01:35:58,531] [ERROR] OHLCV data fetch error (SOL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SOLUSDT
+[2025-05-27 01:35:58,631] [ERROR] OHLCV data fetch error (TRX/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TRXUSDT
+[2025-05-27 01:35:58,731] [ERROR] OHLCV data fetch error (ADA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ADAUSDT
+[2025-05-27 01:35:58,833] [ERROR] OHLCV data fetch error (AVAX/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=AVAXUSDT
+[2025-05-27 01:35:58,932] [ERROR] OHLCV data fetch error (LINK/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=LINKUSDT
+[2025-05-27 01:35:59,032] [ERROR] OHLCV data fetch error (XLM/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=XLMUSDT
+[2025-05-27 01:35:59,132] [ERROR] OHLCV data fetch error (SUI/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SUIUSDT
+[2025-05-27 01:35:59,233] [ERROR] OHLCV data fetch error (TON/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TONUSDT
+[2025-05-27 01:35:59,343] [ERROR] OHLCV data fetch error (HBAR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=HBARUSDT
+[2025-05-27 01:35:59,434] [ERROR] OHLCV data fetch error (BCH/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=BCHUSDT
+[2025-05-27 01:35:59,533] [ERROR] OHLCV data fetch error (LTC/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=LTCUSDT
+[2025-05-27 01:35:59,638] [ERROR] OHLCV data fetch error (DOT/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=DOTUSDT
+[2025-05-27 01:35:59,735] [ERROR] OHLCV data fetch error (XMR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=XMRUSDT
+[2025-05-27 01:35:59,835] [ERROR] OHLCV data fetch error (UNI/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=UNIUSDT
+[2025-05-27 01:35:59,936] [ERROR] OHLCV data fetch error (APT/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=APTUSDT
+[2025-05-27 01:36:00,036] [ERROR] OHLCV data fetch error (ONDO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ONDOUSDT
+[2025-05-27 01:36:00,137] [ERROR] OHLCV data fetch error (NEAR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=NEARUSDT
+[2025-05-27 01:36:00,237] [ERROR] OHLCV data fetch error (ICP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ICPUSDT
+[2025-05-27 01:36:00,339] [ERROR] OHLCV data fetch error (ETC/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ETCUSDT
+[2025-05-27 01:36:00,437] [ERROR] OHLCV data fetch error (AAVE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=AAVEUSDT
+[2025-05-27 01:36:00,539] [ERROR] OHLCV data fetch error (TAO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TAOUSDT
+[2025-05-27 01:36:00,639] [ERROR] OHLCV data fetch error (VET/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=VETUSDT
+[2025-05-27 01:36:05,378] [WARNING] Bot stopped by user

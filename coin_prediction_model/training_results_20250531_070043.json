@@ -1,0 +1,793 @@
+{
+  "training_completed_at": "2025-05-31T07:00:43.595162",
+  "total_coins": 89,
+  "successful_coins": 83,
+  "failed_coins": 6,
+  "results": {
+    "BTCUSDT": {
+      "success": true,
+      "test_mape": 0.3039903780130663,
+      "best_model": "random_forest",
+      "duration": 248.28595495224,
+      "train_samples": 1103,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T01:34:51.036091"
+    },
+    "ETHUSDT": {
+      "success": true,
+      "test_mape": 0.5968243034659928,
+      "best_model": "xgboost",
+      "duration": 238.47104358673096,
+      "train_samples": 1103,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T01:38:51.511799"
+    },
+    "XRPUSDT": {
+      "success": true,
+      "test_mape": 0.5511587645632992,
+      "best_model": "xgboost",
+      "duration": 236.4044644832611,
+      "train_samples": 1103,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T01:42:49.923003"
+    },
+    "BNBUSDT": {
+      "success": true,
+      "test_mape": 0.31659808547968005,
+      "best_model": "lightgbm",
+      "duration": 241.59095311164856,
+      "train_samples": 1103,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T01:46:53.520263"
+    },
+    "SOLUSDT": {
+      "success": true,
+      "test_mape": 0.6269059633771571,
+      "best_model": "lightgbm",
+      "duration": 242.591317653656,
+      "train_samples": 1103,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T01:50:58.120054"
+    },
+    "DOGEUSDT": {
+      "success": true,
+      "test_mape": 0.6506682085685173,
+      "best_model": "random_forest",
+      "duration": 233.46826815605164,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:14:42.570973"
+    },
+    "TRXUSDT": {
+      "success": true,
+      "test_mape": 0.3008956193398896,
+      "best_model": "random_forest",
+      "duration": 223.81423783302307,
+      "train_samples": 1103,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T01:58:39.704164"
+    },
+    "ADAUSDT": {
+      "success": true,
+      "test_mape": 0.6669477274337938,
+      "best_model": "random_forest",
+      "duration": 233.63500213623047,
+      "train_samples": 1103,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:02:35.353531"
+    },
+    "AVAXUSDT": {
+      "success": true,
+      "test_mape": 0.7500969906687822,
+      "best_model": "lightgbm",
+      "duration": 237.10411739349365,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:06:34.464268"
+    },
+    "LINKUSDT": {
+      "success": true,
+      "test_mape": 0.6884285435653938,
+      "best_model": "lightgbm",
+      "duration": 235.64777541160583,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:10:32.124608"
+    },
+    "XLMUSDT": {
+      "success": true,
+      "test_mape": 0.5977863804587142,
+      "best_model": "random_forest",
+      "duration": 229.2785942554474,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:14:23.410658"
+    },
+    "SUIUSDT": {
+      "success": true,
+      "test_mape": 0.8986462454537517,
+      "best_model": "lightgbm",
+      "duration": 235.19184517860413,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:18:20.606951"
+    },
+    "TONUSDT": {
+      "success": true,
+      "test_mape": 0.6113011984384978,
+      "best_model": "lightgbm",
+      "duration": 239.67018055915833,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:22:22.293622"
+    },
+    "HBARUSDT": {
+      "success": true,
+      "test_mape": 0.7227193108024045,
+      "best_model": "random_forest",
+      "duration": 234.28786730766296,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:26:18.583688"
+    },
+    "BCHUSDT": {
+      "success": true,
+      "test_mape": 0.6443019278905968,
+      "best_model": "lightgbm",
+      "duration": 234.18882513046265,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:30:14.779034"
+    },
+    "LTCUSDT": {
+      "success": true,
+      "test_mape": 0.5968615976429731,
+      "best_model": "lightgbm",
+      "duration": 237.98439502716064,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:34:14.775692"
+    },
+    "DOTUSDT": {
+      "success": true,
+      "test_mape": 0.618881034214341,
+      "best_model": "gradient_boosting",
+      "duration": 242.2546103000641,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:38:19.033304"
+    },
+    "XMRUSDT": {
+      "success": false,
+      "error": "Veri al\u0131namad\u0131",
+      "duration": 0.7830910682678223
+    },
+    "UNIUSDT": {
+      "success": true,
+      "test_mape": 0.7734263750053135,
+      "best_model": "lightgbm",
+      "duration": 238.40407156944275,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:42:22.237022"
+    },
+    "APTUSDT": {
+      "success": true,
+      "test_mape": 0.7842429935846877,
+      "best_model": "xgboost",
+      "duration": 241.03114414215088,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:46:25.272174"
+    },
+    "ONDOUSDT": {
+      "success": true,
+      "test_mape": 0.6650295296332425,
+      "best_model": "lightgbm",
+      "duration": 194.73957228660583,
+      "train_samples": 900,
+      "test_samples": 226,
+      "trained_at": "2025-05-31T02:49:42.027875"
+    },
+    "NEARUSDT": {
+      "success": true,
+      "test_mape": 0.8187086204565659,
+      "best_model": "gradient_boosting",
+      "duration": 238.94224762916565,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:53:42.977711"
+    },
+    "ICPUSDT": {
+      "success": true,
+      "test_mape": 0.6827835810752197,
+      "best_model": "random_forest",
+      "duration": 242.9924190044403,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T02:57:47.979685"
+    },
+    "ETCUSDT": {
+      "success": true,
+      "test_mape": 0.5560305377538166,
+      "best_model": "random_forest",
+      "duration": 232.3653085231781,
+      "train_samples": 1104,
+      "test_samples": 276,
+      "trained_at": "2025-05-31T03:01:42.360654"
+    },
+    "AAVEUSDT": {
+      "success": true,
+      "test_mape": 0.7313749105289798,
+      "best_model": "lightgbm",
+      "duration": 250.16808915138245,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:05:54.542783"
+    },
+    "TAOUSDT": {
+      "success": true,
+      "test_mape": 0.894958829116905,
+      "best_model": "lightgbm",
+      "duration": 242.3813157081604,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:09:58.938764"
+    },
+    "VETUSDT": {
+      "success": true,
+      "test_mape": 0.6734095899987191,
+      "best_model": "lightgbm",
+      "duration": 230.79574608802795,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:13:51.739178"
+    },
+    "RENDERUSDT": {
+      "success": true,
+      "test_mape": 0.8807039882186153,
+      "best_model": "gradient_boosting",
+      "duration": 252.66353130340576,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:18:06.405373"
+    },
+    "ATOMUSDT": {
+      "success": true,
+      "test_mape": 0.5842522241725032,
+      "best_model": "xgboost",
+      "duration": 257.31017327308655,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:22:25.721771"
+    },
+    "ENAUSDT": {
+      "success": true,
+      "test_mape": 1.070930092103999,
+      "best_model": "random_forest",
+      "duration": 242.51269626617432,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:26:30.248618"
+    },
+    "TRUMPUSDT": {
+      "success": true,
+      "test_mape": 0.9640865426372625,
+      "best_model": "random_forest",
+      "duration": 233.27024149894714,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:30:25.526869"
+    },
+    "FILUSDT": {
+      "success": true,
+      "test_mape": 0.6311556949728317,
+      "best_model": "random_forest",
+      "duration": 238.64227890968323,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:34:26.185245"
+    },
+    "POLUSDT": {
+      "success": true,
+      "test_mape": 0.6373966690088666,
+      "best_model": "random_forest",
+      "duration": 229.53480100631714,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:38:17.725589"
+    },
+    "ALGOUSDT": {
+      "success": true,
+      "test_mape": 0.7759774225489028,
+      "best_model": "random_forest",
+      "duration": 232.1470353603363,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:42:11.875385"
+    },
+    "TIAUSDT": {
+      "success": true,
+      "test_mape": 0.8178827466586089,
+      "best_model": "xgboost",
+      "duration": 240.00980257987976,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:46:13.886618"
+    },
+    "ARBUSDT": {
+      "success": true,
+      "test_mape": 0.7274325499260481,
+      "best_model": "lightgbm",
+      "duration": 231.80750703811646,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:50:07.706881"
+    },
+    "FETUSDT": {
+      "success": true,
+      "test_mape": 0.9328840106198053,
+      "best_model": "random_forest",
+      "duration": 230.4695007801056,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:54:00.188289"
+    },
+    "MKRUSDT": {
+      "success": true,
+      "test_mape": 0.5844041631792479,
+      "best_model": "random_forest",
+      "duration": 229.64641761779785,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T03:57:51.846990"
+    },
+    "OMUSDT": {
+      "success": true,
+      "test_mape": 1.4110024619672774,
+      "best_model": "xgboost",
+      "duration": 233.2860245704651,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:01:47.137099"
+    },
+    "OPUSDT": {
+      "success": true,
+      "test_mape": 0.779739429446098,
+      "best_model": "random_forest",
+      "duration": 230.754896402359,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:05:39.902815"
+    },
+    "JUPUSDT": {
+      "success": true,
+      "test_mape": 0.882416115164087,
+      "best_model": "random_forest",
+      "duration": 235.8133523464203,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:09:37.720752"
+    },
+    "QNTUSDT": {
+      "success": true,
+      "test_mape": 0.6536160381042314,
+      "best_model": "random_forest",
+      "duration": 229.277761220932,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:13:29.012180"
+    },
+    "STXUSDT": {
+      "success": true,
+      "test_mape": 0.7279886139826366,
+      "best_model": "lightgbm",
+      "duration": 225.30811882019043,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:17:16.333630"
+    },
+    "WLDUSDT": {
+      "success": true,
+      "test_mape": 0.9371148170860324,
+      "best_model": "lightgbm",
+      "duration": 236.7232701778412,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:21:15.071961"
+    },
+    "DEXEUSDT": {
+      "success": true,
+      "test_mape": 0.6376994332154994,
+      "best_model": "lightgbm",
+      "duration": 241.04950165748596,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:25:18.133849"
+    },
+    "SEIUSDT": {
+      "success": true,
+      "test_mape": 0.7270106386328894,
+      "best_model": "random_forest",
+      "duration": 227.2946379184723,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:29:07.438718"
+    },
+    "FARTCOINUSDT": {
+      "success": false,
+      "error": "Veri al\u0131namad\u0131",
+      "duration": 0.267505407333374
+    },
+    "CRVUSDT": {
+      "success": true,
+      "test_mape": 0.9329890719928525,
+      "best_model": "random_forest",
+      "duration": 243.87528228759766,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:33:15.596775"
+    },
+    "INJUSDT": {
+      "success": true,
+      "test_mape": 0.7984370246013326,
+      "best_model": "gradient_boosting",
+      "duration": 230.62180137634277,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:37:08.231374"
+    },
+    "GRTUSDT": {
+      "success": true,
+      "test_mape": 0.7021560327696065,
+      "best_model": "random_forest",
+      "duration": 220.46195197105408,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:40:50.696624"
+    },
+    "JASMYUSDT": {
+      "success": true,
+      "test_mape": 0.9859625507579958,
+      "best_model": "random_forest",
+      "duration": 225.2397129535675,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:44:37.950095"
+    },
+    "MOVEUSDT": {
+      "success": true,
+      "test_mape": 0.9889179262626527,
+      "best_model": "lightgbm",
+      "duration": 235.71295928955078,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:48:35.679019"
+    },
+    "IMXUSDT": {
+      "success": true,
+      "test_mape": 0.8276744207748571,
+      "best_model": "random_forest",
+      "duration": 229.99836802482605,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:52:27.688567"
+    },
+    "PAXGUSDT": {
+      "success": true,
+      "test_mape": 0.17691689502606314,
+      "best_model": "random_forest",
+      "duration": 233.16172194480896,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T04:56:22.858482"
+    },
+    "THETAUSDT": {
+      "success": true,
+      "test_mape": 0.807243034719766,
+      "best_model": "xgboost",
+      "duration": 230.59384727478027,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:00:15.457709"
+    },
+    "XCNUSDT": {
+      "success": false,
+      "error": "Veri al\u0131namad\u0131",
+      "duration": 0.26111793518066406
+    },
+    "LDOUSDT": {
+      "success": true,
+      "test_mape": 0.8220257816799985,
+      "best_model": "random_forest",
+      "duration": 236.03847980499268,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:04:15.778834"
+    },
+    "SANDUSDT": {
+      "success": true,
+      "test_mape": 0.6194886685933964,
+      "best_model": "xgboost",
+      "duration": 232.99184036254883,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:08:10.785499"
+    },
+    "GALAUSDT": {
+      "success": true,
+      "test_mape": 0.8241681694076696,
+      "best_model": "random_forest",
+      "duration": 220.56606149673462,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:11:53.356920"
+    },
+    "IOTAUSDT": {
+      "success": true,
+      "test_mape": 0.870976568397068,
+      "best_model": "random_forest",
+      "duration": 233.34712672233582,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:15:48.711342"
+    },
+    "KAIAUSDT": {
+      "success": true,
+      "test_mape": 0.5659425928766025,
+      "best_model": "random_forest",
+      "duration": 224.58415603637695,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:19:35.301920"
+    },
+    "CAKEUSDT": {
+      "success": true,
+      "test_mape": 0.6962981875275303,
+      "best_model": "lightgbm",
+      "duration": 235.42359852790833,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:23:32.727866"
+    },
+    "BSVUSDT": {
+      "success": false,
+      "error": "Veri al\u0131namad\u0131",
+      "duration": 0.26946330070495605
+    },
+    "FLOWUSDT": {
+      "success": true,
+      "test_mape": 0.5625871662436386,
+      "best_model": "lightgbm",
+      "duration": 215.57637238502502,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:27:12.581095"
+    },
+    "RAYUSDT": {
+      "success": true,
+      "test_mape": 1.1376282422968862,
+      "best_model": "random_forest",
+      "duration": 237.60127472877502,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:31:12.190525"
+    },
+    "JTOUSDT": {
+      "success": true,
+      "test_mape": 0.8250981241146297,
+      "best_model": "lightgbm",
+      "duration": 239.50449109077454,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:35:13.708976"
+    },
+    "XTZUSDT": {
+      "success": true,
+      "test_mape": 0.6076930976440879,
+      "best_model": "lightgbm",
+      "duration": 227.97884440422058,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:39:03.692869"
+    },
+    "PENDLEUSDT": {
+      "success": true,
+      "test_mape": 0.8151630977366134,
+      "best_model": "random_forest",
+      "duration": 237.34572339057922,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:43:03.049305"
+    },
+    "ZECUSDT": {
+      "success": true,
+      "test_mape": 0.786297007070056,
+      "best_model": "random_forest",
+      "duration": 240.16315293312073,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:47:05.214113"
+    },
+    "MANAUSDT": {
+      "success": true,
+      "test_mape": 0.7288362268477672,
+      "best_model": "random_forest",
+      "duration": 232.64843606948853,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:50:59.867894"
+    },
+    "SPXUSDT": {
+      "success": false,
+      "error": "Veri al\u0131namad\u0131",
+      "duration": 0.26765894889831543
+    },
+    "PYTHUSDT": {
+      "success": true,
+      "test_mape": 0.8978196892049614,
+      "best_model": "lightgbm",
+      "duration": 229.07674169540405,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:54:53.251112"
+    },
+    "KAVAUSDT": {
+      "success": true,
+      "test_mape": 0.5729353557952258,
+      "best_model": "lightgbm",
+      "duration": 234.95239758491516,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T05:58:50.213707"
+    },
+    "WIFUSDT": {
+      "success": true,
+      "test_mape": 1.2646226717172746,
+      "best_model": "xgboost",
+      "duration": 228.9514753818512,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:02:41.176134"
+    },
+    "DYDXUSDT": {
+      "success": true,
+      "test_mape": 0.7741397943137435,
+      "best_model": "random_forest",
+      "duration": 240.65689039230347,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:06:43.841605"
+    },
+    "BERAUSDT": {
+      "success": true,
+      "test_mape": 0.9716447319442547,
+      "best_model": "gradient_boosting",
+      "duration": 241.2336139678955,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:10:47.087492"
+    },
+    "LAYERUSDT": {
+      "success": true,
+      "test_mape": 1.3022432890884703,
+      "best_model": "xgboost",
+      "duration": 236.0805962085724,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:18:40.656784"
+    },
+    "RSRUSDT": {
+      "success": true,
+      "test_mape": 0.9060581114504893,
+      "best_model": "random_forest",
+      "duration": 223.04842591285706,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:22:25.710783"
+    },
+    "RUNEUSDT": {
+      "success": true,
+      "test_mape": 0.6856495915740451,
+      "best_model": "gradient_boosting",
+      "duration": 229.67258262634277,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:26:17.384846"
+    },
+    "EGLDUSDT": {
+      "success": true,
+      "test_mape": 0.6761186046217716,
+      "best_model": "random_forest",
+      "duration": 235.8505847454071,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:30:15.245283"
+    },
+    "NEOUSDT": {
+      "success": true,
+      "test_mape": 0.7292497001119639,
+      "best_model": "gradient_boosting",
+      "duration": 227.28657603263855,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:34:04.546760"
+    },
+    "COMPUSDT": {
+      "success": true,
+      "test_mape": 0.6044682923962424,
+      "best_model": "gradient_boosting",
+      "duration": 239.39912247657776,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:38:05.960097"
+    },
+    "STRKUSDT": {
+      "success": true,
+      "test_mape": 0.9633542618161514,
+      "best_model": "random_forest",
+      "duration": 227.94258904457092,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:41:55.919472"
+    },
+    "CFXUSDT": {
+      "success": true,
+      "test_mape": 0.7936070609237227,
+      "best_model": "random_forest",
+      "duration": 221.03750801086426,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:45:38.971889"
+    },
+    "CHZUSDT": {
+      "success": true,
+      "test_mape": 0.6217732823082696,
+      "best_model": "random_forest",
+      "duration": 232.389466047287,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:49:33.363079"
+    },
+    "VIRTUALUSDT": {
+      "success": true,
+      "test_mape": 1.3175970189007502,
+      "best_model": "xgboost",
+      "duration": 195.6332380771637,
+      "train_samples": 901,
+      "test_samples": 226,
+      "trained_at": "2025-05-31T06:52:51.010874"
+    },
+    "ARUSDT": {
+      "success": true,
+      "test_mape": 0.828617344335937,
+      "best_model": "lightgbm",
+      "duration": 229.41817355155945,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T06:56:42.445105"
+    },
+    "AEROUSDT": {
+      "success": false,
+      "error": "Veri al\u0131namad\u0131",
+      "duration": 0.2636406421661377
+    },
+    "APEUSDT": {
+      "success": true,
+      "test_mape": 0.7770925316331805,
+      "best_model": "xgboost",
+      "duration": 236.8648009300232,
+      "train_samples": 1104,
+      "test_samples": 277,
+      "trained_at": "2025-05-31T07:00:43.592125"
+    }
+  },
+  "failed_coin_list": [
+    "XMRUSDT",
+    "FARTCOINUSDT",
+    "XCNUSDT",
+    "BSVUSDT",
+    "SPXUSDT",
+    "AEROUSDT"
+  ]
+}

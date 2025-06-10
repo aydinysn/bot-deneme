@@ -1,0 +1,1750 @@
+[2025-05-05 02:09:37,695] [INFO] Logging started - Log file: logs\2025-05-05.txt
+[2025-05-05 02:09:37,695] [INFO] Trading Bot Started
+[2025-05-05 02:09:37,711] [INFO] Loaded 98 coins from coins.json
+[2025-05-05 02:09:37,711] [INFO] Trading 98 coins with 10x leverage
+[2025-05-05 02:09:44,065] [INFO] API connection successful
+[2025-05-05 02:09:44,328] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 02:09:44,328] [INFO] Setting leverage to 10x for all coins...
+[2025-05-05 02:10:10,688] [INFO] Leverage setting completed: 98 successful, 0 failed
+[2025-05-05 02:40:27,900] [INFO] Signal Alert: XMR/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 02:40:27,902] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 02:40:27,902] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 02:40:27,902] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 02:40:28,471] [INFO] Dynamic Risk Levels for XMR/USDT (Score: 60.0)
+[2025-05-05 02:40:28,471] [INFO] ATR: 1.390714 | Current Price: 277.280000
+[2025-05-05 02:40:28,471] [INFO] Stop Loss: 1.25% | Take Profit: 1.00%
+[2025-05-05 02:40:28,472] [WARNING] Order value still too low after adjustments! Notional: $19.96 < $20 minimum
+[2025-05-05 02:42:50,319] [INFO] Signal Alert: XMR/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 02:42:50,320] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 02:42:50,320] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 02:42:50,320] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 02:42:50,854] [INFO] Dynamic Risk Levels for XMR/USDT (Score: 65.0)
+[2025-05-05 02:42:50,855] [INFO] ATR: 1.390714 | Current Price: 277.530000
+[2025-05-05 02:42:50,855] [INFO] Stop Loss: 1.25% | Take Profit: 1.00%
+[2025-05-05 02:42:50,855] [WARNING] Order value still too low after adjustments! Notional: $19.98 < $20 minimum
+[2025-05-05 02:57:17,511] [INFO] Signal Alert: XMR/USDT - Score: 70.0/100 - Trend: long
+[2025-05-05 02:57:17,512] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 02:57:17,512] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 02:57:17,512] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 02:57:18,064] [INFO] Dynamic Risk Levels for XMR/USDT (Score: 70.0)
+[2025-05-05 02:57:18,064] [INFO] ATR: 1.402143 | Current Price: 277.580000
+[2025-05-05 02:57:18,064] [INFO] Stop Loss: 1.01% | Take Profit: 1.26%
+[2025-05-05 02:57:18,065] [WARNING] Order value still too low after adjustments! Notional: $19.99 < $20 minimum
+[2025-05-05 02:59:38,428] [INFO] Signal Alert: XMR/USDT - Score: 75.0/100 - Trend: long
+[2025-05-05 02:59:38,429] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 02:59:38,429] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-05 02:59:38,429] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 02:59:38,961] [INFO] Dynamic Risk Levels for XMR/USDT (Score: 75.0)
+[2025-05-05 02:59:38,961] [INFO] ATR: 1.402143 | Current Price: 278.300000
+[2025-05-05 02:59:38,962] [INFO] Stop Loss: 1.01% | Take Profit: 1.26%
+[2025-05-05 02:59:39,224] [INFO] Progressive trailing stop set for XMR/USDT (LONG)
+[2025-05-05 02:59:39,225] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 02:59:39,225] [INFO] [OPEN POSITION] XMR/USDT - Type: LONG | Price: 278.3 | Amount: 0.072 | Notional: $20.04 | Signal Score: 75.0 | Leverage: 10x | ATR: 1.402143 | Stop Loss: 1.01% | Take Profit: 1.26%
+[2025-05-05 03:01:40,672] [INFO] Dynamic take profit hit: XMR/USDT (1.76% >= 1.26%)
+[2025-05-05 03:01:41,197] [INFO] [CLOSE POSITION] XMR/USDT - Type: LONG | Entry Price: 278.3 | Exit Price: 278.79 | PnL: 1.76% | Amount: 0.072
+[2025-05-05 03:08:56,175] [INFO] Signal Alert: XMR/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 03:08:56,176] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 03:08:56,176] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 03:08:56,176] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 03:08:56,707] [INFO] Dynamic Risk Levels for XMR/USDT (Score: 60.0)
+[2025-05-05 03:08:56,708] [INFO] ATR: 1.399286 | Current Price: 278.540000
+[2025-05-05 03:08:56,708] [INFO] Stop Loss: 1.26% | Take Profit: 1.00%
+[2025-05-05 03:08:56,981] [INFO] Progressive trailing stop set for XMR/USDT (LONG)
+[2025-05-05 03:08:56,982] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 03:08:56,983] [INFO] [OPEN POSITION] XMR/USDT - Type: LONG | Price: 278.54 | Amount: 0.072 | Notional: $20.05 | Signal Score: 60.0 | Leverage: 10x | ATR: 1.399286 | Stop Loss: 1.26% | Take Profit: 1.00%
+[2025-05-05 03:10:56,634] [INFO] Dynamic take profit hit: XMR/USDT (3.37% >= 1.00%)
+[2025-05-05 03:10:57,228] [INFO] [CLOSE POSITION] XMR/USDT - Type: LONG | Entry Price: 278.54 | Exit Price: 279.51 | PnL: 3.48% | Amount: 0.072
+[2025-05-05 03:14:11,825] [ERROR] Error calculating signal score for ARB/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=ARBUSDT
+[2025-05-05 03:14:11,860] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 226, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=ARBUSDT
+
+[2025-05-05 03:22:26,399] [INFO] Signal Alert: STRK/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 03:22:26,400] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 03:22:26,400] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 03:22:26,401] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 03:22:26,921] [INFO] Dynamic Risk Levels for STRK/USDT (Score: 60.0)
+[2025-05-05 03:22:26,922] [INFO] ATR: 0.001000 | Current Price: 0.132400
+[2025-05-05 03:22:26,922] [INFO] Stop Loss: 1.89% | Take Profit: 1.51%
+[2025-05-05 03:22:27,180] [INFO] Progressive trailing stop set for STRK/USDT (LONG)
+[2025-05-05 03:22:27,180] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 03:22:27,181] [INFO] [OPEN POSITION] STRK/USDT - Type: LONG | Price: 0.1324 | Amount: 151.1 | Notional: $20.01 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.001000 | Stop Loss: 1.89% | Take Profit: 1.51%
+[2025-05-05 03:25:24,295] [INFO] Dynamic take profit hit: STRK/USDT (1.51% >= 1.51%)
+[2025-05-05 03:25:24,827] [INFO] [CLOSE POSITION] STRK/USDT - Type: LONG | Entry Price: 0.1324 | Exit Price: 0.1326 | PnL: 1.51% | Amount: 151.1
+[2025-05-05 03:44:38,561] [INFO] Signal Alert: DEXE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 03:44:38,561] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 03:44:38,561] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 03:44:38,562] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 03:44:39,070] [INFO] Dynamic Risk Levels for DEXE/USDT (Score: 60.0)
+[2025-05-05 03:44:39,070] [INFO] ATR: 0.074357 | Current Price: 14.414000
+[2025-05-05 03:44:39,071] [INFO] Stop Loss: 1.29% | Take Profit: 1.03%
+[2025-05-05 03:44:39,329] [INFO] Progressive trailing stop set for DEXE/USDT (LONG)
+[2025-05-05 03:44:39,329] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 03:44:39,329] [INFO] [OPEN POSITION] DEXE/USDT - Type: LONG | Price: 14.414 | Amount: 1.39 | Notional: $20.04 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.074357 | Stop Loss: 1.29% | Take Profit: 1.03%
+[2025-05-05 03:48:17,471] [INFO] Dynamic take profit hit: DEXE/USDT (1.80% >= 1.03%)
+[2025-05-05 03:48:17,991] [INFO] [CLOSE POSITION] DEXE/USDT - Type: LONG | Entry Price: 14.414 | Exit Price: 14.44 | PnL: 1.80% | Amount: 1.39
+[2025-05-05 04:34:21,189] [INFO] Signal Alert: TIA/USDT - Score: 60.0/100 - Trend: short
+[2025-05-05 04:34:21,190] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 04:34:21,191] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 04:34:21,191] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 04:34:21,824] [INFO] Dynamic Risk Levels for TIA/USDT (Score: 60.0)
+[2025-05-05 04:34:21,824] [INFO] ATR: 0.016829 | Current Price: 2.362500
+[2025-05-05 04:34:21,824] [INFO] Stop Loss: 1.78% | Take Profit: 1.42%
+[2025-05-05 04:34:21,825] [WARNING] Order value still too low after adjustments! Notional: $18.90 < $20 minimum
+[2025-05-05 04:35:12,160] [INFO] Signal Alert: DYDX/USDT - Score: 60.0/100 - Trend: short
+[2025-05-05 04:35:12,160] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 04:35:12,160] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 04:35:12,161] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 04:35:12,692] [INFO] Dynamic Risk Levels for DYDX/USDT (Score: 60.0)
+[2025-05-05 04:35:12,693] [INFO] ATR: 0.004286 | Current Price: 0.579000
+[2025-05-05 04:35:12,693] [INFO] Stop Loss: 1.85% | Take Profit: 1.48%
+[2025-05-05 04:35:12,693] [WARNING] Order value still too low after adjustments! Notional: $19.98 < $20 minimum
+[2025-05-05 04:35:20,027] [INFO] Signal Alert: EGLD/USDT - Score: 60.0/100 - Trend: short
+[2025-05-05 04:35:20,028] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 04:35:20,028] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 04:35:20,028] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 04:35:20,547] [INFO] Dynamic Risk Levels for EGLD/USDT (Score: 60.0)
+[2025-05-05 04:35:20,548] [INFO] ATR: 0.103143 | Current Price: 15.550000
+[2025-05-05 04:35:20,548] [INFO] Stop Loss: 1.66% | Take Profit: 1.33%
+[2025-05-05 04:35:20,807] [INFO] Progressive trailing stop set for EGLD/USDT (SHORT)
+[2025-05-05 04:35:20,808] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 04:35:20,808] [INFO] [OPEN POSITION] EGLD/USDT - Type: SHORT | Price: 15.55 | Amount: 1.3 | Notional: $20.21 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.103143 | Stop Loss: 1.66% | Take Profit: 1.33%
+[2025-05-05 04:35:24,653] [INFO] Signal Alert: AXS/USDT - Score: 60.0/100 - Trend: short
+[2025-05-05 04:35:24,654] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 04:35:24,654] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 04:35:24,655] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 04:35:25,186] [INFO] Dynamic Risk Levels for AXS/USDT (Score: 60.0)
+[2025-05-05 04:35:25,187] [INFO] ATR: 0.016857 | Current Price: 2.313000
+[2025-05-05 04:35:25,187] [INFO] Stop Loss: 1.82% | Take Profit: 1.46%
+[2025-05-05 04:35:25,442] [INFO] Progressive trailing stop set for AXS/USDT (SHORT)
+[2025-05-05 04:35:25,443] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 04:35:25,444] [INFO] [OPEN POSITION] AXS/USDT - Type: SHORT | Price: 2.313 | Amount: 9.0 | Notional: $20.82 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.016857 | Stop Loss: 1.82% | Take Profit: 1.46%
+[2025-05-05 04:37:34,122] [INFO] Signal Alert: DYDX/USDT - Score: 60.0/100 - Trend: short
+[2025-05-05 04:37:34,123] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 04:37:34,124] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 04:37:34,124] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 04:37:34,654] [INFO] Dynamic Risk Levels for DYDX/USDT (Score: 60.0)
+[2025-05-05 04:37:34,654] [INFO] ATR: 0.004286 | Current Price: 0.580000
+[2025-05-05 04:37:34,655] [INFO] Stop Loss: 1.85% | Take Profit: 1.48%
+[2025-05-05 04:37:34,917] [INFO] Progressive trailing stop set for DYDX/USDT (SHORT)
+[2025-05-05 04:37:34,917] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 04:37:34,918] [INFO] [OPEN POSITION] DYDX/USDT - Type: SHORT | Price: 0.58 | Amount: 34.5 | Notional: $20.01 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.004286 | Stop Loss: 1.85% | Take Profit: 1.48%
+[2025-05-05 04:38:21,584] [INFO] Dynamic stop loss hit: EGLD/USDT (-2.89% <= -1.66%)
+[2025-05-05 04:38:22,111] [INFO] [CLOSE POSITION] EGLD/USDT - Type: SHORT | Entry Price: 15.55 | Exit Price: 15.6 | PnL: -3.22% | Amount: 1.3
+[2025-05-05 04:38:22,827] [INFO] Dynamic stop loss hit: AXS/USDT (-3.89% <= -1.82%)
+[2025-05-05 04:38:23,407] [INFO] [CLOSE POSITION] AXS/USDT - Type: SHORT | Entry Price: 2.313 | Exit Price: 2.322 | PnL: -3.89% | Amount: 9.0
+[2025-05-05 04:40:36,734] [INFO] Dynamic take profit hit: DYDX/USDT (1.72% >= 1.48%)
+[2025-05-05 04:40:37,246] [INFO] [CLOSE POSITION] DYDX/USDT - Type: SHORT | Entry Price: 0.58 | Exit Price: 0.579 | PnL: 1.72% | Amount: 34.5
+[2025-05-05 04:42:20,996] [ERROR] Error calculating signal score for COMP/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=COMPUSDT
+[2025-05-05 04:42:21,004] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 226, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 13, in calculate_multi_timeframe_score
+    df_15m = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='15m', limit=50),
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=COMPUSDT
+
+[2025-05-05 04:43:38,498] [INFO] Signal Alert: TIA/USDT - Score: 60.0/100 - Trend: short
+[2025-05-05 04:43:38,498] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 04:43:38,499] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 04:43:38,499] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 04:43:39,020] [INFO] Dynamic Risk Levels for TIA/USDT (Score: 60.0)
+[2025-05-05 04:43:39,020] [INFO] ATR: 0.016829 | Current Price: 2.365000
+[2025-05-05 04:43:39,021] [INFO] Stop Loss: 1.78% | Take Profit: 1.42%
+[2025-05-05 04:43:39,021] [WARNING] Order value still too low after adjustments! Notional: $18.92 < $20 minimum
+[2025-05-05 05:00:20,438] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 05:02:36,355] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 05:04:52,321] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 05:07:08,090] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 05:09:25,719] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 05:11:44,677] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 05:27:09,550] [INFO] Signal Alert: DEXE/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 05:29:25,569] [INFO] Signal Alert: DEXE/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 06:08:07,054] [ERROR] OHLCV data fetch error (LINK/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=LINKUSDT
+[2025-05-05 06:20:56,665] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 06:23:11,388] [INFO] Signal Alert: KAVA/USDT - Score: 65.0/100 - Trend: None
+[2025-05-05 07:40:26,850] [ERROR] Error calculating signal score for RSR/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=RSRUSDT
+[2025-05-05 07:40:26,859] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 226, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=RSRUSDT
+
+[2025-05-05 08:04:12,236] [ERROR] Error calculating signal score for HBAR/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=HBARUSDT
+[2025-05-05 08:04:12,239] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 226, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 29, in calculate_multi_timeframe_score
+    df_4h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='4h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 600, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=HBARUSDT
+
+[2025-05-05 08:07:45,611] [INFO] Signal Alert: LAYER/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 08:27:38,399] [ERROR] Error calculating signal score for ZEC/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=ZECUSDT
+[2025-05-05 08:27:38,405] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 226, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 13, in calculate_multi_timeframe_score
+    df_15m = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='15m', limit=50),
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 600, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=ZECUSDT
+
+[2025-05-05 08:42:28,951] [INFO] Signal Alert: LTC/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 08:42:28,952] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 08:42:28,952] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 08:42:28,953] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 08:42:29,501] [INFO] Dynamic Risk Levels for LTC/USDT (Score: 60.0)
+[2025-05-05 08:42:29,502] [INFO] ATR: 0.447143 | Current Price: 88.080000
+[2025-05-05 08:42:29,502] [INFO] Stop Loss: 1.27% | Take Profit: 1.02%
+[2025-05-05 08:42:29,503] [WARNING] Order value still too low after adjustments! Notional: $19.99 < $20 minimum
+[2025-05-05 08:44:44,324] [INFO] Signal Alert: LTC/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 08:44:44,324] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 08:44:44,324] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 08:44:44,325] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 08:44:44,871] [INFO] Dynamic Risk Levels for LTC/USDT (Score: 60.0)
+[2025-05-05 08:44:44,871] [INFO] ATR: 0.447143 | Current Price: 87.990000
+[2025-05-05 08:44:44,872] [INFO] Stop Loss: 1.27% | Take Profit: 1.02%
+[2025-05-05 08:44:44,872] [WARNING] Order value still too low after adjustments! Notional: $19.97 < $20 minimum
+[2025-05-05 08:49:14,697] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 08:49:14,698] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 08:49:14,698] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 08:49:14,698] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 08:49:15,295] [INFO] Dynamic Risk Levels for SUI/USDT (Score: 60.0)
+[2025-05-05 08:49:15,296] [INFO] ATR: 0.027743 | Current Price: 3.365700
+[2025-05-05 08:49:15,296] [INFO] Stop Loss: 2.06% | Take Profit: 1.65%
+[2025-05-05 08:49:15,297] [WARNING] Order value still too low after adjustments! Notional: $19.86 < $20 minimum
+[2025-05-05 08:57:07,064] [INFO] Signal Alert: IOTA/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 08:57:07,065] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 08:57:07,065] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 08:57:07,066] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 08:57:07,585] [INFO] Dynamic Risk Levels for IOTA/USDT (Score: 65.0)
+[2025-05-05 08:57:07,586] [INFO] ATR: 0.001200 | Current Price: 0.209400
+[2025-05-05 08:57:07,586] [INFO] Stop Loss: 1.43% | Take Profit: 1.15%
+[2025-05-05 08:57:07,586] [WARNING] Order value still too low after adjustments! Notional: $20.00 < $20 minimum
+[2025-05-05 08:58:43,082] [INFO] Signal Alert: TAO/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 08:58:43,083] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 08:58:43,083] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 08:58:43,084] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 08:58:43,608] [INFO] Dynamic Risk Levels for TAO/USDT (Score: 65.0)
+[2025-05-05 08:58:43,609] [INFO] ATR: 2.802143 | Current Price: 359.210000
+[2025-05-05 08:58:43,609] [INFO] Stop Loss: 1.95% | Take Profit: 1.56%
+[2025-05-05 08:58:43,871] [INFO] Progressive trailing stop set for TAO/USDT (LONG)
+[2025-05-05 08:58:43,872] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 08:58:43,872] [INFO] [OPEN POSITION] TAO/USDT - Type: LONG | Price: 359.21 | Amount: 0.056 | Notional: $20.12 | Signal Score: 65.0 | Leverage: 10x | ATR: 2.802143 | Stop Loss: 1.95% | Take Profit: 1.56%
+[2025-05-05 08:59:27,375] [INFO] Signal Alert: IOTA/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 08:59:27,375] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 08:59:27,376] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 08:59:27,376] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 08:59:27,911] [INFO] Dynamic Risk Levels for IOTA/USDT (Score: 65.0)
+[2025-05-05 08:59:27,911] [INFO] ATR: 0.001200 | Current Price: 0.209600
+[2025-05-05 08:59:27,911] [INFO] Stop Loss: 1.43% | Take Profit: 1.15%
+[2025-05-05 08:59:27,912] [WARNING] Order value still too low after adjustments! Notional: $20.00 < $20 minimum
+[2025-05-05 09:00:34,240] [INFO] Dynamic take profit hit: TAO/USDT (2.51% >= 1.56%)
+[2025-05-05 09:00:34,798] [INFO] [CLOSE POSITION] TAO/USDT - Type: LONG | Entry Price: 359.21 | Exit Price: 360.11 | PnL: 2.51% | Amount: 0.056
+[2025-05-05 09:13:34,449] [INFO] Signal Alert: LAYER/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 09:13:34,450] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 09:13:34,450] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 09:13:34,450] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 09:13:34,963] [INFO] Dynamic Risk Levels for LAYER/USDT (Score: 60.0)
+[2025-05-05 09:13:34,964] [INFO] ATR: 0.035350 | Current Price: 3.292000
+[2025-05-05 09:13:34,964] [INFO] Stop Loss: 2.68% | Take Profit: 2.15%
+[2025-05-05 09:13:35,218] [INFO] Progressive trailing stop set for LAYER/USDT (LONG)
+[2025-05-05 09:13:35,219] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 09:13:35,221] [INFO] [OPEN POSITION] LAYER/USDT - Type: LONG | Price: 3.292 | Amount: 6.1 | Notional: $20.08 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.035350 | Stop Loss: 2.68% | Take Profit: 2.15%
+[2025-05-05 09:19:04,308] [INFO] Trailing stop activated for LAYER/USDT | Raw PnL: 1.00% | Stop: breakeven
+[2025-05-05 09:19:04,640] [INFO] Dynamic take profit hit: LAYER/USDT (10.02% >= 2.15%)
+[2025-05-05 09:19:05,159] [INFO] [CLOSE POSITION] LAYER/USDT - Type: LONG | Entry Price: 3.292 | Exit Price: 3.325 | PnL: 10.02% | Amount: 6.1
+[2025-05-05 09:38:56,749] [INFO] Signal Alert: LAYER/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 09:38:56,750] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 09:38:56,750] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 09:38:56,751] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 09:38:57,288] [INFO] Dynamic Risk Levels for LAYER/USDT (Score: 60.0)
+[2025-05-05 09:38:57,289] [INFO] ATR: 0.040336 | Current Price: 3.371000
+[2025-05-05 09:38:57,289] [INFO] Stop Loss: 2.99% | Take Profit: 2.39%
+[2025-05-05 09:38:57,290] [WARNING] Order value still too low after adjustments! Notional: $19.89 < $20 minimum
+[2025-05-05 09:41:13,549] [INFO] Signal Alert: LAYER/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 09:41:13,550] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 09:41:13,550] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 09:41:13,551] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 09:41:14,066] [INFO] Dynamic Risk Levels for LAYER/USDT (Score: 60.0)
+[2025-05-05 09:41:14,066] [INFO] ATR: 0.041264 | Current Price: 3.378600
+[2025-05-05 09:41:14,067] [INFO] Stop Loss: 3.05% | Take Profit: 2.44%
+[2025-05-05 09:41:14,067] [WARNING] Order value still too low after adjustments! Notional: $19.93 < $20 minimum
+[2025-05-05 09:43:28,454] [INFO] Signal Alert: LAYER/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 09:43:28,455] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 09:43:28,455] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 09:43:28,456] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 09:43:29,005] [INFO] Dynamic Risk Levels for LAYER/USDT (Score: 60.0)
+[2025-05-05 09:43:29,005] [INFO] ATR: 0.041264 | Current Price: 3.379700
+[2025-05-05 09:43:29,006] [INFO] Stop Loss: 3.05% | Take Profit: 2.44%
+[2025-05-05 09:43:29,006] [WARNING] Order value still too low after adjustments! Notional: $19.94 < $20 minimum
+[2025-05-05 09:45:38,838] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 09:47:54,242] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 09:50:08,216] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 09:52:24,548] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 09:54:38,160] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 09:56:54,893] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 09:57:12,270] [INFO] Signal Alert: VIRTUAL/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 09:57:12,271] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 09:57:12,271] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 09:57:12,272] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 09:57:12,812] [INFO] Dynamic Risk Levels for VIRTUAL/USDT (Score: 60.0)
+[2025-05-05 09:57:12,812] [INFO] ATR: 0.026607 | Current Price: 1.714700
+[2025-05-05 09:57:12,812] [INFO] Stop Loss: 3.88% | Take Profit: 3.10%
+[2025-05-05 09:57:13,070] [INFO] Progressive trailing stop set for VIRTUAL/USDT (LONG)
+[2025-05-05 09:57:13,070] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 09:57:13,071] [INFO] [OPEN POSITION] VIRTUAL/USDT - Type: LONG | Price: 1.7147 | Amount: 11.7 | Notional: $20.06 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.026607 | Stop Loss: 3.88% | Take Profit: 3.10%
+[2025-05-05 09:59:14,296] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 10:01:28,667] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 10:02:21,535] [INFO] Dynamic take profit hit: VIRTUAL/USDT (6.01% >= 3.10%)
+[2025-05-05 10:02:22,103] [INFO] [CLOSE POSITION] VIRTUAL/USDT - Type: LONG | Entry Price: 1.7147 | Exit Price: 1.7265 | PnL: 6.88% | Amount: 11.7
+[2025-05-05 10:03:52,948] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 10:10:55,742] [INFO] Signal Alert: VIRTUAL/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 10:10:55,743] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:10:55,743] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:10:55,744] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:10:56,266] [INFO] Dynamic Risk Levels for VIRTUAL/USDT (Score: 60.0)
+[2025-05-05 10:10:56,266] [INFO] ATR: 0.027543 | Current Price: 1.707300
+[2025-05-05 10:10:56,267] [INFO] Stop Loss: 4.03% | Take Profit: 3.23%
+[2025-05-05 10:10:56,268] [WARNING] Order value still too low after adjustments! Notional: $19.98 < $20 minimum
+[2025-05-05 10:13:13,533] [INFO] Signal Alert: VIRTUAL/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 10:13:13,533] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:13:13,534] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:13:13,534] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:13:14,055] [INFO] Dynamic Risk Levels for VIRTUAL/USDT (Score: 60.0)
+[2025-05-05 10:13:14,056] [INFO] ATR: 0.027543 | Current Price: 1.722400
+[2025-05-05 10:13:14,056] [INFO] Stop Loss: 4.00% | Take Profit: 3.20%
+[2025-05-05 10:13:14,057] [WARNING] Order value still too low after adjustments! Notional: $19.98 < $20 minimum
+[2025-05-05 10:22:22,507] [INFO] Signal Alert: VIRTUAL/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 10:22:22,508] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:22:22,508] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:22:22,509] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:22:23,025] [INFO] Dynamic Risk Levels for VIRTUAL/USDT (Score: 60.0)
+[2025-05-05 10:22:23,026] [INFO] ATR: 0.028371 | Current Price: 1.746800
+[2025-05-05 10:22:23,026] [INFO] Stop Loss: 4.06% | Take Profit: 3.25%
+[2025-05-05 10:22:23,026] [WARNING] Order value still too low after adjustments! Notional: $19.91 < $20 minimum
+[2025-05-05 10:24:37,604] [INFO] Signal Alert: VIRTUAL/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 10:24:37,604] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:24:37,604] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:24:37,605] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:24:38,121] [INFO] Dynamic Risk Levels for VIRTUAL/USDT (Score: 60.0)
+[2025-05-05 10:24:38,122] [INFO] ATR: 0.029064 | Current Price: 1.759500
+[2025-05-05 10:24:38,122] [INFO] Stop Loss: 4.13% | Take Profit: 3.30%
+[2025-05-05 10:24:38,379] [INFO] Progressive trailing stop set for VIRTUAL/USDT (LONG)
+[2025-05-05 10:24:38,380] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 10:24:38,381] [INFO] [OPEN POSITION] VIRTUAL/USDT - Type: LONG | Price: 1.7595 | Amount: 11.4 | Notional: $20.06 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.029064 | Stop Loss: 4.13% | Take Profit: 3.30%
+[2025-05-05 10:33:08,504] [INFO] Signal Alert: WAL/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 10:33:08,505] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:33:08,505] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:33:08,506] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:33:09,023] [INFO] Dynamic Risk Levels for WAL/USDT (Score: 65.0)
+[2025-05-05 10:33:09,024] [INFO] ATR: 0.005436 | Current Price: 0.604800
+[2025-05-05 10:33:09,024] [INFO] Stop Loss: 2.25% | Take Profit: 1.80%
+[2025-05-05 10:33:09,025] [WARNING] Order value still too low after adjustments! Notional: $19.96 < $20 minimum
+[2025-05-05 10:35:24,740] [INFO] Signal Alert: WAL/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 10:35:24,740] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:35:24,741] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:35:24,741] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:35:25,293] [INFO] Dynamic Risk Levels for WAL/USDT (Score: 65.0)
+[2025-05-05 10:35:25,294] [INFO] ATR: 0.005436 | Current Price: 0.603200
+[2025-05-05 10:35:25,294] [INFO] Stop Loss: 2.25% | Take Profit: 1.80%
+[2025-05-05 10:35:25,294] [WARNING] Order value still too low after adjustments! Notional: $19.91 < $20 minimum
+[2025-05-05 10:35:28,499] [INFO] Signal Alert: FLOW/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 10:36:29,045] [INFO] Dynamic stop loss hit: VIRTUAL/USDT (-9.43% <= -4.13%)
+[2025-05-05 10:36:29,557] [INFO] [CLOSE POSITION] VIRTUAL/USDT - Type: LONG | Entry Price: 1.7595 | Exit Price: 1.7437 | PnL: -8.98% | Amount: 11.4
+[2025-05-05 10:37:43,001] [INFO] Signal Alert: WAL/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 10:37:43,002] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:37:43,002] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:37:43,002] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:37:43,529] [INFO] Dynamic Risk Levels for WAL/USDT (Score: 60.0)
+[2025-05-05 10:37:43,530] [INFO] ATR: 0.005479 | Current Price: 0.601000
+[2025-05-05 10:37:43,531] [INFO] Stop Loss: 2.28% | Take Profit: 1.82%
+[2025-05-05 10:37:43,531] [WARNING] Order value still too low after adjustments! Notional: $19.83 < $20 minimum
+[2025-05-05 10:37:46,688] [INFO] Signal Alert: FLOW/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 10:39:55,549] [INFO] Signal Alert: WAL/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 10:39:55,549] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:39:55,550] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:39:55,550] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:39:56,056] [INFO] Dynamic Risk Levels for WAL/USDT (Score: 65.0)
+[2025-05-05 10:39:56,057] [INFO] ATR: 0.005479 | Current Price: 0.603400
+[2025-05-05 10:39:56,057] [INFO] Stop Loss: 2.27% | Take Profit: 1.82%
+[2025-05-05 10:39:56,058] [WARNING] Order value still too low after adjustments! Notional: $19.91 < $20 minimum
+[2025-05-05 10:39:59,230] [INFO] Signal Alert: FLOW/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 10:42:08,385] [INFO] Signal Alert: WAL/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 10:42:08,385] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:42:08,386] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:42:08,387] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:42:08,899] [INFO] Dynamic Risk Levels for WAL/USDT (Score: 65.0)
+[2025-05-05 10:42:08,900] [INFO] ATR: 0.005479 | Current Price: 0.601500
+[2025-05-05 10:42:08,900] [INFO] Stop Loss: 2.28% | Take Profit: 1.82%
+[2025-05-05 10:42:08,901] [WARNING] Order value still too low after adjustments! Notional: $19.85 < $20 minimum
+[2025-05-05 10:42:11,988] [INFO] Signal Alert: FLOW/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 10:43:25,231] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 10:43:25,231] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:43:25,232] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:43:25,232] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:43:25,818] [INFO] Dynamic Risk Levels for SUI/USDT (Score: 60.0)
+[2025-05-05 10:43:25,818] [INFO] ATR: 0.028943 | Current Price: 3.407300
+[2025-05-05 10:43:25,819] [INFO] Stop Loss: 2.12% | Take Profit: 1.70%
+[2025-05-05 10:43:26,074] [INFO] Progressive trailing stop set for SUI/USDT (LONG)
+[2025-05-05 10:43:26,075] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 10:43:26,075] [INFO] [OPEN POSITION] SUI/USDT - Type: LONG | Price: 3.4073 | Amount: 5.9 | Notional: $20.10 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.028943 | Stop Loss: 2.12% | Take Profit: 1.70%
+[2025-05-05 10:43:41,179] [INFO] Signal Alert: TAO/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 10:43:41,180] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:43:41,180] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:43:41,181] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:43:41,696] [INFO] Dynamic Risk Levels for TAO/USDT (Score: 65.0)
+[2025-05-05 10:43:41,697] [INFO] ATR: 2.769286 | Current Price: 362.830000
+[2025-05-05 10:43:41,697] [INFO] Stop Loss: 1.91% | Take Profit: 1.53%
+[2025-05-05 10:43:41,697] [WARNING] Order value still too low after adjustments! Notional: $19.96 < $20 minimum
+[2025-05-05 10:44:23,852] [INFO] Signal Alert: WAL/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 10:44:23,852] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:44:23,852] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:44:23,853] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:44:24,377] [INFO] Dynamic Risk Levels for WAL/USDT (Score: 65.0)
+[2025-05-05 10:44:24,377] [INFO] ATR: 0.005479 | Current Price: 0.602800
+[2025-05-05 10:44:24,377] [INFO] Stop Loss: 2.27% | Take Profit: 1.82%
+[2025-05-05 10:44:24,378] [WARNING] Order value still too low after adjustments! Notional: $19.89 < $20 minimum
+[2025-05-05 10:44:27,508] [INFO] Signal Alert: FLOW/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 10:44:54,600] [INFO] Signal Alert: VIRTUAL/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 10:44:54,601] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:44:54,601] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:44:54,602] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:44:55,111] [INFO] Dynamic Risk Levels for VIRTUAL/USDT (Score: 60.0)
+[2025-05-05 10:44:55,111] [INFO] ATR: 0.030171 | Current Price: 1.745000
+[2025-05-05 10:44:55,112] [INFO] Stop Loss: 4.32% | Take Profit: 3.46%
+[2025-05-05 10:44:55,367] [INFO] Progressive trailing stop set for VIRTUAL/USDT (LONG)
+[2025-05-05 10:44:55,368] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 10:44:55,369] [INFO] [OPEN POSITION] VIRTUAL/USDT - Type: LONG | Price: 1.745 | Amount: 11.5 | Notional: $20.07 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.030171 | Stop Loss: 4.32% | Take Profit: 3.46%
+[2025-05-05 10:45:29,188] [INFO] Dynamic take profit hit: SUI/USDT (2.76% >= 1.70%)
+[2025-05-05 10:45:29,702] [INFO] [CLOSE POSITION] SUI/USDT - Type: LONG | Entry Price: 3.4073 | Exit Price: 3.4187 | PnL: 3.35% | Amount: 5.9
+[2025-05-05 10:47:42,528] [INFO] Dynamic stop loss hit: VIRTUAL/USDT (-4.36% <= -4.32%)
+[2025-05-05 10:47:43,040] [INFO] [CLOSE POSITION] VIRTUAL/USDT - Type: LONG | Entry Price: 1.745 | Exit Price: 1.7376 | PnL: -4.24% | Amount: 11.5
+[2025-05-05 10:51:16,864] [INFO] Signal Alert: KAVA/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 10:57:06,045] [INFO] Signal Alert: TRUMP/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 10:59:07,654] [INFO] Signal Alert: ONDO/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 10:59:07,655] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 10:59:07,656] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 10:59:07,656] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 10:59:08,216] [INFO] Dynamic Risk Levels for ONDO/USDT (Score: 65.0)
+[2025-05-05 10:59:08,216] [INFO] ATR: 0.004550 | Current Price: 0.887400
+[2025-05-05 10:59:08,217] [INFO] Stop Loss: 1.28% | Take Profit: 1.03%
+[2025-05-05 10:59:08,217] [WARNING] Order value still too low after adjustments! Notional: $19.97 < $20 minimum
+[2025-05-05 11:06:47,616] [INFO] Signal Alert: ZEC/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:06:47,617] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:06:47,617] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:06:47,618] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:06:48,137] [INFO] Dynamic Risk Levels for ZEC/USDT (Score: 60.0)
+[2025-05-05 11:06:48,137] [INFO] ATR: 0.194286 | Current Price: 36.130000
+[2025-05-05 11:06:48,138] [INFO] Stop Loss: 1.34% | Take Profit: 1.08%
+[2025-05-05 11:06:48,392] [INFO] Progressive trailing stop set for ZEC/USDT (LONG)
+[2025-05-05 11:06:48,393] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 11:06:48,394] [INFO] [OPEN POSITION] ZEC/USDT - Type: LONG | Price: 36.13 | Amount: 0.554 | Notional: $20.02 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.194286 | Stop Loss: 1.34% | Take Profit: 1.08%
+[2025-05-05 11:07:44,989] [INFO] Dynamic stop loss hit: ZEC/USDT (-3.32% <= -1.34%)
+[2025-05-05 11:07:45,513] [INFO] [CLOSE POSITION] ZEC/USDT - Type: LONG | Entry Price: 36.13 | Exit Price: 36.01 | PnL: -3.32% | Amount: 0.554
+[2025-05-05 11:08:02,717] [INFO] Signal Alert: LTC/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:08:02,717] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:08:02,718] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:08:02,718] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:08:03,234] [INFO] Dynamic Risk Levels for LTC/USDT (Score: 60.0)
+[2025-05-05 11:08:03,234] [INFO] ATR: 0.512143 | Current Price: 88.650000
+[2025-05-05 11:08:03,235] [INFO] Stop Loss: 1.44% | Take Profit: 1.16%
+[2025-05-05 11:08:03,490] [INFO] Progressive trailing stop set for LTC/USDT (LONG)
+[2025-05-05 11:08:03,491] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 11:08:03,491] [INFO] [OPEN POSITION] LTC/USDT - Type: LONG | Price: 88.65 | Amount: 0.226 | Notional: $20.03 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.512143 | Stop Loss: 1.44% | Take Profit: 1.16%
+[2025-05-05 11:09:29,505] [INFO] Signal Alert: VIRTUAL/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:09:29,505] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:09:29,505] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:09:29,506] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:09:30,025] [INFO] Dynamic Risk Levels for VIRTUAL/USDT (Score: 60.0)
+[2025-05-05 11:09:30,025] [INFO] ATR: 0.031943 | Current Price: 1.782800
+[2025-05-05 11:09:30,026] [INFO] Stop Loss: 4.48% | Take Profit: 3.58%
+[2025-05-05 11:09:30,026] [WARNING] Order value still too low after adjustments! Notional: $19.97 < $20 minimum
+[2025-05-05 11:11:50,231] [INFO] Signal Alert: VIRTUAL/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:11:50,231] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:11:50,232] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:11:50,232] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:11:50,743] [INFO] Dynamic Risk Levels for VIRTUAL/USDT (Score: 60.0)
+[2025-05-05 11:11:50,744] [INFO] ATR: 0.031943 | Current Price: 1.775700
+[2025-05-05 11:11:50,744] [INFO] Stop Loss: 4.50% | Take Profit: 3.60%
+[2025-05-05 11:11:51,000] [INFO] Progressive trailing stop set for VIRTUAL/USDT (LONG)
+[2025-05-05 11:11:51,000] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 11:11:51,001] [INFO] [OPEN POSITION] VIRTUAL/USDT - Type: LONG | Price: 1.7757 | Amount: 11.3 | Notional: $20.07 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.031943 | Stop Loss: 4.50% | Take Profit: 3.60%
+[2025-05-05 11:13:45,171] [INFO] Signal Alert: ZEC/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:13:45,172] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:13:45,172] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:13:45,172] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:13:45,751] [INFO] Dynamic Risk Levels for ZEC/USDT (Score: 60.0)
+[2025-05-05 11:13:45,752] [INFO] ATR: 0.199286 | Current Price: 36.060000
+[2025-05-05 11:13:45,752] [INFO] Stop Loss: 1.38% | Take Profit: 1.11%
+[2025-05-05 11:13:46,008] [INFO] Progressive trailing stop set for ZEC/USDT (LONG)
+[2025-05-05 11:13:46,009] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 11:13:46,010] [INFO] [OPEN POSITION] ZEC/USDT - Type: LONG | Price: 36.06 | Amount: 0.555 | Notional: $20.01 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.199286 | Stop Loss: 1.38% | Take Profit: 1.11%
+[2025-05-05 11:14:43,765] [INFO] Dynamic take profit hit: LTC/USDT (2.71% >= 1.16%)
+[2025-05-05 11:14:44,286] [INFO] [CLOSE POSITION] LTC/USDT - Type: LONG | Entry Price: 88.65 | Exit Price: 88.89 | PnL: 2.71% | Amount: 0.226
+[2025-05-05 11:14:44,976] [INFO] Dynamic take profit hit: VIRTUAL/USDT (8.62% >= 3.60%)
+[2025-05-05 11:14:45,519] [INFO] [CLOSE POSITION] VIRTUAL/USDT - Type: LONG | Entry Price: 1.7757 | Exit Price: 1.791 | PnL: 8.62% | Amount: 11.3
+[2025-05-05 11:21:00,500] [INFO] Signal Alert: VIRTUAL/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:21:00,500] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:21:00,501] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:21:00,501] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:21:01,314] [INFO] Dynamic Risk Levels for VIRTUAL/USDT (Score: 60.0)
+[2025-05-05 11:21:01,314] [INFO] ATR: 0.032464 | Current Price: 1.818300
+[2025-05-05 11:21:01,315] [INFO] Stop Loss: 4.46% | Take Profit: 3.57%
+[2025-05-05 11:21:01,655] [INFO] Progressive trailing stop set for VIRTUAL/USDT (LONG)
+[2025-05-05 11:21:01,656] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 11:21:01,656] [INFO] [OPEN POSITION] VIRTUAL/USDT - Type: LONG | Price: 1.8183 | Amount: 11.0 | Notional: $20.00 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.032464 | Stop Loss: 4.46% | Take Profit: 3.57%
+[2025-05-05 11:21:52,821] [INFO] Signal Alert: LTC/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:21:52,822] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:21:52,822] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:21:52,822] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:21:53,343] [INFO] Dynamic Risk Levels for LTC/USDT (Score: 60.0)
+[2025-05-05 11:21:53,344] [INFO] ATR: 0.532857 | Current Price: 89.000000
+[2025-05-05 11:21:53,344] [INFO] Stop Loss: 1.50% | Take Profit: 1.20%
+[2025-05-05 11:21:53,602] [INFO] Progressive trailing stop set for LTC/USDT (LONG)
+[2025-05-05 11:21:53,604] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 11:21:53,605] [INFO] [OPEN POSITION] LTC/USDT - Type: LONG | Price: 89.0 | Amount: 0.225 | Notional: $20.03 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.532857 | Stop Loss: 1.50% | Take Profit: 1.20%
+[2025-05-05 11:23:49,777] [INFO] Dynamic take profit hit: ZEC/USDT (3.88% >= 1.11%)
+[2025-05-05 11:23:50,297] [INFO] [CLOSE POSITION] ZEC/USDT - Type: LONG | Entry Price: 36.06 | Exit Price: 36.2 | PnL: 3.88% | Amount: 0.555
+[2025-05-05 11:24:16,459] [INFO] Signal Alert: AAVE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:24:16,460] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:24:16,460] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:24:16,461] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:24:16,978] [INFO] Dynamic Risk Levels for AAVE/USDT (Score: 60.0)
+[2025-05-05 11:24:16,978] [INFO] ATR: 1.306429 | Current Price: 180.380000
+[2025-05-05 11:24:16,978] [INFO] Stop Loss: 1.81% | Take Profit: 1.45%
+[2025-05-05 11:24:16,978] [WARNING] Order value still too low after adjustments! Notional: $18.04 < $20 minimum
+[2025-05-05 11:24:52,004] [INFO] Signal Alert: PAXG/USDT - Score: 64.0/100 - Trend: long
+[2025-05-05 11:24:52,005] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:24:52,006] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:24:52,006] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:24:52,529] [INFO] Dynamic Risk Levels for PAXG/USDT (Score: 64.0)
+[2025-05-05 11:24:52,529] [INFO] ATR: 4.026429 | Current Price: 3281.640000
+[2025-05-05 11:24:52,529] [INFO] Stop Loss: 0.31% | Take Profit: 0.25%
+[2025-05-05 11:24:52,530] [WARNING] Order value still too low after adjustments! Notional: $19.69 < $20 minimum
+[2025-05-05 11:26:04,559] [INFO] Dynamic take profit hit: LTC/USDT (3.60% >= 1.20%)
+[2025-05-05 11:26:05,085] [INFO] [CLOSE POSITION] LTC/USDT - Type: LONG | Entry Price: 89.0 | Exit Price: 89.33 | PnL: 3.71% | Amount: 0.225
+[2025-05-05 11:26:30,998] [INFO] Signal Alert: AAVE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:26:30,998] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:26:30,999] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:26:31,000] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:26:31,522] [INFO] Dynamic Risk Levels for AAVE/USDT (Score: 60.0)
+[2025-05-05 11:26:31,523] [INFO] ATR: 1.307857 | Current Price: 180.600000
+[2025-05-05 11:26:31,523] [INFO] Stop Loss: 1.81% | Take Profit: 1.45%
+[2025-05-05 11:26:31,523] [WARNING] Order value still too low after adjustments! Notional: $18.06 < $20 minimum
+[2025-05-05 11:27:08,806] [INFO] Signal Alert: PAXG/USDT - Score: 64.0/100 - Trend: long
+[2025-05-05 11:27:08,806] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:27:08,807] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:27:08,807] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:27:09,568] [INFO] Dynamic Risk Levels for PAXG/USDT (Score: 64.0)
+[2025-05-05 11:27:09,569] [INFO] ATR: 4.060714 | Current Price: 3282.120000
+[2025-05-05 11:27:09,569] [INFO] Stop Loss: 0.31% | Take Profit: 0.25%
+[2025-05-05 11:27:09,569] [WARNING] Order value still too low after adjustments! Notional: $19.69 < $20 minimum
+[2025-05-05 11:28:47,924] [INFO] Signal Alert: AAVE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:28:47,924] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:28:47,924] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:28:47,925] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:28:48,439] [INFO] Dynamic Risk Levels for AAVE/USDT (Score: 60.0)
+[2025-05-05 11:28:48,440] [INFO] ATR: 1.307857 | Current Price: 180.540000
+[2025-05-05 11:28:48,440] [INFO] Stop Loss: 1.81% | Take Profit: 1.45%
+[2025-05-05 11:28:48,440] [WARNING] Order value still too low after adjustments! Notional: $18.05 < $20 minimum
+[2025-05-05 11:29:23,540] [INFO] Signal Alert: PAXG/USDT - Score: 68.0/100 - Trend: long
+[2025-05-05 11:29:23,540] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:29:23,540] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:29:23,541] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:29:24,060] [INFO] Dynamic Risk Levels for PAXG/USDT (Score: 68.0)
+[2025-05-05 11:29:24,060] [INFO] ATR: 4.122857 | Current Price: 3282.990000
+[2025-05-05 11:29:24,061] [INFO] Stop Loss: 0.31% | Take Profit: 0.25%
+[2025-05-05 11:29:24,061] [WARNING] Order value still too low after adjustments! Notional: $19.70 < $20 minimum
+[2025-05-05 11:35:08,421] [INFO] Dynamic stop loss hit: VIRTUAL/USDT (-4.89% <= -4.46%)
+[2025-05-05 11:35:08,937] [INFO] [CLOSE POSITION] VIRTUAL/USDT - Type: LONG | Entry Price: 1.8183 | Exit Price: 1.8115 | PnL: -3.74% | Amount: 11.0
+[2025-05-05 11:42:31,396] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:42:31,396] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:42:31,397] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:42:31,397] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:42:31,953] [INFO] Dynamic Risk Levels for SUI/USDT (Score: 60.0)
+[2025-05-05 11:42:31,953] [INFO] ATR: 0.029900 | Current Price: 3.450200
+[2025-05-05 11:42:31,954] [INFO] Stop Loss: 2.17% | Take Profit: 1.73%
+[2025-05-05 11:42:32,232] [INFO] Progressive trailing stop set for SUI/USDT (LONG)
+[2025-05-05 11:42:32,232] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 11:42:32,233] [INFO] [OPEN POSITION] SUI/USDT - Type: LONG | Price: 3.4502 | Amount: 5.8 | Notional: $20.01 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.029900 | Stop Loss: 2.17% | Take Profit: 1.73%
+[2025-05-05 11:44:44,740] [INFO] Dynamic stop loss hit: SUI/USDT (-2.55% <= -2.17%)
+[2025-05-05 11:44:45,313] [INFO] [CLOSE POSITION] SUI/USDT - Type: LONG | Entry Price: 3.4502 | Exit Price: 3.4416 | PnL: -2.49% | Amount: 5.8
+[2025-05-05 11:59:12,673] [INFO] Signal Alert: TAO/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 11:59:12,673] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 11:59:12,674] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 11:59:12,674] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 11:59:13,192] [INFO] Dynamic Risk Levels for TAO/USDT (Score: 60.0)
+[2025-05-05 11:59:13,193] [INFO] ATR: 3.065000 | Current Price: 364.640000
+[2025-05-05 11:59:13,193] [INFO] Stop Loss: 2.10% | Take Profit: 1.68%
+[2025-05-05 11:59:13,445] [INFO] Progressive trailing stop set for TAO/USDT (LONG)
+[2025-05-05 11:59:13,446] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 11:59:13,447] [INFO] [OPEN POSITION] TAO/USDT - Type: LONG | Price: 364.64 | Amount: 0.055 | Notional: $20.06 | Signal Score: 60.0 | Leverage: 10x | ATR: 3.065000 | Stop Loss: 2.10% | Take Profit: 1.68%
+[2025-05-05 12:05:32,624] [INFO] Dynamic stop loss hit: TAO/USDT (-2.50% <= -2.10%)
+[2025-05-05 12:05:33,135] [INFO] [CLOSE POSITION] TAO/USDT - Type: LONG | Entry Price: 364.64 | Exit Price: 363.74 | PnL: -2.47% | Amount: 0.055
+[2025-05-05 12:06:49,856] [INFO] Signal Alert: ZEC/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 12:06:49,856] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 12:06:49,857] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 12:06:49,857] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 12:06:50,370] [INFO] Dynamic Risk Levels for ZEC/USDT (Score: 65.0)
+[2025-05-05 12:06:50,371] [INFO] ATR: 0.262143 | Current Price: 36.310000
+[2025-05-05 12:06:50,371] [INFO] Stop Loss: 1.80% | Take Profit: 1.44%
+[2025-05-05 12:06:50,624] [INFO] Progressive trailing stop set for ZEC/USDT (LONG)
+[2025-05-05 12:06:50,625] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 12:06:50,626] [INFO] [OPEN POSITION] ZEC/USDT - Type: LONG | Price: 36.31 | Amount: 0.551 | Notional: $20.01 | Signal Score: 65.0 | Leverage: 10x | ATR: 0.262143 | Stop Loss: 1.80% | Take Profit: 1.44%
+[2025-05-05 12:07:46,178] [INFO] Dynamic take profit hit: ZEC/USDT (1.65% >= 1.44%)
+[2025-05-05 12:07:46,688] [INFO] [CLOSE POSITION] ZEC/USDT - Type: LONG | Entry Price: 36.31 | Exit Price: 36.37 | PnL: 1.65% | Amount: 0.551
+[2025-05-05 12:14:38,353] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 12:14:38,354] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 12:14:38,354] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 12:14:38,355] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 12:14:38,871] [INFO] Dynamic Risk Levels for SUI/USDT (Score: 60.0)
+[2025-05-05 12:14:38,871] [INFO] ATR: 0.030893 | Current Price: 3.458700
+[2025-05-05 12:14:38,872] [INFO] Stop Loss: 2.23% | Take Profit: 1.79%
+[2025-05-05 12:14:39,126] [INFO] Progressive trailing stop set for SUI/USDT (LONG)
+[2025-05-05 12:14:39,127] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 12:14:39,128] [INFO] [OPEN POSITION] SUI/USDT - Type: LONG | Price: 3.4587 | Amount: 5.8 | Notional: $20.06 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.030893 | Stop Loss: 2.23% | Take Profit: 1.79%
+[2025-05-05 12:16:43,248] [INFO] Dynamic stop loss hit: SUI/USDT (-2.98% <= -2.23%)
+[2025-05-05 12:16:44,238] [INFO] [CLOSE POSITION] SUI/USDT - Type: LONG | Entry Price: 3.4587 | Exit Price: 3.4484 | PnL: -2.98% | Amount: 5.8
+[2025-05-05 12:39:55,549] [INFO] Signal Alert: S/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 12:42:15,703] [INFO] Signal Alert: S/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 12:44:29,103] [INFO] Signal Alert: S/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 13:11:58,646] [INFO] Signal Alert: SEI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 13:14:12,940] [INFO] Signal Alert: SEI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 13:14:49,823] [INFO] Signal Alert: DYDX/USDT - Score: 70.0/100 - Trend: short
+[2025-05-05 13:14:49,824] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 13:14:49,824] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 13:14:49,824] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 13:14:50,341] [INFO] Dynamic Risk Levels for DYDX/USDT (Score: 70.0)
+[2025-05-05 13:14:50,341] [INFO] ATR: 0.003214 | Current Price: 0.587000
+[2025-05-05 13:14:50,342] [INFO] Stop Loss: 1.10% | Take Profit: 1.37%
+[2025-05-05 13:14:50,599] [INFO] Progressive trailing stop set for DYDX/USDT (SHORT)
+[2025-05-05 13:14:50,600] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 13:14:50,601] [INFO] [OPEN POSITION] DYDX/USDT - Type: SHORT | Price: 0.587 | Amount: 34.1 | Notional: $20.02 | Signal Score: 70.0 | Leverage: 10x | ATR: 0.003214 | Stop Loss: 1.10% | Take Profit: 1.37%
+[2025-05-05 13:18:31,925] [INFO] Signal Alert: S/USDT - Score: 60.0/100 - Trend: short
+[2025-05-05 13:18:31,926] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 13:18:31,926] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 13:18:31,926] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 13:18:32,443] [INFO] Dynamic Risk Levels for S/USDT (Score: 60.0)
+[2025-05-05 13:18:32,444] [INFO] ATR: 0.002900 | Current Price: 0.518900
+[2025-05-05 13:18:32,444] [INFO] Stop Loss: 1.40% | Take Profit: 1.12%
+[2025-05-05 13:18:32,701] [INFO] Progressive trailing stop set for S/USDT (SHORT)
+[2025-05-05 13:18:32,702] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 13:18:32,703] [INFO] [OPEN POSITION] S/USDT - Type: SHORT | Price: 0.5189 | Amount: 39.0 | Notional: $20.24 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.002900 | Stop Loss: 1.40% | Take Profit: 1.12%
+[2025-05-05 13:22:24,352] [INFO] Dynamic take profit hit: DYDX/USDT (1.70% >= 1.37%)
+[2025-05-05 13:22:24,854] [INFO] [CLOSE POSITION] DYDX/USDT - Type: SHORT | Entry Price: 0.587 | Exit Price: 0.586 | PnL: 1.70% | Amount: 34.1
+[2025-05-05 13:22:25,599] [INFO] Dynamic take profit hit: S/USDT (1.73% >= 1.12%)
+[2025-05-05 13:22:26,120] [INFO] [CLOSE POSITION] S/USDT - Type: SHORT | Entry Price: 0.5189 | Exit Price: 0.518 | PnL: 1.73% | Amount: 39.0
+[2025-05-05 13:28:26,966] [INFO] Signal Alert: DYDX/USDT - Score: 75.0/100 - Trend: short
+[2025-05-05 13:28:26,967] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 13:28:26,967] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-05 13:28:26,967] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 13:28:27,477] [INFO] Dynamic Risk Levels for DYDX/USDT (Score: 75.0)
+[2025-05-05 13:28:27,478] [INFO] ATR: 0.003286 | Current Price: 0.587000
+[2025-05-05 13:28:27,478] [INFO] Stop Loss: 1.12% | Take Profit: 1.40%
+[2025-05-05 13:28:27,756] [INFO] Progressive trailing stop set for DYDX/USDT (SHORT)
+[2025-05-05 13:28:27,757] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 13:28:27,758] [INFO] [OPEN POSITION] DYDX/USDT - Type: SHORT | Price: 0.587 | Amount: 34.1 | Notional: $20.02 | Signal Score: 75.0 | Leverage: 10x | ATR: 0.003286 | Stop Loss: 1.12% | Take Profit: 1.40%
+[2025-05-05 13:38:18,075] [INFO] Dynamic take profit hit: DYDX/USDT (3.41% >= 1.40%)
+[2025-05-05 13:38:18,632] [INFO] [CLOSE POSITION] DYDX/USDT - Type: SHORT | Entry Price: 0.587 | Exit Price: 0.585 | PnL: 3.41% | Amount: 34.1
+[2025-05-05 14:11:44,687] [INFO] Signal Alert: WAL/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 14:14:00,333] [INFO] Signal Alert: WAL/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 14:43:38,414] [INFO] Signal Alert: WAL/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 14:44:55,843] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 15:29:49,630] [INFO] Signal Alert: ZEC/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 15:29:49,630] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 15:29:49,631] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 15:29:49,631] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 15:29:50,149] [INFO] Dynamic Risk Levels for ZEC/USDT (Score: 60.0)
+[2025-05-05 15:29:50,149] [INFO] ATR: 0.265714 | Current Price: 36.180000
+[2025-05-05 15:29:50,150] [INFO] Stop Loss: 1.84% | Take Profit: 1.47%
+[2025-05-05 15:29:50,409] [INFO] Progressive trailing stop set for ZEC/USDT (LONG)
+[2025-05-05 15:29:50,411] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 15:29:50,411] [INFO] [OPEN POSITION] ZEC/USDT - Type: LONG | Price: 36.18 | Amount: 0.553 | Notional: $20.01 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.265714 | Stop Loss: 1.84% | Take Profit: 1.47%
+[2025-05-05 15:30:46,631] [INFO] Dynamic stop loss hit: ZEC/USDT (-2.21% <= -1.84%)
+[2025-05-05 15:30:47,145] [INFO] [CLOSE POSITION] ZEC/USDT - Type: LONG | Entry Price: 36.18 | Exit Price: 36.11 | PnL: -1.93% | Amount: 0.553
+[2025-05-05 15:49:31,363] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 15:51:48,557] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 16:07:50,922] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 16:23:48,895] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 16:35:13,012] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 16:37:29,223] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 16:53:40,432] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 16:55:59,622] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 16:58:21,424] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:03:15,384] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:05:33,001] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:07:50,710] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:10:12,059] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:12:28,149] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:14:53,047] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:17:15,008] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:20:03,732] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:20:23,226] [INFO] Signal Alert: TAO/USDT - Score: 65.0/100 - Trend: None
+[2025-05-05 17:22:35,827] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:25:07,308] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:28:00,952] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:30:39,734] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:33:23,111] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:35:53,659] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:38:14,661] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:40:34,936] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:42:54,770] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:45:13,811] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:45:43,906] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:47:34,957] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:48:07,226] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:49:56,239] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:50:12,098] [INFO] Signal Alert: TAO/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 17:50:12,098] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 17:50:12,098] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 17:50:12,099] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 17:50:12,625] [INFO] Dynamic Risk Levels for TAO/USDT (Score: 60.0)
+[2025-05-05 17:50:12,625] [INFO] ATR: 3.844286 | Current Price: 364.030000
+[2025-05-05 17:50:12,626] [INFO] Stop Loss: 2.64% | Take Profit: 2.11%
+[2025-05-05 17:50:12,911] [INFO] Progressive trailing stop set for TAO/USDT (LONG)
+[2025-05-05 17:50:12,912] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 17:50:12,912] [INFO] [OPEN POSITION] TAO/USDT - Type: LONG | Price: 364.03 | Amount: 0.055 | Notional: $20.02 | Signal Score: 60.0 | Leverage: 10x | ATR: 3.844286 | Stop Loss: 2.64% | Take Profit: 2.11%
+[2025-05-05 17:50:29,624] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:52:17,592] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:52:47,510] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:54:37,104] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:54:46,729] [INFO] Signal Alert: ONDO/USDT - Score: 70.0/100 - Trend: long
+[2025-05-05 17:54:46,730] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 17:54:46,731] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 17:54:46,731] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 17:54:47,295] [INFO] Dynamic Risk Levels for ONDO/USDT (Score: 70.0)
+[2025-05-05 17:54:47,296] [INFO] ATR: 0.008636 | Current Price: 0.872600
+[2025-05-05 17:54:47,297] [INFO] Stop Loss: 1.98% | Take Profit: 2.47%
+[2025-05-05 17:54:47,297] [WARNING] Order value still too low after adjustments! Notional: $19.98 < $20 minimum
+[2025-05-05 17:55:06,642] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:56:41,904] [INFO] Dynamic stop loss hit: TAO/USDT (-2.72% <= -2.64%)
+[2025-05-05 17:56:42,463] [INFO] [CLOSE POSITION] TAO/USDT - Type: LONG | Entry Price: 364.03 | Exit Price: 363.04 | PnL: -2.72% | Amount: 0.055
+[2025-05-05 17:56:56,336] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:57:06,368] [INFO] Signal Alert: ONDO/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 17:57:06,369] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 17:57:06,369] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 17:57:06,370] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 17:57:07,116] [INFO] Dynamic Risk Levels for ONDO/USDT (Score: 65.0)
+[2025-05-05 17:57:07,116] [INFO] ATR: 0.008679 | Current Price: 0.868600
+[2025-05-05 17:57:07,117] [INFO] Stop Loss: 2.50% | Take Profit: 2.00%
+[2025-05-05 17:57:07,118] [WARNING] Order value still too low after adjustments! Notional: $19.98 < $20 minimum
+[2025-05-05 17:57:27,029] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:57:57,325] [INFO] Signal Alert: CAKE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 17:57:57,326] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 17:57:57,327] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 17:57:57,328] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 17:57:58,168] [INFO] Dynamic Risk Levels for CAKE/USDT (Score: 60.0)
+[2025-05-05 17:57:58,168] [INFO] ATR: 0.011764 | Current Price: 1.962700
+[2025-05-05 17:57:58,169] [INFO] Stop Loss: 1.50% | Take Profit: 1.20%
+[2025-05-05 17:57:58,170] [WARNING] Order value still too low after adjustments! Notional: $19.63 < $20 minimum
+[2025-05-05 17:59:17,069] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 17:59:27,125] [INFO] Signal Alert: ONDO/USDT - Score: 75.0/100 - Trend: long
+[2025-05-05 17:59:27,125] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 17:59:27,126] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-05-05 17:59:27,126] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 17:59:27,642] [INFO] Dynamic Risk Levels for ONDO/USDT (Score: 75.0)
+[2025-05-05 17:59:27,643] [INFO] ATR: 0.008714 | Current Price: 0.869700
+[2025-05-05 17:59:27,643] [INFO] Stop Loss: 2.00% | Take Profit: 2.50%
+[2025-05-05 17:59:27,898] [INFO] Progressive trailing stop set for ONDO/USDT (LONG)
+[2025-05-05 17:59:27,899] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 17:59:27,899] [INFO] [OPEN POSITION] ONDO/USDT - Type: LONG | Price: 0.8697 | Amount: 23.0 | Notional: $20.00 | Signal Score: 75.0 | Leverage: 10x | ATR: 0.008714 | Stop Loss: 2.00% | Take Profit: 2.50%
+[2025-05-05 17:59:48,287] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 18:01:37,565] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 18:01:50,430] [INFO] Signal Alert: AAVE/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 18:02:07,912] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 18:04:02,302] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 18:04:16,597] [INFO] Signal Alert: AAVE/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 18:04:34,093] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 18:06:24,895] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 18:06:56,144] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 18:08:50,070] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 18:11:04,585] [INFO] Dynamic stop loss hit: ONDO/USDT (-3.10% <= -2.00%)
+[2025-05-05 18:11:05,484] [INFO] [CLOSE POSITION] ONDO/USDT - Type: LONG | Entry Price: 0.8697 | Exit Price: 0.867 | PnL: -3.10% | Amount: 23.0
+[2025-05-05 18:42:20,957] [INFO] Signal Alert: ZEC/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 18:42:20,958] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 18:42:20,958] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 18:42:20,958] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 18:42:21,510] [INFO] Dynamic Risk Levels for ZEC/USDT (Score: 65.0)
+[2025-05-05 18:42:21,510] [INFO] ATR: 0.328571 | Current Price: 36.760000
+[2025-05-05 18:42:21,511] [INFO] Stop Loss: 2.23% | Take Profit: 1.79%
+[2025-05-05 18:42:21,511] [WARNING] Order value still too low after adjustments! Notional: $20.00 < $20 minimum
+[2025-05-05 18:44:48,548] [INFO] Signal Alert: ZEC/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 18:44:48,549] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 18:44:48,549] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 18:44:48,550] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 18:44:49,074] [INFO] Dynamic Risk Levels for ZEC/USDT (Score: 60.0)
+[2025-05-05 18:44:49,075] [INFO] ATR: 0.328571 | Current Price: 36.810000
+[2025-05-05 18:44:49,075] [INFO] Stop Loss: 2.23% | Take Profit: 1.79%
+[2025-05-05 18:44:49,075] [WARNING] Order value still too low after adjustments! Notional: $19.99 < $20 minimum
+[2025-05-05 18:51:43,593] [INFO] Signal Alert: DEXE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 18:51:43,594] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 18:51:43,594] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 18:51:43,594] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 18:51:44,241] [INFO] Dynamic Risk Levels for DEXE/USDT (Score: 60.0)
+[2025-05-05 18:51:44,242] [INFO] ATR: 0.088143 | Current Price: 14.574000
+[2025-05-05 18:51:44,242] [INFO] Stop Loss: 1.51% | Take Profit: 1.21%
+[2025-05-05 18:51:44,243] [WARNING] Order value still too low after adjustments! Notional: $19.97 < $20 minimum
+[2025-05-05 18:56:43,217] [INFO] Signal Alert: DEXE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 18:56:43,218] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 18:56:43,218] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 18:56:43,218] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 18:56:43,742] [INFO] Dynamic Risk Levels for DEXE/USDT (Score: 60.0)
+[2025-05-05 18:56:43,743] [INFO] ATR: 0.088143 | Current Price: 14.571000
+[2025-05-05 18:56:43,743] [INFO] Stop Loss: 1.51% | Take Profit: 1.21%
+[2025-05-05 18:56:43,744] [WARNING] Order value still too low after adjustments! Notional: $19.96 < $20 minimum
+[2025-05-05 19:10:41,185] [INFO] Signal Alert: AAVE/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 19:13:04,793] [INFO] Signal Alert: AAVE/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 19:15:23,133] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-05 19:17:38,529] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-05 19:20:04,193] [INFO] Signal Alert: AAVE/USDT - Score: 70.0/100 - Trend: None
+[2025-05-05 19:21:22,587] [INFO] Signal Alert: CHZ/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 19:21:22,587] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 19:21:22,588] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 19:21:22,588] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 19:21:23,117] [INFO] Dynamic Risk Levels for CHZ/USDT (Score: 60.0)
+[2025-05-05 19:21:23,118] [INFO] ATR: 0.000230 | Current Price: 0.039300
+[2025-05-05 19:21:23,118] [INFO] Stop Loss: 1.46% | Take Profit: 1.17%
+[2025-05-05 19:21:23,372] [INFO] Progressive trailing stop set for CHZ/USDT (LONG)
+[2025-05-05 19:21:23,373] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 19:21:23,373] [INFO] [OPEN POSITION] CHZ/USDT - Type: LONG | Price: 0.0393 | Amount: 509.0 | Notional: $20.00 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.000230 | Stop Loss: 1.46% | Take Profit: 1.17%
+[2025-05-05 19:22:26,618] [INFO] Signal Alert: AAVE/USDT - Score: 70.0/100 - Trend: None
+[2025-05-05 19:24:41,989] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: None
+[2025-05-05 19:26:35,592] [INFO] Signal Alert: SOL/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 19:27:02,591] [INFO] Signal Alert: AAVE/USDT - Score: 70.0/100 - Trend: None
+[2025-05-05 19:28:59,325] [INFO] Signal Alert: SOL/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 19:29:20,918] [INFO] Signal Alert: AAVE/USDT - Score: 95.0/100 - Trend: long
+[2025-05-05 19:29:20,919] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 19:29:21,443] [INFO] Dynamic Risk Levels for AAVE/USDT (Score: 95.0)
+[2025-05-05 19:29:21,444] [INFO] ATR: 1.631429 | Current Price: 177.630000
+[2025-05-05 19:29:21,444] [INFO] Stop Loss: 1.38% | Take Profit: 2.76%
+[2025-05-05 19:29:21,444] [WARNING] Order value still too low after adjustments! Notional: $17.76 < $20 minimum
+[2025-05-05 19:29:49,356] [INFO] Signal Alert: FARTCOIN/USDT - Score: 70.0/100 - Trend: long
+[2025-05-05 19:29:49,356] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 19:29:49,357] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 19:29:49,357] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 19:29:49,901] [INFO] Dynamic Risk Levels for FARTCOIN/USDT (Score: 70.0)
+[2025-05-05 19:29:49,901] [INFO] ATR: 0.011986 | Current Price: 1.121100
+[2025-05-05 19:29:49,902] [INFO] Stop Loss: 2.14% | Take Profit: 2.67%
+[2025-05-05 19:29:49,902] [WARNING] Order value still too low after adjustments! Notional: $19.96 < $20 minimum
+[2025-05-05 19:35:56,134] [INFO] Dynamic take profit hit: CHZ/USDT (1.27% >= 1.17%)
+[2025-05-05 19:35:56,698] [INFO] [CLOSE POSITION] CHZ/USDT - Type: LONG | Entry Price: 0.0393 | Exit Price: 0.03935 | PnL: 1.27% | Amount: 509.0
+[2025-05-05 19:43:30,159] [INFO] Signal Alert: QNT/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 19:43:30,159] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 19:43:30,160] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 19:43:30,160] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 19:43:30,681] [INFO] Dynamic Risk Levels for QNT/USDT (Score: 60.0)
+[2025-05-05 19:43:30,682] [INFO] ATR: 0.675714 | Current Price: 87.530000
+[2025-05-05 19:43:30,682] [INFO] Stop Loss: 1.93% | Take Profit: 1.54%
+[2025-05-05 19:43:30,682] [WARNING] Order value still too low after adjustments! Notional: $17.51 < $20 minimum
+[2025-05-05 20:02:09,172] [INFO] Signal Alert: DEXE/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 20:24:50,404] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 20:27:06,023] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 20:27:57,150] [INFO] Signal Alert: NEO/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 20:27:57,151] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 20:27:57,152] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 20:27:57,152] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 20:27:57,664] [INFO] Dynamic Risk Levels for NEO/USDT (Score: 60.0)
+[2025-05-05 20:27:57,664] [INFO] ATR: 0.029357 | Current Price: 5.671000
+[2025-05-05 20:27:57,664] [INFO] Stop Loss: 1.29% | Take Profit: 1.04%
+[2025-05-05 20:27:57,920] [INFO] Progressive trailing stop set for NEO/USDT (LONG)
+[2025-05-05 20:27:57,921] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 20:27:57,922] [INFO] [OPEN POSITION] NEO/USDT - Type: LONG | Price: 5.671 | Amount: 3.53 | Notional: $20.02 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.029357 | Stop Loss: 1.29% | Take Profit: 1.04%
+[2025-05-05 20:28:38,140] [INFO] Dynamic take profit hit: NEO/USDT (1.23% >= 1.04%)
+[2025-05-05 20:28:38,741] [INFO] [CLOSE POSITION] NEO/USDT - Type: LONG | Entry Price: 5.671 | Exit Price: 5.677 | PnL: 1.06% | Amount: 3.53
+[2025-05-05 20:29:21,534] [INFO] Signal Alert: MKR/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 20:29:34,108] [INFO] Signal Alert: CRV/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 20:34:00,891] [INFO] Signal Alert: CRV/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 20:36:14,075] [INFO] Signal Alert: CRV/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 20:38:25,554] [INFO] Signal Alert: QNT/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 20:38:25,555] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 20:38:25,556] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 20:38:25,556] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 20:38:26,184] [INFO] Dynamic Risk Levels for QNT/USDT (Score: 60.0)
+[2025-05-05 20:38:26,185] [INFO] ATR: 0.767857 | Current Price: 89.220000
+[2025-05-05 20:38:26,185] [INFO] Stop Loss: 2.15% | Take Profit: 1.72%
+[2025-05-05 20:38:26,186] [WARNING] Order value still too low after adjustments! Notional: $17.84 < $20 minimum
+[2025-05-05 20:38:34,130] [INFO] Signal Alert: CRV/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 20:40:18,382] [INFO] Signal Alert: NEAR/USDT - Score: 70.0/100 - Trend: long
+[2025-05-05 20:40:18,383] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 20:40:18,383] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 20:40:18,383] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 20:40:18,899] [INFO] Dynamic Risk Levels for NEAR/USDT (Score: 70.0)
+[2025-05-05 20:40:18,899] [INFO] ATR: 0.016643 | Current Price: 2.347000
+[2025-05-05 20:40:18,900] [INFO] Stop Loss: 1.42% | Take Profit: 1.77%
+[2025-05-05 20:40:19,157] [INFO] Progressive trailing stop set for NEAR/USDT (LONG)
+[2025-05-05 20:40:19,158] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 20:40:19,158] [INFO] [OPEN POSITION] NEAR/USDT - Type: LONG | Price: 2.347 | Amount: 9.0 | Notional: $21.12 | Signal Score: 70.0 | Leverage: 10x | ATR: 0.016643 | Stop Loss: 1.42% | Take Profit: 1.77%
+[2025-05-05 20:40:44,123] [INFO] Signal Alert: QNT/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 20:40:44,123] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 20:40:44,124] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 20:40:44,124] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 20:40:44,626] [INFO] Dynamic Risk Levels for QNT/USDT (Score: 60.0)
+[2025-05-05 20:40:44,627] [INFO] ATR: 0.767857 | Current Price: 89.190000
+[2025-05-05 20:40:44,627] [INFO] Stop Loss: 2.15% | Take Profit: 1.72%
+[2025-05-05 20:40:44,627] [WARNING] Order value still too low after adjustments! Notional: $17.84 < $20 minimum
+[2025-05-05 21:12:11,220] [INFO] Signal Alert: MANA/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 21:12:11,221] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 21:12:11,221] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 21:12:11,221] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 21:12:11,787] [INFO] Dynamic Risk Levels for MANA/USDT (Score: 60.0)
+[2025-05-05 21:12:11,788] [INFO] ATR: 0.002207 | Current Price: 0.301000
+[2025-05-05 21:12:11,788] [INFO] Stop Loss: 1.83% | Take Profit: 1.47%
+[2025-05-05 21:12:11,789] [WARNING] Order value still too low after adjustments! Notional: $19.87 < $20 minimum
+[2025-05-05 21:13:07,929] [INFO] Dynamic take profit hit: NEAR/USDT (2.56% >= 1.77%)
+[2025-05-05 21:13:08,468] [INFO] [CLOSE POSITION] NEAR/USDT - Type: LONG | Entry Price: 2.347 | Exit Price: 2.353 | PnL: 2.56% | Amount: 9.0
+[2025-05-05 21:14:36,145] [INFO] Signal Alert: MANA/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 21:14:36,145] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 21:14:36,145] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 21:14:36,146] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 21:14:36,695] [INFO] Dynamic Risk Levels for MANA/USDT (Score: 60.0)
+[2025-05-05 21:14:36,696] [INFO] ATR: 0.002207 | Current Price: 0.301400
+[2025-05-05 21:14:36,696] [INFO] Stop Loss: 1.83% | Take Profit: 1.46%
+[2025-05-05 21:14:36,696] [WARNING] Order value still too low after adjustments! Notional: $19.89 < $20 minimum
+[2025-05-05 21:35:54,267] [INFO] Signal Alert: BSV/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 21:35:54,267] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 21:35:54,268] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 21:35:54,268] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 21:35:54,784] [INFO] Dynamic Risk Levels for BSV/USDT (Score: 60.0)
+[2025-05-05 21:35:54,785] [INFO] ATR: 0.197143 | Current Price: 37.480000
+[2025-05-05 21:35:54,785] [INFO] Stop Loss: 1.31% | Take Profit: 1.05%
+[2025-05-05 21:35:54,786] [WARNING] Order value still too low after adjustments! Notional: $18.74 < $20 minimum
+[2025-05-05 21:42:15,445] [INFO] Signal Alert: IP/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 21:42:15,446] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 21:42:15,446] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 21:42:15,446] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 21:42:15,966] [INFO] Dynamic Risk Levels for IP/USDT (Score: 60.0)
+[2025-05-05 21:42:15,967] [INFO] ATR: 0.023886 | Current Price: 3.780140
+[2025-05-05 21:42:15,967] [INFO] Stop Loss: 1.58% | Take Profit: 1.26%
+[2025-05-05 21:42:16,225] [INFO] Progressive trailing stop set for IP/USDT (LONG)
+[2025-05-05 21:42:16,226] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 21:42:16,226] [INFO] [OPEN POSITION] IP/USDT - Type: LONG | Price: 3.78014 | Amount: 5.3 | Notional: $20.03 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.023886 | Stop Loss: 1.58% | Take Profit: 1.26%
+[2025-05-05 21:43:45,354] [INFO] Dynamic take profit hit: IP/USDT (2.52% >= 1.26%)
+[2025-05-05 21:43:45,883] [INFO] [CLOSE POSITION] IP/USDT - Type: LONG | Entry Price: 3.78014 | Exit Price: 3.79055 | PnL: 2.75% | Amount: 5.3
+[2025-05-05 21:44:14,254] [INFO] Signal Alert: TAO/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 21:44:14,254] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 21:44:14,255] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 21:44:14,255] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 21:44:14,780] [INFO] Dynamic Risk Levels for TAO/USDT (Score: 65.0)
+[2025-05-05 21:44:14,780] [INFO] ATR: 3.309286 | Current Price: 375.600000
+[2025-05-05 21:44:14,781] [INFO] Stop Loss: 2.20% | Take Profit: 1.76%
+[2025-05-05 21:44:14,781] [WARNING] Order value still too low after adjustments! Notional: $19.91 < $20 minimum
+[2025-05-05 21:49:32,184] [INFO] Signal Alert: BSV/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 21:49:32,185] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 21:49:32,185] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 21:49:32,186] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 21:49:32,706] [INFO] Dynamic Risk Levels for BSV/USDT (Score: 60.0)
+[2025-05-05 21:49:32,706] [INFO] ATR: 0.187857 | Current Price: 37.560000
+[2025-05-05 21:49:32,707] [INFO] Stop Loss: 1.25% | Take Profit: 1.00%
+[2025-05-05 21:49:32,707] [WARNING] Order value still too low after adjustments! Notional: $18.78 < $20 minimum
+[2025-05-05 21:51:53,015] [INFO] Signal Alert: BSV/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 21:51:53,016] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 21:51:53,016] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 21:51:53,017] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 21:51:53,532] [INFO] Dynamic Risk Levels for BSV/USDT (Score: 60.0)
+[2025-05-05 21:51:53,532] [INFO] ATR: 0.190000 | Current Price: 37.600000
+[2025-05-05 21:51:53,532] [INFO] Stop Loss: 1.26% | Take Profit: 1.01%
+[2025-05-05 21:51:53,533] [WARNING] Order value still too low after adjustments! Notional: $18.80 < $20 minimum
+[2025-05-05 21:53:09,372] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 21:54:11,440] [INFO] Signal Alert: BSV/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 21:54:11,441] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 21:54:11,441] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 21:54:11,442] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 21:54:11,958] [INFO] Dynamic Risk Levels for BSV/USDT (Score: 60.0)
+[2025-05-05 21:54:11,959] [INFO] ATR: 0.190000 | Current Price: 37.550000
+[2025-05-05 21:54:11,959] [INFO] Stop Loss: 1.26% | Take Profit: 1.01%
+[2025-05-05 21:54:11,959] [WARNING] Order value still too low after adjustments! Notional: $18.77 < $20 minimum
+[2025-05-05 21:55:28,776] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 21:56:32,149] [INFO] Signal Alert: BSV/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 21:56:32,150] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 21:56:32,150] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 21:56:32,150] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 21:56:32,668] [INFO] Dynamic Risk Levels for BSV/USDT (Score: 60.0)
+[2025-05-05 21:56:32,668] [INFO] ATR: 0.190714 | Current Price: 37.570000
+[2025-05-05 21:56:32,669] [INFO] Stop Loss: 1.27% | Take Profit: 1.02%
+[2025-05-05 21:56:32,669] [WARNING] Order value still too low after adjustments! Notional: $18.79 < $20 minimum
+[2025-05-05 21:56:53,345] [INFO] Signal Alert: RUNE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 21:56:53,345] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 21:56:53,346] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 21:56:53,346] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 21:56:54,350] [INFO] Dynamic Risk Levels for RUNE/USDT (Score: 60.0)
+[2025-05-05 21:56:54,351] [INFO] ATR: 0.007643 | Current Price: 1.290000
+[2025-05-05 21:56:54,351] [INFO] Stop Loss: 1.48% | Take Profit: 1.18%
+[2025-05-05 21:56:54,610] [INFO] Progressive trailing stop set for RUNE/USDT (LONG)
+[2025-05-05 21:56:54,611] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 21:56:54,612] [INFO] [OPEN POSITION] RUNE/USDT - Type: LONG | Price: 1.29 | Amount: 16.0 | Notional: $20.64 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.007643 | Stop Loss: 1.48% | Take Profit: 1.18%
+[2025-05-05 21:57:37,157] [INFO] Dynamic take profit hit: RUNE/USDT (2.33% >= 1.18%)
+[2025-05-05 21:57:37,686] [INFO] [CLOSE POSITION] RUNE/USDT - Type: LONG | Entry Price: 1.29 | Exit Price: 1.294 | PnL: 3.10% | Amount: 16.0
+[2025-05-05 21:57:50,817] [INFO] Signal Alert: SUI/USDT - Score: 60.0/100 - Trend: None
+[2025-05-05 21:58:08,666] [INFO] Signal Alert: TAO/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 21:58:08,666] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 21:58:08,666] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 21:58:08,667] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 21:58:09,193] [INFO] Dynamic Risk Levels for TAO/USDT (Score: 60.0)
+[2025-05-05 21:58:09,193] [INFO] ATR: 3.090714 | Current Price: 375.920000
+[2025-05-05 21:58:09,193] [INFO] Stop Loss: 2.06% | Take Profit: 1.64%
+[2025-05-05 21:58:09,194] [WARNING] Order value still too low after adjustments! Notional: $19.92 < $20 minimum
+[2025-05-05 22:03:19,498] [INFO] Signal Alert: DEXE/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 22:03:19,499] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:03:19,500] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:03:19,500] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:03:20,058] [INFO] Dynamic Risk Levels for DEXE/USDT (Score: 65.0)
+[2025-05-05 22:03:20,059] [INFO] ATR: 0.083500 | Current Price: 14.876000
+[2025-05-05 22:03:20,059] [INFO] Stop Loss: 1.40% | Take Profit: 1.12%
+[2025-05-05 22:03:20,060] [WARNING] Order value still too low after adjustments! Notional: $19.93 < $20 minimum
+[2025-05-05 22:04:04,120] [INFO] Signal Alert: RUNE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 22:04:04,121] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:04:04,121] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:04:04,121] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:04:04,630] [INFO] Dynamic Risk Levels for RUNE/USDT (Score: 60.0)
+[2025-05-05 22:04:04,631] [INFO] ATR: 0.009000 | Current Price: 1.298000
+[2025-05-05 22:04:04,631] [INFO] Stop Loss: 1.73% | Take Profit: 1.39%
+[2025-05-05 22:04:04,632] [WARNING] Order value still too low after adjustments! Notional: $19.47 < $20 minimum
+[2025-05-05 22:05:39,541] [INFO] Signal Alert: DEXE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 22:05:39,542] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:05:39,542] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:05:39,542] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:05:40,062] [INFO] Dynamic Risk Levels for DEXE/USDT (Score: 60.0)
+[2025-05-05 22:05:40,062] [INFO] ATR: 0.084286 | Current Price: 14.958000
+[2025-05-05 22:05:40,063] [INFO] Stop Loss: 1.41% | Take Profit: 1.13%
+[2025-05-05 22:05:40,320] [INFO] Progressive trailing stop set for DEXE/USDT (LONG)
+[2025-05-05 22:05:40,322] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 22:05:40,322] [INFO] [OPEN POSITION] DEXE/USDT - Type: LONG | Price: 14.958 | Amount: 1.34 | Notional: $20.04 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.084286 | Stop Loss: 1.41% | Take Profit: 1.13%
+[2025-05-05 22:06:21,461] [INFO] Signal Alert: RUNE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 22:06:21,461] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:06:21,462] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:06:21,462] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:06:21,997] [INFO] Dynamic Risk Levels for RUNE/USDT (Score: 60.0)
+[2025-05-05 22:06:21,997] [INFO] ATR: 0.009000 | Current Price: 1.295000
+[2025-05-05 22:06:21,998] [INFO] Stop Loss: 1.74% | Take Profit: 1.39%
+[2025-05-05 22:06:21,999] [WARNING] Order value still too low after adjustments! Notional: $19.42 < $20 minimum
+[2025-05-05 22:08:42,001] [INFO] Signal Alert: RUNE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 22:08:42,002] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:08:42,002] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:08:42,002] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:08:42,533] [INFO] Dynamic Risk Levels for RUNE/USDT (Score: 60.0)
+[2025-05-05 22:08:42,533] [INFO] ATR: 0.009000 | Current Price: 1.297000
+[2025-05-05 22:08:42,534] [INFO] Stop Loss: 1.73% | Take Profit: 1.39%
+[2025-05-05 22:08:42,534] [WARNING] Order value still too low after adjustments! Notional: $19.45 < $20 minimum
+[2025-05-05 22:11:00,721] [INFO] Signal Alert: RUNE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 22:11:00,723] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:11:00,723] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:11:00,724] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:11:01,233] [INFO] Dynamic Risk Levels for RUNE/USDT (Score: 60.0)
+[2025-05-05 22:11:01,233] [INFO] ATR: 0.009000 | Current Price: 1.293000
+[2025-05-05 22:11:01,233] [INFO] Stop Loss: 1.74% | Take Profit: 1.39%
+[2025-05-05 22:11:01,234] [WARNING] Order value still too low after adjustments! Notional: $19.39 < $20 minimum
+[2025-05-05 22:11:44,361] [INFO] Dynamic stop loss hit: DEXE/USDT (-3.08% <= -1.41%)
+[2025-05-05 22:11:44,874] [INFO] [CLOSE POSITION] DEXE/USDT - Type: LONG | Entry Price: 14.958 | Exit Price: 14.913 | PnL: -3.01% | Amount: 1.34
+[2025-05-05 22:12:17,458] [INFO] Signal Alert: KAS/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 22:12:17,459] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:12:17,459] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:12:17,460] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:12:17,970] [INFO] Dynamic Risk Levels for KAS/USDT (Score: 60.0)
+[2025-05-05 22:12:17,970] [INFO] ATR: 0.000771 | Current Price: 0.095250
+[2025-05-05 22:12:17,970] [INFO] Stop Loss: 2.02% | Take Profit: 1.62%
+[2025-05-05 22:12:18,226] [INFO] Progressive trailing stop set for KAS/USDT (LONG)
+[2025-05-05 22:12:18,227] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 22:12:18,227] [INFO] [OPEN POSITION] KAS/USDT - Type: LONG | Price: 0.09525 | Amount: 210.0 | Notional: $20.00 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.000771 | Stop Loss: 2.02% | Take Profit: 1.62%
+[2025-05-05 22:13:21,691] [INFO] Signal Alert: RUNE/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 22:13:21,692] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:13:21,692] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:13:21,692] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:13:22,243] [INFO] Dynamic Risk Levels for RUNE/USDT (Score: 60.0)
+[2025-05-05 22:13:22,243] [INFO] ATR: 0.009000 | Current Price: 1.294000
+[2025-05-05 22:13:22,244] [INFO] Stop Loss: 1.74% | Take Profit: 1.39%
+[2025-05-05 22:13:22,244] [WARNING] Order value still too low after adjustments! Notional: $19.41 < $20 minimum
+[2025-05-05 22:16:21,033] [INFO] Dynamic take profit hit: KAS/USDT (5.46% >= 1.62%)
+[2025-05-05 22:16:21,558] [INFO] [CLOSE POSITION] KAS/USDT - Type: LONG | Entry Price: 0.09525 | Exit Price: 0.09577 | PnL: 5.46% | Amount: 210.0
+[2025-05-05 22:23:48,895] [INFO] Signal Alert: KAS/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 22:23:48,895] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:23:48,896] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:23:48,896] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:23:49,450] [INFO] Dynamic Risk Levels for KAS/USDT (Score: 60.0)
+[2025-05-05 22:23:49,451] [INFO] ATR: 0.000804 | Current Price: 0.095720
+[2025-05-05 22:23:49,451] [INFO] Stop Loss: 2.10% | Take Profit: 1.68%
+[2025-05-05 22:23:49,825] [INFO] Progressive trailing stop set for KAS/USDT (LONG)
+[2025-05-05 22:23:49,826] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 22:23:49,826] [INFO] [OPEN POSITION] KAS/USDT - Type: LONG | Price: 0.09572 | Amount: 209.0 | Notional: $20.01 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.000804 | Stop Loss: 2.10% | Take Profit: 1.68%
+[2025-05-05 22:27:56,626] [INFO] Dynamic take profit hit: KAS/USDT (6.90% >= 1.68%)
+[2025-05-05 22:27:57,148] [INFO] [CLOSE POSITION] KAS/USDT - Type: LONG | Entry Price: 0.09572 | Exit Price: 0.0964 | PnL: 7.10% | Amount: 209.0
+[2025-05-05 22:35:19,368] [INFO] Signal Alert: KAS/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 22:35:19,369] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:35:19,369] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:35:19,370] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:35:19,886] [INFO] Dynamic Risk Levels for KAS/USDT (Score: 60.0)
+[2025-05-05 22:35:19,886] [INFO] ATR: 0.000836 | Current Price: 0.097120
+[2025-05-05 22:35:19,887] [INFO] Stop Loss: 2.15% | Take Profit: 1.72%
+[2025-05-05 22:35:20,151] [INFO] Progressive trailing stop set for KAS/USDT (LONG)
+[2025-05-05 22:35:20,153] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 22:35:20,153] [INFO] [OPEN POSITION] KAS/USDT - Type: LONG | Price: 0.09712 | Amount: 206.0 | Notional: $20.01 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.000836 | Stop Loss: 2.15% | Take Profit: 1.72%
+[2025-05-05 22:39:26,429] [INFO] Dynamic take profit hit: KAS/USDT (2.37% >= 1.72%)
+[2025-05-05 22:39:26,954] [INFO] [CLOSE POSITION] KAS/USDT - Type: LONG | Entry Price: 0.09712 | Exit Price: 0.09735 | PnL: 2.37% | Amount: 206.0
+[2025-05-05 22:44:46,885] [INFO] Signal Alert: KAS/USDT - Score: 60.0/100 - Trend: long
+[2025-05-05 22:44:46,885] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:44:46,886] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:44:46,886] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:44:47,402] [INFO] Dynamic Risk Levels for KAS/USDT (Score: 60.0)
+[2025-05-05 22:44:47,403] [INFO] ATR: 0.000883 | Current Price: 0.096290
+[2025-05-05 22:44:47,403] [INFO] Stop Loss: 2.29% | Take Profit: 1.83%
+[2025-05-05 22:44:47,655] [INFO] Progressive trailing stop set for KAS/USDT (LONG)
+[2025-05-05 22:44:47,656] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 22:44:47,657] [INFO] [OPEN POSITION] KAS/USDT - Type: LONG | Price: 0.09629 | Amount: 208.0 | Notional: $20.03 | Signal Score: 60.0 | Leverage: 10x | ATR: 0.000883 | Stop Loss: 2.29% | Take Profit: 1.83%
+[2025-05-05 22:46:46,201] [INFO] Dynamic stop loss hit: KAS/USDT (-2.70% <= -2.29%)
+[2025-05-05 22:46:46,706] [INFO] [CLOSE POSITION] KAS/USDT - Type: LONG | Entry Price: 0.09629 | Exit Price: 0.09603 | PnL: -2.70% | Amount: 208.0
+[2025-05-05 22:55:29,739] [INFO] Signal Alert: DEXE/USDT - Score: 65.0/100 - Trend: long
+[2025-05-05 22:55:29,739] [INFO] Balance - Total: $7.63 | Available: $7.63
+[2025-05-05 22:55:29,740] [INFO] Position notional too small: $1.26 * 10x = $12.60 < $20
+[2025-05-05 22:55:29,740] [INFO] Increased position amount to minimum: $2.00
+[2025-05-05 22:55:30,350] [INFO] Dynamic Risk Levels for DEXE/USDT (Score: 65.0)
+[2025-05-05 22:55:30,351] [INFO] ATR: 0.078643 | Current Price: 15.048000
+[2025-05-05 22:55:30,352] [INFO] Stop Loss: 1.31% | Take Profit: 1.05%
+[2025-05-05 22:55:30,652] [INFO] Progressive trailing stop set for DEXE/USDT (LONG)
+[2025-05-05 22:55:30,652] [INFO] Activation: 1.0% raw PnL | First Target: 1.5% | Stop step: 0.5%
+[2025-05-05 22:55:30,653] [INFO] [OPEN POSITION] DEXE/USDT - Type: LONG | Price: 15.048 | Amount: 1.33 | Notional: $20.01 | Signal Score: 65.0 | Leverage: 10x | ATR: 0.078643 | Stop Loss: 1.31% | Take Profit: 1.05%
+[2025-05-05 22:59:22,323] [INFO] Dynamic stop loss hit: DEXE/USDT (-2.66% <= -1.31%)
+[2025-05-05 22:59:22,841] [INFO] [CLOSE POSITION] DEXE/USDT - Type: LONG | Entry Price: 15.048 | Exit Price: 15.008 | PnL: -2.66% | Amount: 1.33
+[2025-05-05 23:10:09,310] [ERROR] Error calculating signal score for LAYER/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=LAYERUSDT
+[2025-05-05 23:10:09,346] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 501, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: ('Connection aborted.', ConnectionResetError(10054, 'Varolan bir bağlantı uzaktaki bir ana bilgisayar tarafından zorla kapatıldı', None, 10054, None))
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 226, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 13, in calculate_multi_timeframe_score
+    df_15m = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='15m', limit=50),
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 600, in fetch
+    raise NetworkError(details) from e
+ccxt.base.errors.NetworkError: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=LAYERUSDT
+
+[2025-05-05 23:10:09,386] [ERROR] OHLCV data fetch error (RSR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=RSRUSDT
+[2025-05-05 23:10:09,454] [ERROR] OHLCV data fetch error (RUNE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=RUNEUSDT
+[2025-05-05 23:10:09,553] [ERROR] OHLCV data fetch error (EGLD/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=EGLDUSDT
+[2025-05-05 23:10:09,653] [ERROR] OHLCV data fetch error (NEO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=NEOUSDT
+[2025-05-05 23:10:09,754] [ERROR] OHLCV data fetch error (COMP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=COMPUSDT
+[2025-05-05 23:10:09,855] [ERROR] OHLCV data fetch error (AXS/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=AXSUSDT
+[2025-05-05 23:10:09,956] [ERROR] OHLCV data fetch error (STRK/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=STRKUSDT
+[2025-05-05 23:10:10,058] [ERROR] OHLCV data fetch error (CFX/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=CFXUSDT
+[2025-05-05 23:10:10,168] [ERROR] OHLCV data fetch error (CHZ/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=CHZUSDT
+[2025-05-05 23:10:10,259] [ERROR] OHLCV data fetch error (VIRTUAL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=VIRTUALUSDT
+[2025-05-05 23:10:10,362] [ERROR] OHLCV data fetch error (AR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ARUSDT
+[2025-05-05 23:10:10,461] [ERROR] OHLCV data fetch error (AERO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=AEROUSDT
+[2025-05-05 23:10:10,563] [ERROR] OHLCV data fetch error (APE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=APEUSDT
+[2025-05-06 00:30:51,189] [WARNING] Bot stopped by user

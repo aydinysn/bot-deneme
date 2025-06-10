@@ -1,0 +1,1857 @@
+[2025-06-01 16:07:40,326] [INFO] Logging started - Log file: logs\2025-06-01.txt
+[2025-06-01 16:07:40,327] [INFO] Trading Bot Started
+[2025-06-01 16:07:40,334] [INFO] Loaded 97 coins from coins.json
+[2025-06-01 16:07:40,335] [INFO] Trading 97 coins with 10x leverage
+[2025-06-01 16:07:45,889] [INFO] API connection successful
+[2025-06-01 16:07:46,163] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 16:07:46,164] [INFO] Setting leverage to 10x for all coins...
+[2025-06-01 16:08:15,595] [INFO] Leverage setting completed: 97 successful, 0 failed
+[2025-06-01 16:12:18,080] [INFO] Signal Alert: DEXE/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 16:12:18,082] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 16:12:18,083] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 16:12:18,083] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 16:12:18,608] [INFO] Dynamic Risk Levels for DEXE/USDT (Score: 65.0)
+[2025-06-01 16:12:18,608] [INFO] ATR: 0.073286 | Current Price: 14.362000
+[2025-06-01 16:12:18,609] [INFO] Stop Loss: 10.21% | Take Profit: 7.65%
+[2025-06-01 16:12:18,609] [WARNING] Order value still too low after adjustments! Notional: $19.96 < $20 minimum
+[2025-06-01 16:24:53,126] [ERROR] OHLCV data fetch error (XRP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=XRPUSDT
+[2025-06-01 16:25:21,285] [ERROR] Error calculating signal score for AVAX/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=AVAXUSDT
+[2025-06-01 16:25:21,681] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=AVAXUSDT
+
+[2025-06-01 16:27:07,497] [ERROR] OHLCV data fetch error (CRV/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=CRVUSDT
+[2025-06-01 16:38:48,988] [ERROR] Error calculating signal score for WIF/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=WIFUSDT
+[2025-06-01 16:38:48,999] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 13, in calculate_multi_timeframe_score
+    df_15m = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='15m', limit=50),
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=WIFUSDT
+
+[2025-06-01 16:41:03,856] [ERROR] Error calculating signal score for SUI/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=SUIUSDT
+[2025-06-01 16:41:03,865] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 29, in calculate_multi_timeframe_score
+    df_4h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='4h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=SUIUSDT
+
+[2025-06-01 16:41:44,175] [ERROR] Error calculating signal score for TAO/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=TAOUSDT
+[2025-06-01 16:41:44,180] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 13, in calculate_multi_timeframe_score
+    df_15m = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='15m', limit=50),
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=TAOUSDT
+
+[2025-06-01 16:42:22,597] [ERROR] Error calculating signal score for TRUMP/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=TRUMPUSDT
+[2025-06-01 16:42:22,601] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 13, in calculate_multi_timeframe_score
+    df_15m = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='15m', limit=50),
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=TRUMPUSDT
+
+[2025-06-01 16:42:39,523] [ERROR] OHLCV data fetch error (POL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=POLUSDT
+[2025-06-01 16:43:05,373] [ERROR] OHLCV data fetch error (TIA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=TIAUSDT
+[2025-06-01 16:58:12,489] [ERROR] Error calculating signal score for IOTA/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=IOTAUSDT
+[2025-06-01 16:58:12,494] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=IOTAUSDT
+
+[2025-06-01 16:58:12,496] [ERROR] OHLCV data fetch error (KAIA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=KAIAUSDT
+[2025-06-01 16:58:12,597] [ERROR] OHLCV data fetch error (WAL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=WALUSDT
+[2025-06-01 16:58:12,697] [ERROR] OHLCV data fetch error (CAKE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=CAKEUSDT
+[2025-06-01 16:58:12,798] [ERROR] OHLCV data fetch error (BSV/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=BSVUSDT
+[2025-06-01 16:58:12,899] [ERROR] OHLCV data fetch error (FLOW/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=FLOWUSDT
+[2025-06-01 16:58:13,000] [ERROR] OHLCV data fetch error (RAY/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=RAYUSDT
+[2025-06-01 16:58:13,100] [ERROR] OHLCV data fetch error (JTO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=JTOUSDT
+[2025-06-01 16:58:13,201] [ERROR] OHLCV data fetch error (XTZ/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=XTZUSDT
+[2025-06-01 16:58:13,301] [ERROR] OHLCV data fetch error (PENDLE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=PENDLEUSDT
+[2025-06-01 16:58:13,400] [ERROR] OHLCV data fetch error (ZEC/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ZECUSDT
+[2025-06-01 16:58:13,501] [ERROR] OHLCV data fetch error (MANA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=MANAUSDT
+[2025-06-01 16:58:13,612] [ERROR] OHLCV data fetch error (SPX/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SPXUSDT
+[2025-06-01 16:58:13,705] [ERROR] OHLCV data fetch error (PYTH/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=PYTHUSDT
+[2025-06-01 16:58:13,806] [ERROR] OHLCV data fetch error (ENS/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ENSUSDT
+[2025-06-01 16:58:13,907] [ERROR] OHLCV data fetch error (KAVA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=KAVAUSDT
+[2025-06-01 16:58:14,004] [ERROR] OHLCV data fetch error (WIF/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=WIFUSDT
+[2025-06-01 16:58:14,105] [ERROR] OHLCV data fetch error (DYDX/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=DYDXUSDT
+[2025-06-01 16:58:14,205] [ERROR] OHLCV data fetch error (BERA/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=BERAUSDT
+[2025-06-01 16:58:14,309] [ERROR] OHLCV data fetch error (DOGE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=DOGEUSDT
+[2025-06-01 16:58:14,410] [ERROR] OHLCV data fetch error (GRASS/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=GRASSUSDT
+[2025-06-01 16:58:14,510] [ERROR] OHLCV data fetch error (LAYER/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=LAYERUSDT
+[2025-06-01 16:58:14,610] [ERROR] OHLCV data fetch error (RSR/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=RSRUSDT
+[2025-06-01 16:58:14,711] [ERROR] OHLCV data fetch error (RUNE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=RUNEUSDT
+[2025-06-01 16:58:14,810] [ERROR] OHLCV data fetch error (EGLD/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=EGLDUSDT
+[2025-06-01 16:58:14,913] [ERROR] OHLCV data fetch error (NEO/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=NEOUSDT
+[2025-06-01 16:58:15,010] [ERROR] OHLCV data fetch error (COMP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=COMPUSDT
+[2025-06-01 16:58:15,112] [ERROR] OHLCV data fetch error (AXS/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=AXSUSDT
+[2025-06-01 16:58:15,213] [ERROR] OHLCV data fetch error (STRK/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=STRKUSDT
+[2025-06-01 16:59:45,226] [ERROR] OHLCV data fetch error (ICP/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=ICPUSDT
+[2025-06-01 17:03:48,823] [ERROR] Error calculating signal score for WLD/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=WLDUSDT
+[2025-06-01 17:03:48,834] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 13, in calculate_multi_timeframe_score
+    df_15m = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='15m', limit=50),
+                          ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=50&symbol=WLDUSDT
+
+[2025-06-01 17:07:11,831] [ERROR] Error calculating signal score for TAO/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=TAOUSDT
+[2025-06-01 17:07:11,837] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=TAOUSDT
+
+[2025-06-01 17:07:50,122] [ERROR] Error calculating signal score for MKR/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=MKRUSDT
+[2025-06-01 17:07:50,128] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=MKRUSDT
+
+[2025-06-01 17:14:47,051] [INFO] Signal Alert: KAVA/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 17:14:47,051] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 17:14:47,052] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 17:14:47,053] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 17:14:47,584] [INFO] Dynamic Risk Levels for KAVA/USDT (Score: 65.0)
+[2025-06-01 17:14:47,584] [INFO] ATR: 0.002143 | Current Price: 0.421500
+[2025-06-01 17:14:47,585] [INFO] Stop Loss: 10.17% | Take Profit: 7.63%
+[2025-06-01 17:14:47,586] [WARNING] Order value still too low after adjustments! Notional: $19.98 < $20 minimum
+[2025-06-01 17:20:38,942] [ERROR] OHLCV data fetch error (RUNE/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=RUNEUSDT
+[2025-06-01 17:24:13,194] [ERROR] Error calculating signal score for EGLD/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=EGLDUSDT
+[2025-06-01 17:24:13,203] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=EGLDUSDT
+
+[2025-06-01 17:27:04,889] [ERROR] Error calculating signal score for STX/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=STXUSDT
+[2025-06-01 17:27:04,895] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=STXUSDT
+
+[2025-06-01 17:29:40,660] [ERROR] Error calculating signal score for LTC/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=LTCUSDT
+[2025-06-01 17:29:40,670] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=LTCUSDT
+
+[2025-06-01 17:34:30,165] [ERROR] Error calculating signal score for UNI/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=UNIUSDT
+[2025-06-01 17:34:30,169] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 29, in calculate_multi_timeframe_score
+    df_4h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='4h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=UNIUSDT
+
+[2025-06-01 17:37:37,875] [ERROR] OHLCV data fetch error (CFX/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=CFXUSDT
+[2025-06-01 17:43:38,815] [ERROR] Error calculating signal score for XTZ/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=XTZUSDT
+[2025-06-01 17:43:38,826] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 21, in calculate_multi_timeframe_score
+    df_1h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='1h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=1h&limit=50&symbol=XTZUSDT
+
+[2025-06-01 17:49:40,440] [ERROR] OHLCV data fetch error (SOL/USDT): binance GET https://fapi.binance.com/fapi/v1/klines?interval=15m&limit=100&symbol=SOLUSDT
+[2025-06-01 17:50:40,613] [ERROR] Error calculating signal score for APT/USDT: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=APTUSDT
+[2025-06-01 17:50:40,623] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+  File "C:\Python313\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ~~~~~~~~~~~~~~~~~^^
+  File "C:\Python313\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\socket.py", line 719, in readinto
+    return self._sock.recv_into(b)
+           ~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\Python313\Lib\ssl.py", line 1304, in recv_into
+    return self.read(nbytes, buffer)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Python313\Lib\ssl.py", line 1138, in read
+    return self._sslobj.read(len, buffer)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 486, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 547, in fetch
+    response = self.session.request(
+        method,
+    ...<5 lines>...
+        verify=self.verify and self.validateServerSsl
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\adapters.py", line 532, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='fapi.binance.com', port=443): Read timed out. (read timeout=10.0)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 227, in calculate_total_signal_score
+    mtf_score, trend_alignment, all_aligned = calculate_multi_timeframe_score(exchange, symbol)
+                                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "c:\Users\yasin\Desktop\BinanceBot\strategies\multi_timeframe.py", line 29, in calculate_multi_timeframe_score
+    df_4h = pd.DataFrame(exchange.fetch_ohlcv(symbol, timeframe='4h', limit=50),
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 4687, in fetch_ohlcv
+    response = self.fapiPublicGetKlines(self.extend(request, params))
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 577, in fetch
+    raise RequestTimeout(details) from e
+ccxt.base.errors.RequestTimeout: binance GET https://fapi.binance.com/fapi/v1/klines?interval=4h&limit=50&symbol=APTUSDT
+
+[2025-06-01 18:29:49,042] [INFO] Signal Alert: FARTCOIN/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 18:29:49,043] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 18:29:49,044] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 18:29:49,045] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 18:29:50,065] [INFO] Dynamic Risk Levels for FARTCOIN/USDT (Score: 65.0)
+[2025-06-01 18:29:50,066] [INFO] ATR: 0.012321 | Current Price: 1.122300
+[2025-06-01 18:29:50,066] [INFO] Stop Loss: 21.96% | Take Profit: 16.47%
+[2025-06-01 18:29:50,067] [WARNING] Order value still too low after adjustments! Notional: $19.98 < $20 minimum
+[2025-06-01 18:58:36,344] [INFO] Signal Alert: AAVE/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 18:58:36,345] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 18:58:36,346] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 18:58:36,346] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 18:58:36,867] [INFO] Dynamic Risk Levels for AAVE/USDT (Score: 65.0)
+[2025-06-01 18:58:36,867] [INFO] ATR: 1.505000 | Current Price: 249.980000
+[2025-06-01 18:58:36,868] [INFO] Stop Loss: 12.04% | Take Profit: 9.03%
+[2025-06-01 18:58:37,121] [ERROR] Order placement error for AAVE/USDT: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action, request ip: 78.163.249.155"}
+[2025-06-01 18:58:37,143] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 396, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11451, in handle_errors
+    self.throw_exactly_matched_exception(self.exceptions['exact'], error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.AuthenticationError: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action, request ip: 78.163.249.155"}
+
+[2025-06-01 19:10:44,884] [INFO] Signal Alert: RSR/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 19:10:44,885] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 19:10:44,886] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 19:10:44,886] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 19:10:45,417] [INFO] Dynamic Risk Levels for RSR/USDT (Score: 65.0)
+[2025-06-01 19:10:45,417] [INFO] ATR: 0.000051 | Current Price: 0.007324
+[2025-06-01 19:10:45,432] [INFO] Stop Loss: 13.87% | Take Profit: 10.40%
+[2025-06-01 19:10:45,689] [ERROR] Order placement error for RSR/USDT: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action, request ip: 78.163.249.155"}
+[2025-06-01 19:10:45,697] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 396, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11451, in handle_errors
+    self.throw_exactly_matched_exception(self.exceptions['exact'], error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.AuthenticationError: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action, request ip: 78.163.249.155"}
+
+[2025-06-01 19:11:48,696] [INFO] Signal Alert: UNI/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 19:11:48,697] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 19:11:48,697] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 19:11:48,697] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 19:11:49,221] [INFO] Dynamic Risk Levels for UNI/USDT (Score: 65.0)
+[2025-06-01 19:11:49,222] [INFO] ATR: 0.046071 | Current Price: 6.262000
+[2025-06-01 19:11:49,222] [INFO] Stop Loss: 14.71% | Take Profit: 11.04%
+[2025-06-01 19:11:49,222] [WARNING] Order value still too low after adjustments! Notional: $18.79 < $20 minimum
+[2025-06-01 19:11:53,415] [INFO] Signal Alert: ICP/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 19:11:53,415] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 19:11:53,416] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 19:11:53,417] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 19:11:53,937] [INFO] Dynamic Risk Levels for ICP/USDT (Score: 65.0)
+[2025-06-01 19:11:53,937] [INFO] ATR: 0.028357 | Current Price: 4.980000
+[2025-06-01 19:11:53,952] [INFO] Stop Loss: 11.39% | Take Profit: 8.54%
+[2025-06-01 19:11:53,954] [WARNING] Order value still too low after adjustments! Notional: $19.92 < $20 minimum
+[2025-06-01 19:12:16,185] [INFO] Signal Alert: IP/USDT - Score: 70.0/100 - Trend: long
+[2025-06-01 19:12:16,185] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 19:12:16,186] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 19:12:16,186] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 19:12:16,716] [INFO] Dynamic Risk Levels for IP/USDT (Score: 70.0)
+[2025-06-01 19:12:16,717] [INFO] ATR: 0.022599 | Current Price: 4.124100
+[2025-06-01 19:12:16,718] [INFO] Stop Loss: 8.22% | Take Profit: 13.70%
+[2025-06-01 19:12:16,719] [WARNING] Order value still too low after adjustments! Notional: $19.80 < $20 minimum
+[2025-06-01 19:12:59,952] [INFO] Signal Alert: RSR/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 19:12:59,953] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 19:12:59,954] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 19:12:59,955] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 19:13:00,473] [INFO] Dynamic Risk Levels for RSR/USDT (Score: 65.0)
+[2025-06-01 19:13:00,474] [INFO] ATR: 0.000051 | Current Price: 0.007311
+[2025-06-01 19:13:00,474] [INFO] Stop Loss: 13.89% | Take Profit: 10.42%
+[2025-06-01 19:13:00,732] [ERROR] Order placement error for RSR/USDT: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action, request ip: 78.163.249.155"}
+[2025-06-01 19:13:00,738] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 396, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11451, in handle_errors
+    self.throw_exactly_matched_exception(self.exceptions['exact'], error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.AuthenticationError: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action, request ip: 78.163.249.155"}
+
+[2025-06-01 19:14:03,518] [INFO] Signal Alert: UNI/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 19:14:03,518] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 19:14:03,519] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 19:14:03,519] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 19:14:04,044] [INFO] Dynamic Risk Levels for UNI/USDT (Score: 65.0)
+[2025-06-01 19:14:04,045] [INFO] ATR: 0.046071 | Current Price: 6.275000
+[2025-06-01 19:14:04,045] [INFO] Stop Loss: 14.68% | Take Profit: 11.01%
+[2025-06-01 19:14:04,046] [WARNING] Order value still too low after adjustments! Notional: $18.83 < $20 minimum
+[2025-06-01 19:14:08,253] [INFO] Signal Alert: ICP/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 19:14:08,253] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 19:14:08,253] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 19:14:08,254] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 19:14:08,762] [INFO] Dynamic Risk Levels for ICP/USDT (Score: 65.0)
+[2025-06-01 19:14:08,763] [INFO] ATR: 0.028429 | Current Price: 4.981000
+[2025-06-01 19:14:08,763] [INFO] Stop Loss: 11.41% | Take Profit: 8.56%
+[2025-06-01 19:14:08,763] [WARNING] Order value still too low after adjustments! Notional: $19.92 < $20 minimum
+[2025-06-01 19:14:31,045] [INFO] Signal Alert: IP/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 19:14:31,046] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 19:14:31,046] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 19:14:31,047] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 19:14:31,569] [INFO] Dynamic Risk Levels for IP/USDT (Score: 65.0)
+[2025-06-01 19:14:31,570] [INFO] ATR: 0.023143 | Current Price: 4.126990
+[2025-06-01 19:14:31,571] [INFO] Stop Loss: 11.22% | Take Profit: 8.41%
+[2025-06-01 19:14:31,571] [WARNING] Order value still too low after adjustments! Notional: $19.81 < $20 minimum
+[2025-06-01 19:19:40,567] [INFO] Signal Alert: RSR/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 19:19:40,568] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 19:19:40,568] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 19:19:40,569] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 19:19:41,094] [INFO] Dynamic Risk Levels for RSR/USDT (Score: 65.0)
+[2025-06-01 19:19:41,095] [INFO] ATR: 0.000052 | Current Price: 0.007312
+[2025-06-01 19:19:41,095] [INFO] Stop Loss: 14.11% | Take Profit: 10.58%
+[2025-06-01 19:19:41,096] [WARNING] Order value still too low after adjustments! Notional: $20.00 < $20 minimum
+[2025-06-01 20:29:13,687] [INFO] Signal Alert: BERA/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 20:29:13,689] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 20:29:13,689] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 20:29:13,690] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 20:29:14,227] [INFO] Dynamic Risk Levels for BERA/USDT (Score: 65.0)
+[2025-06-01 20:29:14,228] [INFO] ATR: 0.043286 | Current Price: 2.530000
+[2025-06-01 20:29:14,228] [INFO] Stop Loss: 34.22% | Take Profit: 25.66%
+[2025-06-01 20:29:14,229] [WARNING] Order value still too low after adjustments! Notional: $19.99 < $20 minimum
+[2025-06-01 20:59:58,561] [INFO] Signal Alert: XMR/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 20:59:58,562] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 20:59:58,562] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 20:59:58,563] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 20:59:59,082] [INFO] Dynamic Risk Levels for XMR/USDT (Score: 65.0)
+[2025-06-01 20:59:59,083] [INFO] ATR: 1.884286 | Current Price: 336.670000
+[2025-06-01 20:59:59,083] [INFO] Stop Loss: 11.19% | Take Profit: 8.40%
+[2025-06-01 20:59:59,084] [WARNING] Order value still too low after adjustments! Notional: $19.86 < $20 minimum
+[2025-06-01 23:29:21,549] [INFO] Signal Alert: KAS/USDT - Score: 65.0/100 - Trend: long
+[2025-06-01 23:29:21,550] [INFO] Balance - Total: $5.42 | Available: $5.42
+[2025-06-01 23:29:21,551] [INFO] Position notional too small: $1.68 * 10x = $16.80 < $20
+[2025-06-01 23:29:21,551] [INFO] Increased position amount to minimum: $2.00
+[2025-06-01 23:29:22,085] [INFO] Dynamic Risk Levels for KAS/USDT (Score: 65.0)
+[2025-06-01 23:29:22,086] [INFO] ATR: 0.000489 | Current Price: 0.086240
+[2025-06-01 23:29:22,086] [INFO] Stop Loss: 11.33% | Take Profit: 8.50%
+[2025-06-01 23:29:22,347] [ERROR] Order placement error for KAS/USDT: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action, request ip: 78.163.249.155"}
+[2025-06-01 23:29:22,353] [ERROR] Traceback (most recent call last):
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 573, in fetch
+    response.raise_for_status()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 401 Client Error: Unauthorized for url: https://fapi.binance.com/fapi/v1/order
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Users\yasin\Desktop\BinanceBot\main.py", line 396, in place_order
+    order = exchange.create_market_order(
+        symbol=symbol,
+    ...<2 lines>...
+        params=params
+    )
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 5433, in create_market_order
+    return self.create_order(symbol, 'market', side, amount, price, params)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 6200, in create_order
+    response = self.fapiPrivatePostOrder(request)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\types.py", line 35, in unbound_method
+    return _self.request(self.path, self.api, self.method, params, config=self.config)
+           ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11483, in request
+    response = self.fetch2(path, api, method, params, headers, body, config)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4355, in fetch2
+    raise e
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4345, in fetch2
+    return self.fetch(request['url'], request['method'], request['headers'], request['body'])
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 589, in fetch
+    skip_further_error_handling = self.handle_errors(http_status_code, http_status_text, url, method, headers, http_response, json_response, request_headers, request_body)
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\binance.py", line 11451, in handle_errors
+    self.throw_exactly_matched_exception(self.exceptions['exact'], error, feedback)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\yasin\AppData\Roaming\Python\Python313\site-packages\ccxt\base\exchange.py", line 4748, in throw_exactly_matched_exception
+    raise exact[string](message)
+ccxt.base.errors.AuthenticationError: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action, request ip: 78.163.249.155"}
+
+[2025-06-01 23:33:18,200] [WARNING] Bot stopped by user
+[2025-06-01 23:33:25,979] [INFO] Logging started - Log file: logs\2025-06-01.txt
+[2025-06-01 23:33:25,980] [INFO] Trading Bot Started
+[2025-06-01 23:33:25,981] [INFO] Loaded 97 coins from coins.json
+[2025-06-01 23:33:25,981] [INFO] Trading 97 coins with 10x leverage
+[2025-06-01 23:33:26,579] [ERROR] Exchange initialization error: binance {"code":-2015,"msg":"Invalid API-key, IP, or permissions for action."}

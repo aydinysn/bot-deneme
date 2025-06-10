@@ -1,0 +1,17 @@
+[2025-05-06 00:30:57,226] [INFO] Logging started - Log file: logs\2025-05-06.txt
+[2025-05-06 00:30:57,227] [INFO] Trading Bot Started
+[2025-05-06 00:30:57,238] [INFO] Loaded 98 coins from coins.json
+[2025-05-06 00:30:57,239] [INFO] Trading 98 coins with 10x leverage
+[2025-05-06 00:31:02,093] [INFO] API connection successful
+[2025-05-06 00:31:02,351] [INFO] Balance - Total: $7.18 | Available: $7.18
+[2025-05-06 00:31:02,352] [INFO] Setting leverage to 10x for all coins...
+[2025-05-06 00:31:27,330] [INFO] Leverage setting completed: 98 successful, 0 failed
+[2025-05-06 01:06:54,979] [WARNING] Bot stopped by user
+[2025-05-06 01:07:02,481] [INFO] Logging started - Log file: logs\2025-05-06.txt
+[2025-05-06 01:07:02,482] [INFO] Trading Bot Started
+[2025-05-06 01:07:02,483] [INFO] Loaded 98 coins from coins.json
+[2025-05-06 01:07:02,484] [INFO] Trading 98 coins with 10x leverage
+[2025-05-06 01:07:08,273] [INFO] API connection successful
+[2025-05-06 01:07:08,526] [INFO] Balance - Total: $7.18 | Available: $7.18
+[2025-05-06 01:07:08,526] [INFO] Setting leverage to 10x for all coins...
+[2025-05-06 01:07:33,791] [INFO] Leverage setting completed: 98 successful, 0 failed
